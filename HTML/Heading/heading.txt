@@ -1,0 +1,28 @@
+Membuat Heading 
+-----------------------
+
+Heading adalah judul atau subjudul yang digunakan untuk memisahkan bagian-bagian dari konten. Dalam HTML, heading dibuat dengan menggunakan tag `<h1>` hingga `<h6>`, di mana `<h1>` adalah heading terbesar dan `<h6>` adalah heading terkecil.
+
+Contoh penggunaan heading:
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+Atribut untuk heading 
+--------------------
+
+Heading tidak memiliki atribut khusus, tetapi Anda dapat menggunakan atribut umum seperti `id`, `class`, dan `style` untuk menyesuaikan tampilan atau memberikan identifikasi pada heading tertentu.
+
+Contoh penggunaan atribut:
+<h1 id="judul-utama" class="heading-style">Judul Utama</h1>
+<h2 style="color: blue;">Subjudul</h2>
+
+Perbedaan heading Dengan title dan header
+-------------------------
+Heading digunakan untuk menandai bagian dari konten, sedangkan title digunakan untuk memberikan informasi tentang halaman web (muncul di tab browser) dan header adalah bagian dari struktur halaman web yang biasanya berisi judul situs atau navigasi. 
+secara struktur dan fungsi, heading berbeda dengan title dan header. Heading adalah elemen yang digunakan di dalam konten untuk menandai tingkatan judul, sedangkan title adalah elemen meta yang memberikan informasi tentang halaman web (muncul di tab browser), dan header adalah bagian dari struktur halaman web yang biasanya berisi judul situs atau navigasi.
+<h1>Perbedaan Heading, Title, dan Header</h1>
+<h2>Heading dalam HTML</h2>
