@@ -1,0 +1,68 @@
+cara menampilkan gambar di html 
+-------------------------------------------
+
+menambahkan gambar di html dilakukan dengan menggunakan tag `<img>` yang memiliki atribut `src` untuk menentukan sumber gambar dan `alt` untuk memberikan teks alternatif jika gambar tidak dapat ditampilkan. 
+contoh penggunaannya adalah sebagai berikut:
+
+<img src="path/to/image.jpg" alt="deskripsi gambar">
+
+- FORMAT FILE UNTUK HTML
+Nama Format	Nama Panjang	                        Ekstensi
+APNG	    Animated Portable Network Graphics      .apng
+GIF	        Graphics Interchange Format	            .gif
+ICO	        Microsoft Icon	                        .ico, .cur
+JPEG	    Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG	        Portable Network Graphics	            .png
+SVG	        Scalable Vector Graphics	            .svg
+WebP	    Web Picture	                            .webp
+
+- ATRIBUT UNTUK TAG <img>
+- `src`: Menentukan URL gambar yang akan ditampilkan.
+- `alt`: Memberikan teks alternatif jika gambar tidak dapat dimuat.
+- `width`: Mengatur lebar gambar dalam piksel atau persentase.
+- `height`: Mengatur tinggi gambar dalam piksel atau persentase.
+- `title`: Menampilkan tooltip saat kursor diarahkan ke gambar.
+- `loading`: Mengatur cara pemuatan gambar, dengan nilai "lazy" untuk memuat gambar saat dibutuhkan atau "eager" untuk memuat gambar segera.
+- 'style' : untuk mengatur style gambar pada css.
+
+- CONTOH PENGGUNAAN TAG <img> DENGAN BERBAGAI ATRIBUT:
+---------------------------------------------------------
+-Atribut alt
+adalah atribut yang digunakan untuk memberikan teks alternatif jika gambar tidak dapat ditampilkan. contoh penggunaannya adalah sebagai berikut:
+
+<img src="" alt="deskripsi gambar">
+
+- Atribut width dan height
+adalah atribut yang digunakan untuk mengatur ukuran gambar. contoh penggunaannya adalah sebagai berikut:
+<p>
+    <img src="path/to/image.jpg" alt="deskripsi gambar" width="300" height="200">
+</p>
+
+- Atribut title
+adalah atribut yang digunakan untuk menampilkan tooltip saat kursor diarahkan ke gambar. contoh penggunaannya adalah sebagai berikut:
+
+<img src="path/to/image.jpg" alt="deskripsi gambar" title="judul gambar">
+
+- Atribut loading adalah atribut yang digunakan untuk mengatur cara pemuatan gambar. contoh penggunaannya adalah sebagai berikut:
+
+<img src="path/to/image.jpg" alt="deskripsi gambar" loading="lazy">
+
+- Atribut style merupakan atribut yang digunakan untuk mengatur style gambar pada css. contoh penggunaannya adalah sebagai berikut:
+
+<img src="path/to/image.jpg" alt="deskripsi gambar" style="border: 1px solid black;">
+
+MEMBUAT GAMBAR BACKGROUND
+agar gambar bisa ditampilkan sebagai background, maka kita harus menggunakan CSS dengan atribut background-image lalu diisi dengan URL dari gambar.
+Contoh :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contoh Gambar di HTML</title>
+</head>
+<body style="background-image: url(images/sawah.jpg);"> // menetapkan gambar sebagai background body
+  <h1>Background dengan Gambar</h1>
+  <p>Halaman ini menggunakan gambar sebagai background</p>
+</body>
+</html>
+
