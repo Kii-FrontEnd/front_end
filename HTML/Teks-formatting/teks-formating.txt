@@ -10,3 +10,10 @@ Beberapa contoh teks formatting yang umum digunakan antara lain:
 6. ~~Strikethrough~~ - Digunakan untuk menunjukkan teks yang telah dihapus.
 7. __Underline__ - Digunakan untuk menggarisbawahi teks.
 8. [Link](https://example.com) - Digunakan untuk menyisipkan tautan ke halaman web lain.
+
+Teks formatting untuk komputer :
+    <code> untuk menandai bagian dari kode program;
+    <samp> untuk menandai output dari program komputer;
+    <kbd> untuk menandai tombol keyboard;
+    <var> untuk menandai sebuah variabel;
+    <pre> untuk preformatting teks.
