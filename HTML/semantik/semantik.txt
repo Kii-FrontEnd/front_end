@@ -1,0 +1,48 @@
+MENGENAL ELEMEN SEMANTIK PADA HTML
+-------------------------------------
+
+Elemen semantik dalam HTML memberikan makna atau arti pada struktur halaman web. Dengan menggunakan elemen semantik, kita dapat membuat kode HTML yang lebih mudah dipahami oleh browser dan mesin pencari.
+
+Contoh elemen semantik:
+    <article> — untuk membuat elemen artikel;
+    <aside> — untuk membuat elemen bagian samping;
+    <details> — untuk membuat elemen detail atau spoiler;
+    <figcaption> — untuk membuat teks caption pada figure;
+    <figure> — untuk membuat figur atau gambar pada artikel;
+    <footer> — untuk membuat elemen bagian kaki dari web;
+    <header> — untuk membuat kepala kop dari web;
+    <main> — untuk membuat elemen utama;
+    <mark> — untuk menandai teks;
+    <nav> — untuk membuat navigasi;
+    <section> — untuk membuat bagian artikel;
+    <summary> — untuk membuat ringkasan artikel atau isi spoiler;
+    <time> — untuk membuat elemen yang menyatakan waktu;
+    dan masih banyak lagi.
+
+    mengapa harus memakai elemen semantik?
+    salah satu keuntungan menggunakan elemen semantik adalah dokumen HTML mudah dibaca
+    baik manusia maupun mesin.
+    contoh :
+    <header>
+        <h1>Judul Halaman</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul></nav>
+    </header>
+    <main>
+        <article>
+            <h2>Judul Artikel</h2>
+            <p>Isi artikel...</p>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 Nama Website</p>
+    </footer>
+    Menggunakan elemen semantik juga membantu dalam hal aksesibilitas web, 
+    karena membantu teknologi bantu seperti pembaca layar untuk memahami struktur dan isi dari halaman web dengan lebih baik. Selain itu, 
+    elemen semantik juga dapat meningkatkan SEO (Search Engine Optimization) karena mesin pencari dapat lebih mudah memahami konten dan struktur dari halaman web.
+    
+    
