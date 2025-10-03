@@ -1,0 +1,52 @@
+CARA MEMBUAT TABEL DI HTML
+-----------------------------
+
+salah satu cara atau format menampilkan informasi dalam web adalaha dengan tabel.
+Tabel terdiri dari 4 unsur utama :
+1. Baris 
+2. Kolom
+3. Sel
+4. Garis
+
+Tag untuk membuat tabel di HTMl :
+1. tag <table> untuk membungkus tabelnya
+2. tag <tr> untuk membuat baris
+3. tag <td> untuk membuat kolom
+4. tag <th> untuk membuat header kolom
+5. tag <thead> untuk membungkus header tabel
+6. tag <tbody> untuk membungkus body tabel
+-------------------------------------------------
+
+menggatur jarak sel dengan cellpadding
+Atribut cellpadding digunakan untuk mengatur jarak antara isi sel dengan batas sel. Nilai yang diberikan bersifat numerik dan dihitung dalam satuan piksel (px). Contoh penggunaannya adalah sebagai berikut:
+
+<table cellpadding="10">
+  <tr>    
+    <th>Header</th>
+    <th>Header</th>
+  </tr>
+  <tr>
+    <td>Isi sel</td>
+    <td>Isi sel</td>
+  </tr>
+</table>
+--------------------------------------------------
+
+Menambahkan warna pada sel dan baris
+untuk menambahkan warna pada sel dan baris, bisa menggunakan bgcolor di dalam tag <td>(untuk sel)
+atau <tr> (untuk baris).
+----------------------------------------------------
+
+menggabungkan sel (merge cell)
+untuk menggabungkan sel secara horizontal, gunakan atribut colspan pada tag <td> atau <th>.
+contoh :
+
+<table border="1">
+  <tr>
+    <th colspan="2">Header gabungan</th>    </tr>
+  <tr>
+    <td>kolom 1</td>
+    <td>kolom 2</td>
+  </tr>
+</table>
+---------------------------------------------------

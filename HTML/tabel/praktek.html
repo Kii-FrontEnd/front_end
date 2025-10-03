@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+</head>
+<body>
+    <!-- membuat tabel -->
+    <table border="1">
+        <tr>
+            <td>Baris 1 kolom 1</td>
+            <td>Baris 1 kolom 2</td>
+        </tr>
+        <tr>
+            <td>Baris 2 kolom 1</td>
+            <td>Baris 2 kolom 2</td>
+        </tr>
+    </table>
+
+    <!-- mengatur jarak sel dengan cellpadding -->
+    <table border="1" cellpadding="10">
+        <tr>
+            <td>Baris 1 kolom 1</td>
+            <td>Baris 1 kolom 2</td>
+        </tr>
+        <tr>
+            <td>Baris 2 kolom 1</td>
+            <td>Baris 2 kolom 2</td>
+        </tr>
+    </table>
+
+    <!-- menambahkan warna pada sel dan baris -->
+    <table border="1" cellpadding="10">
+        <tr bgcolor="lightblue">
+            <td>Baris 1 kolom 1</td>
+            <td>Baris 1 kolom 2</td>
+        </tr>
+        <tr bgcolor="lightgreen">
+            <td>Baris 2 kolom 1</td>
+            <td>Baris 2 kolom 2</td>
+        </tr>
+    </table>
+
+    <!-- menggabungkan sel tabel -->
+    <table border="1" cellpadding="10">
+        <tr>
+            <td colspan="2" bgcolor="lightcoral">Header Tabel (menggabungkan 2 kolom)</td>
+        </tr>
+        <tr>
+            <td>Baris 1 kolom 1</td>
+            <td>Baris 1 kolom 2</td>
+        </tr>
+        <tr>
+            <td rowspan="2" bgcolor="lightyellow">Baris 2 dan 3 kolom 1 (menggabungkan 2 baris)</td>
+            <td>Baris 2 kolom 2</td>
+        </tr>
+        <tr>
+            <td>Baris 3 kolom 2</td>
+        </tr>
+    </table>
+
+    <!-- Menyisipkan elemen yang lain ke dalam sel -->
+    <table border="1">
+        <tr>
+            <th colspan="3" bgcolor="yellow">Produk Unggulan</th>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                <img src="https://www.petanikode.com/img/petanikode-hero.svg" width="200" />
+            </td>
+        </tr>
+        <tr>
+            <td>Website</td>
+            <td>Petani Kode</td>
+        </tr>
+        <tr>
+            <td>Harga</td>
+            <td>Rp 192.000</td>
+        </tr>
+        <tr>
+            <td>Fitur</td>
+            <td>
+                <ul>
+                    <li>Dilengkapi Dokumentasi</li>
+                    <li>Ukuran: 31MB</li>
+                    <li>Masa Tanam: 6 Bulan</li>
+                    <li>Lisensi: MIT</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
