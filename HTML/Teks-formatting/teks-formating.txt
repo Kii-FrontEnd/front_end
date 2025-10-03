@@ -1,0 +1,12 @@
+teks formatting adalah teks formatting adalah teks yang diatur sedemikian rupa agar mudah dibaca dan dipahami oleh pembaca. 
+Tujuan utama dari teks formatting adalah untuk meningkatkan keterbacan dan kejelasan informasi yang disampaikan dalam teks tersebut.
+Beberapa contoh teks formatting yang umum digunakan antara lain:
+
+1. **Bold** - Digunakan untuk menonjolkan kata atau kalimat penting.
+2. *Italic* - Digunakan untuk menekankan makna tertentu atau menunjukkan istilah asing.
+3. ***Bold and Italic*** - Digunakan untuk menonjolkan dan menekankan kata atau kalimat secara bersamaan.
+4. `Inline Code` - Digunakan untuk menampilkan kode program dalam teks.
+5. Code Block - Digunakan untuk menampilkan blok kode program yang lebih panjang.
+6. ~~Strikethrough~~ - Digunakan untuk menunjukkan teks yang telah dihapus.
+7. __Underline__ - Digunakan untuk menggarisbawahi teks.
+8. [Link](https://example.com) - Digunakan untuk menyisipkan tautan ke halaman web lain.
