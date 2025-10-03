@@ -21,6 +21,7 @@
             <input type="submit" value="Login">
         </fieldset>
     </form>
+    <hr>
 
     <!-- Membuat Form Contact -->
     <form action="contact.php" method="POST">
@@ -29,6 +30,9 @@
             <label for="nama">Nama:</label>
             <input type="text" id="nama" name="nama" placeholder="nama....." required>
             <br> <br>
+            <label for="subjeck">Subject</label>
+            <input type="text" id="subjeck" name="subjeck" placeholder="subjeck...." required>
+            <br> </br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="email...." required>
             <br><br>
@@ -37,5 +41,62 @@
             <br> <br>
             <input type="submit" value="Kirim">
         </fieldset>
+        <hr>
+
+        <!-- membuat Form Register -->
+        <form action="contact.php" method="post">
+            <fieldset>
+                <legend>Registrasi</legend>
+                <!-- registrasi -->
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="nama....." required>
+                <br> <br>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="username....." required>
+                <br> <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email...." required>
+                <br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password...." required>
+                <br><br>
+                <!-- radio button -->
+                <label>Jenis Kelamin:</label>
+                <label><input type="radio" name="jenis kelamin" value="Laki-laki"> Laki-laki</label>
+                <label><input type="radio" name="jenis kelamin" value="Perempuan"> Perempuan</label>
+                <br> <br>
+                <!-- option -->
+                <label>Agama:</label>
+                <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+                <br></br>
+                <!-- textarea -->
+                <label>Biografi:</label>
+                <textarea name="biografi"></textarea>
+                <input type="submit" name="submit" placeholder="send">
+            </fieldset>
+        </form>
+        <hr>
+
+        <!-- Membuat form tingkat lanjut -->
+        <form action="proses.php" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Form Tingkat Lanjut</legend>
+                <label>Alamat web:</label>
+                <input type="url" id="nama" name="nama" placeholder="Masukkan URL web....." required>
+                <br> <br>
+                <label>Tanggal Lahir:</label>
+                <input type="date" name="tanggal">
+                <br><br>
+                <label>Umur:</label>
+                <input type="number" min="10" max="90" name="umur">
+                <br> <br>
+                <input type="submit" name="submit" value="send">
+            </fieldset>
+        </form>
 </body>
 </html>
