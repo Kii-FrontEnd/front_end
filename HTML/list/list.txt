@@ -1,0 +1,26 @@
+CARA MEMBUAUT LIST DI HTML
+-----------------------------------
+ELEMEN LIST DI HTML
+--------------------
+# Ordered List = bisa diubah menjadi bebrapa type dengan menggunakan atribut 
+type = "1|a|A|i|I"
+1. Item pertama
+2. Item kedua
+3. Item ketiga
+
+# Unordered List
+- Item pertama
+- Item kedua
+- Item ketiga
+
+# Description List
+<dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+    <dt>JavaScript</>
+    <dd>Programming language for web development</dd>
+    <dt>Python</dt>
+    <dd>High-level programming language</dd>
+</dl>
