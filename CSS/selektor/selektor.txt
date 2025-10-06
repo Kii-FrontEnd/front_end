@@ -1,0 +1,68 @@
+MEMAHAMI 6 JENIS SELEKTOR DI CSS
+-----------------------------------
+
+1. Selektor Tag
+2. Selektor Kelas
+3. Selektor ID
+4. Selektor Atribut
+5. Selektor Universal
+6. Selektor Pseudo
+
+----------------------------------------
+1. Selektor Tag
+Selektor Tag disebut juga Type Selector. Selektor ini akan memilih elemen berdasarkan nama tag.
+contoh:
+    p {
+        color: blue;
+    }
+
+2. Selektor Class
+Selektor Class memilih elemen berdasarkan nama kelas yang diberikan pada atribut class.
+contoh:
+    .highlight {
+        background-color: yellow;
+    }
+
+3. Selektor ID
+Selektor ID memilih elemen berdasarkan nama id yang diberikan pada atribut id.
+contoh:
+    #header {
+        font-size: 24px;
+    }    
+    
+4. Selektor Atribut
+Selektor Atribut memilih elemen berdasarkan atribut yang diberikan pada elemen.
+contoh:
+    [type="text"] {
+        border: 1px solid #ccc;
+    }
+
+5. Selektor Universal
+Selektor Universal memilih semua elemen pada dokumen.
+contoh:
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+6. Selektor Pseudo
+Selektor Pseudo memilih elemen berdasarkan keadaan tertentu.
+contoh:
+    a:hover {
+        color: red;
+    }
+
+berikut ini beberapa contoh selektor pseudo-element:
+ - ::before untuk memilih elemen semu sebelum elemen;
+ - ::after untuk memilih elemen semu setelah elemen;
+ - ::first-line untuk memilih baris pertama dari elemen;
+ - ::first-letter untuk memilih huruf pertama dari elemen;
+ - ::selection untuk memilih bagian teks yang dipilih oleh pengguna. 
+ - ::placeholder untuk memilih teks placeholder dalam input field. 
+ - ::backdrop untuk memilih latar belakang elemen dalam keadaan fullscreen. 
+ - ::file-selector-button untuk memilih tombol pemilih file dalam input type file. 
+ - ::cue untuk memilih teks subtitle dalam video. 
+ - ::slotted() untuk memilih elemen yang dimasukkan ke dalam slot dalam komponen web.
+ - ::part() untuk memilih bagian dari komponen web yang memiliki atribut part. 
+ - ::shadow untuk memilih elemen dalam shadow DOM.
+ - ::marker untuk memilih penandaftar atau bullet point dalam daftar.
