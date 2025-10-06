@@ -1,0 +1,68 @@
+CARA MENAMBAHKAN VIDEO PADA WEB
+--------------------------------
+
+html sekarang punya tag baru untuk membuat media player, yakni tag <video>, jika tag video di buka pada browser yang tidak mendukungnya,
+maka teks browser tidak mendukung tag video akan muncul.
+
+contoh penggunaan tag <video>:
+<video src="https://www.petanikode.com/img/html-video/cat-herd.webm" controls>
+    Browser tidak mendukung tag video.
+</video>
+
+penjelasan:
+- atribut src digunakan untuk menentukan sumber video.
+- atribut controls digunakan untuk menampilkan kontrol video (play, pause, volume, dll).
+- atribut width dan height dapat digunakan untuk mengatur ukuran video.- atribut autoplay dapat digunakan untuk memutar video secara otomatis.
+- atribut loop dapat digunakan untuk mengulang video secara terus-menerus.
+- atribut muted dapat digunakan untuk membisukan suara video secara default.
+- atribut poster dapat digunakan untuk menampilkan gambar sampul sebelum video dimainkan.
+- atribut preload dapat digunakan untuk menentukan apakah video akan dimuat sebelum dimainkan atau tidak.
+- atribut controlslist dapat digunakan untuk mengatur kontrol yang ditampilkan pada video.
+- atribut disablepictureinpicture dapat digunakan untuk menonaktifkan fitur picture-in-picture pada video.
+- atribut playsinline dapat digunakan untuk memutar video secara inline pada perangkat mobile.
+
+pada contoh diatas, kita menuliskan secara langsung nama video yang akan ditampilkan, ini karena videonya berada dalam
+satu folder dengan file html, jika video berada di folder yang berbeda, maka kita harus menuliskan pathnya secara lengkap.
+
+format yang didukung oleh tag <video> adalah mp4, webm, dan ogg. mp4, webm, dan ogg.
+ jika browser tidak mendukung format video yang digunakan, maka teks browser tidak mendukung tag video akan muncul.
+ contoh lain penggunaan tag <video> dengan format yang berbeda:
+<video controls>
+    <source src="https://www.petanikode.com/img/html-video/cat-herd.webm" type="video/webm">
+    <source src="https://www.petanikode.com/img/html-video/cat-herd.mp4" type="video/mp4">
+    Browser tidak mendukung tag video.
+</video>
+
+atribut untuk video
+- autoplay: memutar video secara otomatis.
+- controls: menampilkan kontrol video.
+- height: mengatur tinggi video.
+- width: mengatur lebar video.
+- loop: mengulang video secara terus-menerus.
+- muted: membisukan suara video secara default.
+- poster: menampilkan gambar sampul sebelum video dimainkan.
+- playsinline: untuk memutar video secara inline dengan nilai true atau false
+
+subtitle untuk video
+subtitle adalah teks yang ditampilkan dalam video. Biasanya digunakan untuk terjemahan atau alih bhasa dari video dan juga 
+untuk membantu tuna rungu (orang tuli) untuk menyerap informasi pada video
+contohnya :
+<track src="sub-id.vtt"
+    kind="subtitle"
+    srclang="id"
+    label="idonesia"/>
+
+format file subtitle untuk video di dalam HTML adalah WebVTT(.vtt) atau Web video Text
+Track. File .vtt ini bisa dibuat dengan teks editor.
+jika kamu punya subtitle dengan format SubRip Text(.srt), maka kamu bisa mengubahnya ke format .vtt dengan menggunakan tools online.
+contoh :
+<video controls>
+    <source src="https://www.petanikode.com/img/html-video/cat-herd.webm" type="video/webm">
+    <source src="https://www.petanikode.com/img/html-video/cat-herd.mp4" type="video/mp4">
+    <track src="sub-id.vtt" kind="subtitle" srclang="id" label="Indonesia">    Browser tidak mendukung tag video.
+</video>
+penjelasan:
+- atribut src digunakan untuk menentukan sumber subtitle.
+- atribut kind digunakan untuk menentukan jenis teks yang ditampilkan (subtitle, captions, descriptions, chapters, metadata).
+- atribut srclang digunakan untuk menentukan bahasa subtitle.
+- atribut label digunakan untuk menentukan nama subtitle yang akan ditampilkan pada kontrol video.
