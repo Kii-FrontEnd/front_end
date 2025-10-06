@@ -1,0 +1,40 @@
+SINTAKS DASAR CSS YANG HARUS DIPAHAMI
+-------------------------------------------
+
+STRUKTUR DASAR CSS
+struktur dasar css ada 3 bagian:
+1. selektor
+2. blok deklarasi
+3. properti dan nilainya
+--------------------------------------
+
+1. selektor
+selektor adalah bagian yang menunjuk pada elemen HTML yang akan diberi style. Selektor bisa berupa nama tag, class, id, atau kombinasi dari ketiganya. Contoh:
+- `p` untuk memilih semua elemen paragraf
+- `.kelas` untuk memilih elemen dengan class "kelas"
+- `#id` untuk memilih elemen dengan id tertentu
+- `div p` untuk memilih elemen paragraf yang berada di dalam elemen div
+
+2. blok deklarasi
+    blok deklarasi adalah tempat kita menuliskan atribut atau properti CSS yang akan diberikan ke pada elemen yang telah diseleksi.
+    contoh :
+    p {
+        color: blue;
+        font-size: 16px;
+    }
+artinya, kita mmengatur ukuran font dari tag <p> sebesar 18px.
+blok deklarasi dimulai atau dibka dengan tanda kurung kurawal {}.
+satu blok deklarasi, bisa dipakai oleh lebih dari satu selektor.
+contohnya :
+    h1, h2, h3, h4, h5, h6 {
+        color: teal;
+    }
+3. properti dan nilainya
+properti adalah sekumpulan aturan yang akan diberikan kepada elemen yang dipilih.
+format penulisannya properti seperti ini:
+    properti: nilai;
+    contoh:
+    color: blue;
+    font-size: 16px;
+    text-align: center;
+
