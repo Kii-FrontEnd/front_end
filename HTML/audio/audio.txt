@@ -1,0 +1,6 @@
+CARA MENAMBAHKAN AUDIO PADA HTML
+-------------------------------------
+
+tag <audio> adalah tag untuk membuat audio player. lalu kita bisa memberikan file audio 
+yang akan diputar dengan tag <source>.
+contoh:
