@@ -1,0 +1,49 @@
+CARA MENULIS CSS ADA TIGA CARA :
+1. INLINE CSS
+2. INTERNAL CSS
+3. EXTERNAL CSS
+-----------------------------------
+
+1. Internal css adalah kode css yang ditulis di dalam tag <style>. internal css juga dikenal dengan sebutan Embedded CSS
+Tag <style> bisa ditulis di dalma tag <head>, bisa juga ditulis di dalam tag <bidy>.
+Namun kebanyakan orang menulisnya di dalam <head>.
+contoh :
+<head>
+    <style>
+        body {
+            background-color: lightblue;
+            color: darkblue;
+        }
+    </style>
+</head>
+
+2. Eksternal CSS
+Eksternal CSS adalah kode CSS yang ditulis terpisah dengan kode HTML. Eksternal CSS ditulis di dalam
+file khusus yag berekstensi .css
+contoh :
+kita akan membuka file bernama style.css yang didalmnya berisi kode CSS.
+p {
+    font-family: serif;
+    line-height: 1.75em;
+}
+
+i {
+    font-family: sans;
+    color: orange;
+}
+
+untuk menggunakan CSS ini, kita harus menghubungkan dengan HTML.
+Ada dua cara yang bisa dilakukan :
+1. Menggunakan tag <link>
+    <link rel="stylesheet" type="text/css" href="style.css">
+2. Menggunakan @import
+    <style type="text/css">
+        @import "style.css"
+    </style>
+
+3. Inline CSS
+Inline css adalah kode css yang ditulis langsung pada atribut style di elemen HTML.
+Kode CSS ditulis langsung tanpa menggunakan kuurng kurawal{...}. kemudian properti
+tetap dispisah dengan titik koma.
+contoh :
+<h2 style="color: red; font-size: 24px;">Ini judul</h2>

@@ -1,0 +1,35 @@
+PENGENALAN DASAR CSS UNTUK PEMULA:
+------------------------------------------
+
+CSS (Cascade Style Sheet) adalah sebuah bahasa untuk mengatur tamplan web sehingga terlibat lebih menarik dan indah.
+Dengan CSS, kita dapat mengatur layout(tata letak), warna, font, garis, background, animasi, dll.
+
+TIPS BELAJAR CSS
+
+1. CARA MENGHAFAL KODE CSS
+-----
+- Pahami struktur dasar CSS: selector, property, dan value
+- Pelajari secara bertahap mulai dari yang paling dasar- Gunakan tools seperti CSS validator dan inspector browser untuk membantu proses belajar  
+- Buat proyek sederhana untuk latihan- Gunakan referensi seperti dokumentasi resmi CSS dan tutorial online untuk memperdalam pemahaman
+- Praktikkan secara konsisten setiap hari meskipun hanya 15-30 menit
+
+2. CARA MENULIS CSS:
+-----
+1. Inline CSS: Menulis CSS langsung di dalam tag HTML menggunakan atribut style= text after the completion point  
+2. Internal CSS: Menulis CSS di dalam tag <style> di bagian <head> dokumen HTML
+3. External CSS: Menulis CSS di file terpisah dengan ekstensi .css dan menghubungkannya ke dokumen HTML menggunakan tag <link>
+
+3. GUNAKAN VS CODE
+-----
+- Install extension seperti CSS Peek, Auto Rename Tag, dan Bracket Pair Colorizer untuk mempermudah penulisan kode
+- Gunakan fitur Emmet untuk menulis kode HTML dan CSS lebih cepat
+- Manfaatkan fitur autocomplete dan syntax highlighting untuk menghindari kesalahan penulisan kode
+- Gunakan live server extension untuk melihat perubahan secara real-time di browser- Gunakan shortcut seperti Ctrl+/ untuk comment/uncomment dan Ctrl+D untuk select word yang sama
+
+4. PEMAHAMAN DASAR TENTANG DESAIN WEB
+-----
+- Pelajari prinsip dasar desain seperti layout, typography, color theory, dan UX/UI design
+- Pahami konsep responsive design agar website terlihat baik di berbagai perangkat
+- Kenali tools desain seperti Figma atau Adobe XD untuk membuat wireframe dan mockup sebelum implementasi ke kode
+- Kuasai dasar-dasar HTML terlebih dahulu karena CSS digunakan untuk mempercantik tampilan HTML
+
