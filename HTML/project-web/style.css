@@ -83,10 +83,69 @@ article p {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .email {
+    margin: 10px;
+}
+
+.contact .email label {
+    font-weight: bold;
+}
+
+.contact .email input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact .pesan {
+    margin: 10px;
+}
+
+.contact .pesan label {
+    font-weight: bold;
+}
+
+.contact .pesan textarea {
+    padding: 10px;
+    width: 250px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact form .btn input {
+    width: 70px;
+    padding: 10px;
+    font-weight: 800;
+    transition: 0.5s;
+    border: none;
+}
+
+.contact form .btn input:hover {
+    background-color: darkslateblue;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 5px darkslateblue;
+    border-radius: 10px;
+}
+
 footer {
     text-align: center;
     padding: 10px;
     background-color: darkgrey;
+    bottom: 0;
     color: white;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
