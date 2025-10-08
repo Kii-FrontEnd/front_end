@@ -1,0 +1,18 @@
+MEWARNAI TEKS DENGAN CSS
+--------------------------------
+
+Warna adalah properti yang paling sering digunakan dalam CSS. Properti warna digunakan untuk mengatur warna teks pada elemen HTML. 
+Contoh penggunaan properti warna adalah sebagai berikut:
+
+h1 {
+    color: red;
+}
+
+artinya warna red untuk teks pada elemen <h1>
+
+NILAI YANG VALID UNTUK WARNA
+--------------------------------
+- Nama warna (red, blue, green, dll)
+- Kode heksadesimal (#ff0000, #00ff00, dll)
+- Kode RGB (rgb(255, 0, 0), rgb(0, 255, 0), dll)
+- Kode RGBA (rgba(255, 0, 0, 0.5), rgba(0, 255, 0, 0.5), dll)
