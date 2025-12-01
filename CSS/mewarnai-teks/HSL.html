@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSL</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        .container {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .container .box-1 {
+            padding: 20px;
+            background-color: hsl(0, 100%, 50%);
+        }
+        
+        .container .box-2 {
+            padding: 20px;
+            background-color: hsl(240, 100%, 50%);
+        }
+        .container .box-3 {
+            padding: 20px;
+            background-color: hsl(147, 50%, 47%);
+        }
+        .container .box-4 {
+            padding: 20px;
+            background-color: hsl(300, 76%, 72%);
+        }
+        .container .box-5 {
+            padding: 20px;
+            background-color: hsl(39, 100%, 50%);
+        }
+        .container .box-6 {
+            padding: 20px;
+            background-color: hsl(248, 53%, 58%);
+        }
+        .container .box-7 {
+            padding: 20px;
+            background-color: rgb(60, 60, 60);
+        }
+
+        .container .box-8 {
+            padding: 20px;
+            background-color: rgb(90, 90, 90);
+        }
+
+        .container .box-9 {
+            padding: 20px;
+            background-color: rgb(120, 120, 120);
+        }
+
+        .container .box-10 {
+            padding: 20px;
+            background-color: rgb(180, 180, 180);
+        }
+
+        .container .box-11 {
+            padding: 20px;
+            background-color: rgb(210, 210, 210);
+        }
+
+        .container .box-12 {
+            padding: 20px;
+            background-color: rgb(240, 240, 240);
+        }
+
+        /* HSL */
+        .saturasi {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .saturasi .box-1 {
+            padding: 20px;
+            background-color: hsl(0, 100%, 50%);
+        }
+        
+        .saturasi .box-2 {
+            padding: 20px;
+            background-color: hsl(0, 80%, 50%);
+        }
+        .saturasi .box-3 {
+            padding: 20px;
+            background-color: hsl(0, 60%, 50%);
+        }
+        .saturasi .box-4 {
+            padding: 20px;
+            background-color: hsl(0, 40%, 50%);
+        }
+        .saturasi .box-5 {
+            padding: 20px;
+            background-color: hsl(0, 20%, 50%);
+        }
+        .saturasi .box-6 {
+            padding: 20px;
+            background-color: hsl(0, 0%, 50%);
+        }
+
+        /* lightness */
+        .lightness {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            color: gray;
+        }
+        .lightness .box-1 {
+            padding: 20px;
+            background-color: hsl(0, 100%, 0%);
+        }
+        
+        .lightness .box-2 {
+            padding: 20px;
+            background-color: hsl(0, 80%, 25%);
+        }
+        .lightness .box-3 {
+            padding: 20px;
+            background-color: hsl(0, 60%, 50%);
+        }
+        .lightness .box-4 {
+            padding: 20px;
+            background-color: hsl(0, 40%, 75%);
+        }
+        .lightness .box-5 {
+            padding: 20px;
+            background-color: hsl(0, 20%, 90%);
+        }
+        .lightness .box-6 {
+            padding: 20px;
+            background-color: hsl(0, 0%, 100%);
+        }
+
+        /* Nuansa Gray */
+        .gray {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            color: blueviolet;
+        }
+        .gray .box-1 {
+            padding: 20px;
+            background-color: hsl(0, 0%, 0%);
+        }
+        
+        .gray .box-2 {
+            padding: 20px;
+            background-color: hsl(0, 0%, 24%);
+        }
+        .gray .box-3 {
+            padding: 20px;
+            background-color: hsl(0, 0%, 47%);
+        }
+        .gray .box-4 {
+            padding: 20px;
+            background-color: hsl(0, 0%, 71%);
+        }
+        .gray .box-5 {
+            padding: 20px;
+            background-color: hsl(0, 0%, 94%);
+        }
+        .gray .box-6 {
+            padding: 20px;
+            background-color: hsl(0, 0%, 100%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Nilai HSL</h1>
+    <p>
+        HSL adalah singkatan dari Hue(corak), Saturation(saturasi) dan lighness(Kecerahan).
+        <br>
+        Dalam CSS, warna dapat ditentukan menggunakan warna, saturasi
+        dan ringan(HSL) dalam bentuk:
+    </p>
+    <h2>hsl (hue, saturasi, lightness)</h2>
+    <p><b>Hue</b> adalah derajat roda warna (dari 0 hingga 360):</p>
+    <ul>
+        <li>0 (atau 360) adalah <span style="color: red;">merah</span></li>
+        <li>120 adalah <span style="color: green;">hijau</span></li>
+        <li>240 adalah <span style="color: blue;">biru</span></li>
+    </ul>
+    <p>
+        <b>Saturasi</b> adalah nilai presentase: 0% berarti warna abu-abu, dan
+        100% adalah warna penuh.
+    </p>
+    <p>
+        <b>Kecerahan</b> adalah nilai presentasi: 0% adalah hitam, 50% tidak terang/gelap,
+        100% putih
+    </p>
+    <p>Contoh Campuran nilai Warna HSL sebagai berikut:</p>
+    <br>
+    <div class="container">
+        <div class="box-1">hsl(0, 100%, 50%)</div>
+        <div class="box-2">hsl(240, 100%, 50%)</div>
+        <div class="box-3">hsl(147, 50%, 47%)</div>
+        <div class="box-4">hsl(300, 76%, 72%)</div>
+        <div class="box-5">hsl(39, 100%, 50%)</div>
+        <div class="box-6">hsl(248, 53%, 58%)</div>
+    </div>
+    <br>
+
+    <h3>Saturasi</h3>
+    <p>
+        Saturasi dapat digunakan sebagai intentitas warna. <b>100%</b> adalah warna murni,
+        tidak ada nuansa abu-abu. <b>50%</b> adalah 50% abu-abu, tetapi anda masih
+        bisa melihat warnanya. <b>0%</b> benar-benar abu-abu; Anda tidak bisa lagi melihat warnanya.
+        <br>
+        Contoh:
+    </p>
+    <div class="saturasi">
+        <div class="box-1">hsl(0, 100%, 50%)</div>
+        <div class="box-2">hsl(0, 80%, 50%)</div>
+        <div class="box-3">hsl(0, 60%, 50%)</div>
+        <div class="box-4">hsl(0, 40%, 50%)</div>
+        <div class="box-5">hsl(0, 20%, 50%)</div>
+        <div class="box-6">hsl(0, 0%, 50%)</div>
+    </div>
+    <br>
+
+    <h3>Kecerahan</h3>
+    <p>
+        Kecerahan dapat digambarkan sebagai berapa banyak cahaya yang anda inginkan untuk memberikan warna,
+        di mana <b>0%</b> berarti tidak ada cahaya (hitam), <b>50%</b> berarti cahaya 50%
+        (baik gelap maupun terang) dan <b>100%</b> berarti kecerahan penuh (putih).
+        <br>
+        Contoh:
+    </p>
+    <div class="lightness">
+        <div class="box-1">hsl(0, 100%, 0%)</div>
+        <div class="box-2">hsl(0, 100%, 25%)</div>
+        <div class="box-3">hsl(0, 100%, 50%)</div>
+        <div class="box-4">hsl(0, 100%, 75%)</div>
+        <div class="box-5">hsl(0, 100%, 90%)</div>
+        <div class="box-6">hsl(0, 100%, 100%)</div>
+    </div>
+    <br>
+    
+    <h3>Nuansa dari Gray</h3>
+    <p>
+        Nuansa abu-abu sering didefinisika dengan menetapkan rona dan saturasi
+        ke 0, dan menyesuaikan ringan dari 0% hingga 100% untuk mendapatkan nuansa
+        yang lebih gelap / lebih ringan.
+        <br>
+        Contoh:
+    </p>
+    <div class="gray">
+        <div class="box-1">hsl(0, 0%, 0%)</div>
+        <div class="box-2">hsl(0, 0%, 24%)</div>
+        <div class="box-3">hsl(0, 0%, 47%)</div>
+        <div class="box-4">hsl(0, 0%, 71%)</div>
+        <div class="box-5">hsl(0, 0%, 94%)</div>
+        <div class="box-6">hsl(0, 0%, 100%)</div>
+    </div>
+</body>
+</html>

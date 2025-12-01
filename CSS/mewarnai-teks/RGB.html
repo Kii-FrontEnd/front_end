@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB dan RGBA</title>
+    <style>
+        body {
+            text-align: justify;
+            background-color: beige;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        span {
+            border-bottom: 1px solid black;
+        }
+
+        .container {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .container .box-1 {
+            padding: 20px;
+            background-color: rgb(255, 0, 0);
+        }
+
+        .container .box-2 {
+            padding: 20px;
+            background-color: rgb(0, 0, 255);
+        }
+
+        .container .box-3 {
+            padding: 20px;
+            background-color: rgb(60, 179, 113);
+        }
+
+        .container .box-4 {
+            padding: 20px;
+            background-color: rgb(238, 130, 238);
+        }
+
+        .container .box-5 {
+            padding: 20px;
+            background-color: rgb(255, 165, 0);
+        }
+
+        .container .box-6 {
+            padding: 20px;
+            background-color: rgb(106, 90, 205);
+        }
+
+        .container .box-7 {
+            padding: 20px;
+            background-color: rgb(60, 60, 60);
+        }
+
+        .container .box-8 {
+            padding: 20px;
+            background-color: rgb(90, 90, 90);
+        }
+
+        .container .box-9 {
+            padding: 20px;
+            background-color: rgb(120, 120, 120);
+        }
+
+        .container .box-10 {
+            padding: 20px;
+            background-color: rgb(180, 180, 180);
+        }
+
+        .container .box-11 {
+            padding: 20px;
+            background-color: rgb(210, 210, 210);
+        }
+
+        .container .box-12 {
+            padding: 20px;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .container .box-13 {
+            padding: 20px;
+            background-color: rgb(255, 0, 0, 0);
+        }
+
+        .container .box-14 {
+            padding: 20px;
+            background-color: rgb(0, 0, 255, 0.2);
+        }
+
+        .container .box-15 {
+            padding: 20px;
+            background-color: rgb(60, 179, 113, 0.4);
+        }
+
+        .container .box-16 {
+            padding: 20px;
+            background-color: rgb(238, 130, 238, 0.6);
+        }
+
+        .container .box-17 {
+            padding: 20px;
+            background-color: rgb(255, 165, 0, 0.8);
+        }
+
+        .container .box-18 {
+            padding: 20px;
+            background-color: rgb(106, 90, 205, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nilai RGB</h1>
+    <ul>
+        <li>Warna Merah: rgb(255, 0, 0)</li>
+        <li>Warna hijau: rgb(0, 255, 0)</li>
+        <li>Warna biru : rgb(0, 0, 255)</li>
+    </ul>
+    <p>Nilai yang memiliki warna rgb(merah, hijau, biru), contohnya
+        rgb(255,0,0) ditampilkan sebagai merah, karena merah diatur
+        ke nilai tertinggi (255) dan yang lainnya diatur ke 0.
+    </p>
+    <p>
+        Untuk menampilkan warna <b>hitam</b>, atur semua parameter warna ke 0,
+        seperti ini: rgb(0, 0, 0). <strong>sedangkan,</strong> untuk
+        menampilkan warna <span>putih,</span> atur semua parameter warna hingga
+        255, seperti ini: rgb(255, 255, 255).
+        <br><br>
+        Contoh nilai RGB, sebagai berikut:
+    </p>
+    <div class="container">
+        <div class="box-1">rgb(255, 0, 0)</div>
+        <div class="box-2">rgb(0, 0, 255)</div>
+        <div class="box-3">rgb(60, 179, 113)</div>
+        <div class="box-4">rgb(238, 130, 238)</div>
+        <div class="box-5">rgb(255, 165, 0)</div>
+        <div class="box-6">rgb(106, 90, 205)</div>
+    </div>
+    <p>
+        Nuansa abu-abu sering didefinisikan menggunakan nilai yang sama untuk semua 3 sumber cahaya:
+    </p>
+    <div class="container">
+        <div class="box-7">rgb(60, 60, 60)</div>
+        <div class="box-8">rgb(90, 90, 90)</div>
+        <div class="box-9">rgb(120, 120, 120)</div>
+        <div class="box-10">rgb(180, 180, 180)</div>
+        <div class="box-11">rgb(210, 210, 210)</div>
+        <div class="box-12">rgb(240, 240, 240)</div>
+    </div>
+    <hr style="border: 2px solid black;">
+
+    <h1>Nilai RGBA</h1>
+    <p>
+        Nilai warna RGBA adalah perpanjangan dari nilai warna RGB
+        dengan tambahan alfa - yang menetukan opacity untuk warna.
+        <br>
+        Nilai warna RGBA(merah, hijau, biru, alfa), untuk parameter alfa
+        adalah angka antara 0,0 (sepenuhnya transparan) dan 1,0 (tidak transparan sama sekali)
+        <br>
+        Contohnya:
+    </p>
+    <div class="container">
+        <div class="box-13">rgba(255, 0, 0, 0)</div>
+        <div class="box-14">rgba(0, 0, 255, 0.2)</div>
+        <div class="box-15">rgba(60, 179, 113, 0.4)</div>
+        <div class="box-16">rgba(238, 130, 238, 0.6)</div>
+        <div class="box-17">rgba(255, 165, 0, 0.8)</div>
+        <div class="box-18">rgba(106, 90, 205, 1)</div>
+    </div>
+</body>
+
+</html>

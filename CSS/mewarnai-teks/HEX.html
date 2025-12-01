@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warna HEX</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+
+        .container {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .container .box-1 {
+            padding: 20px;
+            background-color: #ff0000;
+        }
+
+        .container .box-2 {
+            padding: 20px;
+            background-color: #0000ff;
+        }
+
+        .container .box-3 {
+            padding: 20px;
+            background-color: #3cb371;
+        }
+
+        .container .box-4 {
+            padding: 20px;
+            background-color: #ee82ee;
+        }
+
+        .container .box-5 {
+            padding: 20px;
+            background-color: #ffa500;
+        }
+
+        .container .box-6 {
+            padding: 20px;
+            background-color: #6a5acd;
+        }
+
+        .container .box-7 {
+            padding: 20px;
+            background-color: #3c3c3c;
+        }
+
+        .container .box-8 {
+            padding: 20px;
+            background-color: #616161;
+        }
+
+        .container .box-9 {
+            padding: 20px;
+            background-color: #787878;
+        }
+
+        .container .box-10 {
+            padding: 20px;
+            background-color: #b4b4b4;
+        }
+
+        .container .box-11 {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container .box-12 {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .hex {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .hex li {
+            text-align: center;
+            list-style: none;
+            padding: 20px;
+        }
+
+        .hex .hex-1 {
+            background-color: #fc9;
+        }
+
+        .hex .hex-2 {
+            background-color: #f0f;
+        }
+
+        .hex .hex-3 {
+            background-color: #b58;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Nilai HEX</h1>
+    <p>
+        Warna heksadesimal ditentukan dengan: #RRGGBB(red, green, blue).
+        <br>
+        Dalam CSS, warna dapat ditentukan menggunakan nilai heksadesimal Dalam
+        bentuk:
+    </p>
+    <ul>
+        <li>6 digit: <b>#rrggbb</b></li>
+        <li>3 digit: <b>#rgb</b></li>
+    </ul>
+    <h3># rrggbb</h3>
+    <p>
+        Dimana rr(merah), gg(hijau), bb(biru) adalah nilai heksadesimal antara
+        00 dan ff (sama dengan desimal 0-255).
+        <br>
+        Misalnya, #ff0000 ditampilkan sebagai merah, karena merah diatur ke nilai tertinggi(ff)
+        dan yang lainnya diatur dengan nilai 00(terendah).
+        <br>
+        Untuk menampilkan hitam, tetapkan semua nilai menjadi 00, seperti ini:
+        #000000
+        <br>
+        untuk menampilkan putih, tetapkan warna nilai tertinggi ff, seperti ini:
+        #ffffff
+        <br>
+        contoh <b>#rrggbb</b>:
+    </p>
+    <div class="container">
+        <div class="box-1">#ff0000</div>
+        <div class="box-2">#0000ff</div>
+        <div class="box-3">#3cb371</div>
+        <div class="box-4">#ee82ee</div>
+        <div class="box-5">#ffa500</div>
+        <div class="box-6">#6a5acd</div>
+    </div>
+    <br>
+
+    <p>
+        Nuansa abu-abu sering didefinisikan menggunakan nilai yang sama untuk semua 3 sumber cahaya:
+    </p>
+    <div class="container">
+        <div class="box-7">#3c3c3c</div>
+        <div class="box-8">#616161</div>
+        <div class="box-9">#787878</div>
+        <div class="box-10">#b4b4b4</div>
+        <div class="box-11">#f0f0f0</div>
+        <div class="box-12">#f9f9f9</div>
+    </div>
+    <hr style="border-bottom: 2px solid black;">
+
+    <h2>3 Digit Nilai HEX</h2>
+    <p>
+        Kode HEX 3 digit adalah singkatan untuk beberapa kode hex 6 digit.
+        <br>
+        Contohnya sebagai berikut:
+    </p>
+    <h3># rgb</h3>
+    <p>
+        Dimana r, g, b mewakili komponen merah, hijau, dan biru dengan nilai
+        antara 0 dan f.
+        <br>
+        Kode hekss 3 digit hanya dapat digunakan ketika kedua nilai (RR, GG dan BB)
+        adalah sama untuk setiap komponen. Jadi, jika kita memiliki #ff00cc, itu bisa
+        ditulis seperti ini: #f0c
+        <br>
+        Berikut contohnya:
+    </p>
+    <ul class="hex">
+        <li class="hex-1">#fc9 = #ffcc99</li>
+        <li class="hex-2">#f0f = #ff00ff</li>
+        <li class="hex-3">#b58 = #bb5588</li>
+    </ul>
+</body>
+
+</html>
