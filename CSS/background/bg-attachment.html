@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAckground Attachment</title>
+    <style>
+        .fixed {
+            background-image: url(img/moountain\ sibayak.webp);
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .fixed p {
+            text-align: center;
+            line-height: 50vh;
+            color: rgb(64, 32, 5);
+            font-size: 16px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px white;
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 2px solid black;
+        }
+
+        .scroll {
+            background-image: url(img/bg.jpg);
+            height: 50vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+        }
+        .scroll p {
+            text-align: center;
+            line-height: 50vh;
+            color: rgb(11, 19, 171);
+            font-size: 16px;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px white;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>BACKGROUND ATTACHMENT</h1>
+    <p>
+        Background attachment adalah sebuah property yang mennetukan apakah
+        gambar latar belakang harus menggulir(scroll) atau tetap(fixed)
+        <br>
+        contoh:
+    </p>
+    <div class="fixed">
+        <p>
+            ini background attachment dengan nilai fixed 
+        </p>
+    </div>
+    <hr>
+    <div class="scroll">
+        <p>
+            ini merupakan background-attachment dengan nilai scroll
+        </p>
+    </div>
 </body>
 </html>
