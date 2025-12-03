@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <style>
+        body {
+            background-color: beige;
+            text-align: justify;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        span {
+            color: brown;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+            font-weight: 800;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        ul li a {
+            color: red;
+        }
+
+        ul li a:hover {
+            text-decoration: none;
+        }
+
+        .box {
+            border: 1px solid black;
+            width: 80%;
+            margin-left: 100px;
+            /*mengatur margin left 100px induk*/
+        }
+
+        .box p {
+            margin-left: inherit;
+            /*anak= mengikuti warisan dari parennt*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MARGIN</h1>
+    <p>
+        Sifat margin CSS digunakan untuk menciptakan ruang di sekitar elemen,
+        di luar perbatasan yang ditentukan.
+        <br>
+        Margin menentukan jarak antara perbatasan elemen dan sekitarnya.
+        <br>
+        Dengan CSS, anda memiliki kontrol penuh atas margin. CSS memiliki
+        properti untuk menentapkan margin untuk setiap sisi individu dari
+        elemen (atas, kanan, bawah, kiri), dan properti singkatan untuk pengaturan
+        semua properti margin dalam satu deklarasi.
+    </p>
+    <div class="individu">
+        <p>
+            CSS memiliki properti untuk menentukan margin untuk masing-masing
+            sisi dari elemen:
+        </p>
+        <ul>
+            <li>
+                <a href="https://www.w3schools.com/cssref/pr_margin-top.php">margin-top</a>
+                - menetapkan margin atas
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/cssref/pr_margin-right.php">margin-right</a>
+                - mengatur margin kanan
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/cssref/pr_margin-bottom.php">margin-bottom</a>
+                - mengatur margin bawah
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/cssref/pr_margin-left.php">margin-left</a>
+                - mengatur margin kiri
+            </li>
+        </ul>
+        <p>Semua properti margin dapat memiliki nilai-nilai berikut:</p>
+        <ul>
+            <li>auto - browser menghitung margin</li>
+            <li>panjang - menentukan margin dalam px, pt, cm, dll</li>
+            <li>% - menentukan margin dalam % dari lebar elemen yang mengandung</li>
+            <li>mewarisi - menentukan bahwa margin harus diwarisi dari elemen induk</li>
+        </ul>
+        <caption><b>Tip:</b> Nilai-nilai negatif juga diperbolehkan</caption>
+    </div>
+
+    <!-- margin warisan -->
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente id doloremque quisquam possimus quae?
+            Cumque laborum dignissimos error adipisci iste quidem, illum quaerat doloremque maxime beatae eligendi
+            voluptas illo, alias quos sint. Aliquid in architecto hic incidunt aut alias suscipit eligendi obcaecati,
+            ratione a fugit distinctio nihil dolores quos! Voluptas.</p>
+    </div>
+</body>
+
+</html>

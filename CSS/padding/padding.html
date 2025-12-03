@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        span {
+            color: red;
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            margin: 10px 0;
+            border: 1px solid black;
+            /* padding-top: 25px;
+            padding-right: 50px;
+            padding-bottom: 75px;
+            padding-left: 100px; */
+            /* disingkat menjadi */
+            padding: 25px 50px 75px 100px;
+        }
+
+        .sizing {
+            border: 1px solid black;
+            height: 300px;
+            width: 450px;
+            margin: auto;
+            box-shadow: 0 0 10px black;
+            border-radius: 5px;
+        }
+
+        .sizing h2 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-shadow: 0 10px 5px gray;
+        }
+
+        .sizing .isi {
+            display: block;
+            margin: 10px 20px;
+            text-transform: lowercase;
+        }
+
+        .sizing .isi input {
+            display: flex;
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid black;
+            outline: none;
+        }
+
+        .sizing .isi button {
+            padding: 10px;
+            width: 100%;
+            margin: 10px 0;
+            letter-spacing: 2px;
+            font-weight: 800;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+            box-shadow: 0 5px 10px black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>PADDING</h1>
+    <p>
+        Sifat padding CSS digunakan untuk menghasilkan ruang di sekitar
+        konten elemen, di dalam batas yang ditentukan.
+    </p>
+    <p>
+        Dengan CSS, anda memiliki kontrol penuh atas padding. Ada properti untuk
+        pengaturan bantalan untuk setiap sisi elemen (atas, kanan, bawah, kiri), dan
+        properti singkatan untuk pengaturan semua properti padding dalam
+        satu deklarasi.
+    </p>
+    <h2>Padding - sisi individu</h2>
+    <p>
+        CSS memiliki properti untuk menentukan padding untuk setiap sisi elemen:
+    </p>
+    <ul>
+        <li><span>padding-top</span> - mengatur padding atas</li>
+        <li><span>padding-right</span> - mengatur padding kanan</li>
+        <li><span>padding-bottom</span> - mengatur padding bawah</li>
+        <li><span>padding-left</span> - mengatur padding kiri</li>
+    </ul>
+    <p>Semua properti padding dapat memiliki nilai-nilai berikut:</p>
+    <ul>
+        <li>panjang - menentukan margin dalam px, pt, cm, dll</li>
+        <li>% - menentukan margin dalam % dari lebar elemen yang mengandung</li>
+        <li>mewarisi - menentukan bahwa margin harus diwarisi dari elemen induk</li>
+    </ul>
+    <caption><b>Tip:</b> Nilai-nilai negatif tidak diperbolehkan</caption>
+    <div class="box">
+        <p>ini padding individual</p>
+    </div>
+
+    <!-- box sizing padding -->
+    <h2>PADDING DAN BOX SIZING</h2>
+    <p>
+        Properti Box Sizing didefinisikan bagaimana lebar dan tinggi elemen
+        dihitung: harus mencangkup padding dan border, atau tidak.
+        <br>
+        Properti ini memiliki nilai-nilai berikut:
+    </p>
+    <ul>
+        <li><span>Content-box </span>
+            - ini adalah default. Sifat lebar dan tinggi hanya mencangkup konten
+            (border dan padding tidak termasuk)
+        </li>
+        <li><span>border-box </span>
+            - Sifat lebar dan tinggi termasuk konten, padding, dan border.
+        </li>
+    </ul>
+    <p>
+        Jadi, untuk menjaga lebar pada 300px, tidak peduli jumlah padding, anda dapat
+        menggunakan <span>box-sizing: border-box;</span>. Hal ini menyebabkan elemen
+        memperahankan lebar sebenarnya; jika anda meningkatkan padding, ruang konten
+        yang tersedia akan berkurang.
+        <br>
+        Contoh:
+    </p>
+    <div class="sizing">
+        <h2>Login</h2>
+        <div class="isi">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            margin-left: 150px;
+        }
+
+        .one {
+            width: 300px;
+            border: 15px solid blue;
+            padding: 50px;
+            margin: 20px;
+        }
+
+        .keterangan {
+            background-color: red;
+            padding: 10px;
+        }
+
+        .two {
+            width: 320px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid gray;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BOX MODEL</h1>
+    <p>
+        Dalam CSS, istilah "Box Model" digunakan saat berbicara tentang
+        desain web dan tata letak.
+        <br>
+        Model CSS box pada dasarnya adalah kotak yang membungkus setiap elemen
+        HTML.
+        <br>
+        Setiap kotak terdiri dari empat bagian: konten, padding, border dan margin.
+        Gambar dibawah ini menggambarkan model kotak CSS:
+    </p>
+    <img src="box.png" alt="gambar">
+    <ul>
+        <li><b>konten </b>- Isi kotak, dimana tes dan gambar muncul</li>
+        <li><b>padding </b>- Membersihkan area di sekitar konten. padding adalah transparan</li>
+        <li><b>border </b>- border yang melintas padding dan konten</li>
+        <li><b>margin </b>- Membersihkan area di luar border. Margin adalah transparan</li>
+    </ul>
+    <p>
+        Box Model memungkinkan kita untuk menambahkan batas di sekitar elemen,
+        dan untuk menentukan ruang antara elemen.
+        <br>
+        Contoh:
+    </p>
+    <div class="one">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit mollitia architecto quo. Voluptates doloremque
+        cupiditate ipsa velit, animi aut quae iusto molestias sed, autem dicta.
+    </div>
+    <hr>
+
+    <h2>Width dan Height Elemen</h2>
+    <p>
+        untuk mengatur width dan height elemen dengan benar di semua browser,
+        anda perlu tahu cara kerja model kotak.
+    </p>
+    <div class="keterangan">
+        <b>Penting:</b> Ketika anda mengatur sifat lebar dan tinggi dari elemen dnegan CSS,
+        anda hanya mengatur lebar dan tinggi are konten. Untuk menghitung total lebar
+        dan tinggi elemen, anda juga harus menyertakan padding dan border.
+    </div>
+    <p>
+        Contoh:
+        <br>
+        Class two ini akan memiliki lebar total 520px dan tinggi total dari 80px:
+    </p>
+    <div class="two">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, ipsam. Ducimus enim blanditiis ea recusandae
+        nisi magni, nesciunt omnis fugiat, minima, maxime quisquam cupiditate asperiores illo nihil! Sunt, vero
+        adipisci!
+    </div>
+    <p>Beriikut adalah Perhitungannya:</p>
+    <div class="hitung">
+        <p>
+            320px (width area konten)
+            + 40px (padding left + padding Right)
+            + 10px (border left + border right)
+            <b>= 370px (lebar total)</b>
+        </p>
+        <p>
+            100px (height area konten)
+            + 40px (padding left + padding Right)
+            + 10px (border left + border right)
+            <b>= 150px (tinggi lebar)</b>
+        </p>
+    </div>
+</body>
+
+</html>
