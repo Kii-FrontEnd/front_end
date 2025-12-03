@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Color</title>
+    <style>
+        h1 {
+            background: #020024;
+            background: linear-gradient(90deg, 
+            rgba(2, 0, 36, 1) 0%, 
+            rgba(9, 9, 121, 1) 35%, 
+            rgba(0, 212, 255, 1) 100%);
+            color: aliceblue;
+            text-align: center;
+        }
+
+        span {
+            color: blue;
+        }
+
+        .tebal {
+            border-color: blue;
+            border-style: solid;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .medium {
+            border-color: red;
+            border-style: solid;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .tipis {
+            border-color: green;
+            border-style: dotted;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .thick {
+            border-color: yellow;
+            border-style: dotted;
+            text-align: center;
+        }
+
+        .one {
+            border-style: solid;
+            border-color: blue green;
+            margin: 20px 0;
+            padding: 10px;
+        }
+
+        .two {
+            border-style: solid;
+            border-color: yellowgreen orange;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .three {
+            border-style: solid;
+            padding: 10px;
+            border-color: purple blue aqua blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>BORDER COLOR</h1>
+    <p>
+        properti ini menetukan lebar dari empat bagian border.
+        <br>
+        lebar dapat diatur sebagai ukuran tertentu (dalam px, pt, cm, em, dll)
+        atau dengan menggunkaan salah satu dari tiga nilia yang telah ditentukan sebelumnya:
+        tipis, sedang atau tebal.
+        <br>
+        warna dapat diatur oleh :
+        <ul>
+            <li>nama</li>
+            <li>HEX</li>
+            <li>rgb</li>
+            <li>HSL</li>
+            <li>transparan</li>
+        </ul>
+        <br>
+        Contoh:
+    </p>
+    <div class="tebal">5px border-width</div>
+    <div class="medium">medium border-width</div>
+    <div class="tipis">2px border-width</div>
+    <div class="thick">thick border-width</div>
+    <hr>
+
+    <h2>Lebar sisi Spesifik</h2>
+    <p>
+        properti <span>border-width</span> dapat mengatur satu sampai empat
+        nilai(atas, kanan, bawah, kiri), Contohnya sebagai berikut:
+    </p>
+    <div class="one">Lebar atas dan bawah 5px, 20px kanan dan kiri</div>
+    <div class="two">Lebar atas dan bawah 20px, 5px kanan dan kiri</div>
+    <div class="three">25px atas, 10px kanan, 4px bawah, 35px kiri</div>
+</body>
+</html>

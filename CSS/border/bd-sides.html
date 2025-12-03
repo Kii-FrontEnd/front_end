@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Sisi</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        span {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .different {
+            /* border-top-style: dotted;
+            border-right-style: solid;
+            border-bottom-style: dotted;
+            border-left-style: solid; */
+            padding: 10px;
+            text-align: center;
+            /* code diatas disingkkat sepeprti ini */
+            border-style: dotted solid;
+            /* untuk dotted(atas dan bawah), solid(kanan dan kiri)*/
+        }
+
+        .one {
+            border-style: dotted solid double dashed;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .two {
+            border-style: dotted solid double;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .three {
+            border-style: dotted solid;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .four {
+            border-style: dotted;
+            text-align: center;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BORDER COLOR</h1>
+    <p>
+        Dari contoh-contoh pada halaman sebelumnya, anda telah melihat bahwa adalah mungkin
+        untuk menentukan perbatasan yang berebda untuk masing-masing pihak.
+        <br>
+        Dalam CSS ada juga preperti untuk menentukan masing-masing perbatasan
+        (atas, kanan, bawah, kiri).
+    </p>
+    <ul>
+        <li>border-top-style</li>
+        <li>border-right-style</li>
+        <li>border-bottom-style</li>
+        <li>border-left-style</li>
+    </ul>
+    <p>
+        Dalam contoh di bawah ini kita menggunakan empat sifat di atas
+        untuk mengatur gaya setipa sisi perbatasan:
+        <br>
+        Contoh:
+    </p>
+    <div class="different">2 gaya border yang berbeda</div>
+    <br>
+    <p>
+        Jadi di sini adalah cara kerjanya:
+    </p>
+    <ol type="1">
+        <li>
+            Jika memakai <span>border-style</span> properti memiliki empat nilai:
+            <br>
+            <b>Gaya perbatasan: putus-putus double dashed yang solid:</b>
+            <ul>
+                <li>nilai yang pertama adalah putus-putus</li>
+                <li>nilai kedua (kanan)adalah double</li>
+                <li>nilai ketiga (bawah) adalah dashed</li>
+                <li>nilai keempat (kiri) adalah solid</li>
+            </ul>
+        </li>
+        <li>
+            Jika memiliki 3 nilai dengan
+            <b>border-style: putus-putus solid ganda</b>
+            <ul>
+                <li>sisi pertama (atas) adalah putus-putus</li>
+                <li>sisi kedua (kanan dan kiri) adalah solid </li>
+                <li>sisi ketiga (bawah) adalah ganda</li>
+            </ul>
+        </li>
+        <li>
+            jika <span>border-style</span> properti memiliki dua nilai dengan nilai:
+            <b>border-style: dotted padat</b>
+            <ul>
+                <li>nilai pertama (atas dan bawah) adalah putus-putus </li>
+                <li>nilai kedua (kanan dan kiri) adalahh solid </li>
+            </ul>
+        </li>
+        <li>
+            jika <span>border-style</span> properti memiliki satu nilai:
+            <b>border-style: putus-putus (dotted) </b>
+            <ul>
+                <li>keempat sisi tersebut memiliki nilai dotted</li>
+            </ul>
+        </li>
+    </ol>
+    <div class="one">4 nilai</div>
+    <div class="two">3 nilai</div>
+    <div class="three">2 nilai</div>
+    <div class="four">1 nilai</div>
+</body>
+
+</html>
