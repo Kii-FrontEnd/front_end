@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline Color</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        span {
+            color: red;
+        }
+
+        .item1 {
+            border: 1px solid black;
+            padding: 5px;
+            outline-color: red;
+            outline-style: solid;
+            margin: 10px 0;
+        }
+
+        .item2 {
+            border: 1px solid black;
+            padding: 5px;
+            outline-color: blue;
+            outline-style: dotted;
+            margin: 10px 0;
+        }
+
+        .item3 {
+            border: 1px solid black;
+            padding: 5px;
+            outline-color: green;
+            outline-style: outset;
+            margin: 10px 0;
+        }
+
+        .item4 {
+            border: 1px solid black;
+            padding: 5px;
+            outline-color: invert;
+            outline-style: solid;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>OUTLINE COLOR</h1>
+    <p>
+        Properti <span>outline-color</span> digunakan untuk mengatur warna
+        garis besar. Warna dapat diatur oleh:
+    </p>
+    <ul>
+        <li>Nama - menentukan nama warna, seperti "merah"</li>
+        <li>HEX - menentukan nilai hex, seperti "#ff0000"</li>
+        <li>RGB - tentukan nilai RGB, seperti "rgb (255,0,0)"</li>
+        <li>HSL - tentukan nilai HSL, seperti "hsl(0, 100%, 50%)"</li>
+        <li>invert - melakukan inversi warna (yang memastikan bahwa
+            garis besar terlihat, terlepas dari latar belakang warna)</li>
+    </ul>
+
+    <h2>CSS Menguraikan Contoh Warna</h2>
+    <p>
+        Berikuut adalah beberapa garis besar yang berbeda dengan warna yang berbeda.
+        Juga perhaikan bahwa elemen-elemen ini juga memiliki border hitam tipis
+        di dalam garis besar:
+    </p>
+    <div class="item1">A solid red Outline</div>
+    <div class="item2">A dotted blue ooutline</div>
+    <div class="item3">An outset green outlinen</div>
+    <div class="item4">A solid invert outline</div>
+</body>
+
+</html>

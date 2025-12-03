@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline Offset</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+        span {
+            color: red;
+        }
+        .box {
+            margin: 30px;
+            padding: 5px;
+            background-color: aqua;
+            border: 2px solid black;
+            outline: 3px solid red;
+            outline-offset: 15px;
+        }
+        .kotak {
+            margin: 30px;
+            padding: 5px;
+            background: yellow;
+            border: 2px solid black;
+            outline: 3px solid red;
+            outline-offset: -6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>OUTLINE OFFSET</h1>
+    <p>
+        Properti <span>outline-offset</span> menambahkan ruang antara outline dan
+        tepi / batas elemen. Ruang antara elemen dan garis besarnya transparan.
+        <br>
+        Contoh berikut menentukan outline 15px di luar tepi border:
+    </p>
+    <div class="box">
+        Paragraf ini memiliki perbatasan hitam dan garis merah 15px di luar tepi perbatasan.
+    </div>
+    <div class="kotak">
+        Paragraf ini memiliki perbatasan hitam dan garis merah -5px di dalam tepi perbatasan.
+    </div>
+</body>
+</html>
