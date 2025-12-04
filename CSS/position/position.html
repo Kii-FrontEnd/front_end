@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        span {
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            color: darkmagenta;
+        }
+
+        .static {
+            position: static;
+            border: 3px solid #00ff00;
+            padding: 10px 0;
+        }
+
+        .relative {
+            position: relative;
+            border: 3px solid #000000;
+            padding: 10px 0;
+            left: 30px;
+        }
+
+        .fixed {
+            position: fixed;
+            border: 3px solid rgba(130, 150, 0, 0.5);
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid rgb(180, 200, 0);
+        }
+
+        .box {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid black;
+        }
+
+        .isi {
+            border: 2px solid gray;
+            box-shadow: 0 0 10px gray;
+            margin: 10px 0;
+            height: 300px;
+            overflow: auto;
+        }
+
+        .isi .sticky {
+            background-color: #00ff00;
+            font-weight: bold;
+            text-transform: capitalize;
+            border: 2px solid greenyellow;
+            padding: 5px 0;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>POSITION</h1>
+    <p>
+        Position adalah mengatur penempatan elemen dalam halaman web.
+        <br>
+        Dengan position CSS, anda dapat mengesampingkan aliran dokumen default.
+        Properti ini dapat memiliki salah satu nilai darikut:
+    </p>
+    <ul>
+        <li><span>static</span> - ini adalah nilai default</li>
+        <li><span>relativ</span></li>
+        <li><span>fixed</span></li>
+        <li><span>absolute</span></li>
+        <li><span>sticky</span></li>
+    </ul>
+    <p>
+        Elemen kemudian diposisikan ke lokasi akhir mereka dengan
+        <span>top, bottom, left dan right</span> properti.
+    </p>
+
+    <h2>Position Static</h2>
+    <p>
+        Semua elemen HTML diposisikan static secara default. Elemene ini
+        tidak terpengaruh oleh properti atas, bawah, kiri, kanan.
+        <br>
+        Sebuah elemen dengan <span>position: static;</span> selalu diposisikan
+        sesuai dengan aliran normal halaman:
+    </p>
+    <div class="static">
+        elemen ini memiliki posisi: static;
+    </div>
+
+    <h2>Posisi Relative</h2>
+    <p>
+        Sebuah elemen dengan <span>position: relative;</span> diposisikan relatif
+        terhadap posisi normalnya dalam aliran dokumen.
+        <br>
+        Menetapkan properti atas, kanan, bawah, dan kiri akan menyebabkan
+        elemen yang akan disesuaikan jauh dari posisi normalnya. Konten lain
+        tidak akan disesuaikan agar ssuai dengan celah apa pun yang ditinggalkan
+        oleh elemen.
+    </p>
+    <div class="relative">
+        properti ini memiliki posisi relative, dan miring 30px ke kanan posisi normalnya.
+    </div>
+
+    <h2>Posisi Fixed</h2>
+    <p>
+        Sebuah elemen dengan <span>position: fixed;</span> diposisikan relatif terhadap viewport, yang berarti selalu
+        Tetap di tempat
+        yang sama bahkan jika halaman itu digulir. Bagian atas, sifat kanan, bawah, dan kiri digunakan untuk mengatur
+        lokasi akhir elemen.
+        <br>
+        Elemen tetap tidak meninggalkan celah di halaman di mana biasanya berada.
+        Perhatikan elemen tetap di sudut kanan bawah halaman. Berikut Contohnya:
+    </p>
+    <div class="fixed">
+        elemen ini memiliki <span>position: fixed;</span>
+    </div>
+
+    <h2>Posisi absolute</h2>
+    <p>
+        Sebuah elemen dengan <span>position: absolute;</span> diposisikan relatif terhadap
+        ancestors/nenek moyang terdekat (dengan posisi lain selain static). Namun; jika elemen posisi absolute
+        tidak memiliki ancestors/nenek moyang yang diposisikan, itu menggunakan tubuh dokumen,
+        dan bergerak bersama dengan halaman bergulir.
+    </p>
+    <p>
+        <b>Catatan:</b> Elemen yang diposisikan absolut dihapus dari normal dokumen aliran,
+        dan dapat tumpang tindih dengan elemen lainnya. Berikut contohnya;
+    </p>
+    <div class="container">
+        Elemen ini memiliki posisi relative
+        <div class="box">elemen ini memiliki posisi absolute</div>
+    </div>
+
+    <h2>Posisi Sticky</h2>
+    <p>
+        Elemen dengan <span>position: sticky;</span> beralih antara elemen <span>relative</span>
+        dan <span>fixed</span> posisi, tergantung pada posisi gulir.
+        <br>
+        Unsur lengket diposisikan relaif sampai posisi gulir tertentu mencapai -
+        kemudian "sticky" di tempat itu (seperti posisi fixed).
+    </p>
+    <caption><b>Catatan</b> Anda harus menentukan setidaknya salah satu dari
+        <span>top, right, bottom dan left</span> properti, agar posisi sticky aktif
+    </caption>
+    <div class="isi">
+        <h3>
+            Coba Scroll kebawah frame ini untuk melihat apakah posisi sticky aktif
+        </h3>
+        <div class="sticky">elemen ini menggunakan posisi sticky</div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ipsa maxime odit tenetur nulla obcaecati,
+            mollitia, alias velit, tempora eius officia fugit? Cum accusamus autem corrupti voluptates tenetur quas,
+            modi perspiciatis fugiat aliquam molestias, magni dicta animi enim nostrum! Praesentium, aliquam ex
+            dignissimos odit, temporibus reiciendis, reprehenderit sed veritatis quibusdam rem totam sint odio deserunt
+            beatae quis facere maxime et atque iste eius dolor ab optio a nobis. Vel ipsum quidem dolorum modi pariatur
+            tempore quas fugiat, harum molestiae dolorem reprehenderit nostrum quod temporibus fugit dolores voluptas
+            similique consequatur cumque cum ea vitae non. Temporibus vel incidunt illum. Repudiandae, eligendi. Nihil
+            officiis aspernatur quae sed quisquam! Quod, hic aperiam soluta quo, excepturi dolorem praesentium aliquid
+            molestiae cum maxime eum? Voluptatibus nulla itaque ratione, rem neque minus perferendis quidem vitae,
+            facilis voluptas dolore aliquid quo asperiores laborum earum laudantium ea porro! Illum iusto ipsam officia
+            deleniti eius excepturi rerum numquam inventore quibusdam optio? Nobis officiis consectetur eius delectus
+            culpa quam, veritatis id enim dignissimos totam ullam et dolorem? Eos debitis, cupiditate doloribus
+            praesentium provident mollitia dignissimos tenetur eaque, voluptate voluptatem impedit recusandae repellat
+            laborum quibusdam nobis aspernatur? Quo laboriosam facere commodi necessitatibus optio, distinctio beatae
+            qui quam! Aliquam, molestiae inventore minima saepe placeat illum ut modi ab beatae sit vel dolor esse
+            repellendus consectetur. Corrupti ducimus, maiores quod placeat earum ullam consectetur voluptatibus
+            incidunt ratione hic quis unde ex! Eos magnam, ut facilis nemo earum odit? Officia nostrum adipisci laborum
+            expedita quidem sed ipsam quas tenetur quia? Minus accusamus repellat, magni laudantium aperiam voluptatibus
+            consectetur. Error quo quaerat accusantium beatae id optio libero assumenda laborum, sequi adipisci.
+            Molestias esse, nisi ex expedita perspiciatis soluta omnis, quaerat maxime natus illum dolor cum eius quasi
+            sed. Aliquam culpa ad cupiditate, maxime vitae doloribus dolor nulla porro consequuntur hic rem laborum,
+            voluptas consequatur amet!
+        </p>
+    </div>
+</body>
+
+</html>
