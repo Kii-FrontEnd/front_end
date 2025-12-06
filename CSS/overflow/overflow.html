@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        span {
+            color: red;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .visible {
+            overflow: visible;
+            height: 100px;
+            border: 2px solid black;
+            background-color: red;
+        }
+
+        .scroll {
+            height: 100px;
+            overflow: scroll;
+            background-color: black;
+            color: aliceblue;
+            margin-top: 18rem;
+        }
+
+        .hidden {
+            overflow: hidden;
+            height: 100px;
+            border: 2px solid black;
+            margin-top: 10px;
+            background-color: blueviolet;
+        }
+
+        .auto {
+            overflow: auto;
+            border: 2px solid orange;
+            margin-top: 10px;
+            height: 100px;
+            background-color: orange;
+        }
+
+        .x {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            border: 2px solid saddlebrown;
+            background-color: saddlebrown;
+            margin-top: 10px;
+            height: 100px;
+            width: 300px;
+        }
+
+        .x .content {
+            width: 400px;
+        }
+
+        .y {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            border: 2px solid salmon;
+            background-color: salmon;
+            margin-top: 10px;
+            height: 100px;
+            width: 200px;
+            scrollbar-color: #eadddd #ec0a0a;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>OVERFLOW</h1>
+    <p>
+        Properti ini mengontrol apa yang akan terjadi pada konten yang terlalu
+        besar untuk amsuk ke dalam satu area. Ini menentukan apaah akan mengklip
+        konten atau menambahkan scrollbars ketika isi dari elemen terlau besar.
+        <br>
+        Properti ini memiliki nilai sebagai berikut:
+    </p>
+    <ul>
+        <li>
+            <span>visible</span> - Default, lampiran tidak terpotong
+        </li>
+        <li>
+            <span>hidden</span> - nilai ini membuat teks terpotong dan teks tersebut
+            di sembunyikan.
+        </li>
+        <li>
+            <span>scroll</span> - mengaktifkan scrollbar, user dapat men-scroll untuk
+            melihat teks dibawahnya.
+        </li>
+        <li>
+            <span>auto</span> - mirip dengan <span>scroll</span>, tetapi menambahkan
+            scrollbar hanya bila diperlukan
+        </li>
+    </ul>
+    <div class="visible">
+        <h3 style="text-align: center;text-transform: uppercase;">Ini nilai visible</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique, facilis sapiente fuga soluta
+        hic assumenda saepe facere repudiandae ad dolores, perferendis delectus, blanditiis velit explicabo laudantium
+        nobis distinctio earum officia quod ab voluptatem ipsa ipsum. Modi dolores ipsa facilis? Expedita rerum rem in
+        praesentium accusantium enim totam facere iusto quis sequi. Optio ullam nihil a accusantium laudantium explicabo
+        incidunt itaque consequatur. Fugiat placeat unde adipisci sunt illum delectus, magnam vero laborum dignissimos
+        numquam dolorem maiores architecto porro error at molestiae quaerat iure nisi cupiditate. Minima neque enim eius
+        nisi repellat, ea nemo! Omnis numquam rerum veniam, expedita cupiditate id sit porro. Voluptatum quasi, itaque
+        rem maiores, nobis provident culpa dignissimos laborum placeat cupiditate eligendi voluptates quisquam excepturi
+        perspiciatis earum ducimus rerum, obcaecati at corrupti modi. Nostrum quisquam delectus animi! Nam earum
+        necessitatibus aspernatur veniam porro! Error nobis eius vel. Magni quasi harum ullam ea hic iure itaque
+        similique deleniti quia minima amet necessitatibus vitae saepe excepturi laudantium perspiciatis adipisci
+        maxime, sequi fuga provident, neque perferendis? Nobis impedit quos commodi assumenda nulla est quis! Quam sint
+        beatae praesentium ullam ut officiis consectetur! Qui consequatur ipsam quod consectetur. Enim alias suscipit
+        repellat quis. Vitae facilis nemo quod officia quidem modi totam.
+    </div>
+    <div class="scroll">
+        <h3 style="text-align: center;text-transform: uppercase;">ini nilai scroll</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique, facilis sapiente fuga soluta
+        hic assumenda saepe facere repudiandae ad dolores, perferendis delectus, blanditiis velit explicabo laudantium
+        nobis distinctio earum officia quod ab voluptatem ipsa ipsum. Modi dolores ipsa facilis? Expedita rerum rem in
+        praesentium accusantium enim totam facere iusto quis sequi. Optio ullam nihil a accusantium laudantium explicabo
+        incidunt itaque consequatur. Fugiat placeat unde adipisci sunt illum delectus, magnam vero laborum dignissimos
+        numquam dolorem maiores architecto porro error at molestiae quaerat iure nisi cupiditate. Minima neque enim eius
+        nisi repellat, ea nemo! Omnis numquam rerum veniam, expedita cupiditate id sit porro. Voluptatum quasi, itaque
+        rem maiores, nobis provident culpa dignissimos laborum placeat cupiditate eligendi voluptates quisquam excepturi
+        perspiciatis earum ducimus rerum, obcaecati at corrupti modi. Nostrum quisquam delectus animi! Nam earum
+        necessitatibus aspernatur veniam porro! Error nobis eius vel. Magni quasi harum ullam ea hic iure itaque
+        similique deleniti quia minima amet necessitatibus vitae saepe excepturi laudantium perspiciatis adipisci
+        maxime, sequi fuga provident, neque perferendis? Nobis impedit quos commodi assumenda nulla est quis! Quam sint
+        beatae praesentium ullam ut officiis consectetur! Qui consequatur ipsam quod consectetur. Enim alias suscipit
+        repellat quis. Vitae facilis nemo quod officia quidem modi totam.
+    </div>
+
+    <div class="hidden">
+        <h3 style="text-align: center;text-transform: uppercase;">ini nilai hidden</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique, facilis sapiente fuga soluta
+        hic assumenda saepe facere repudiandae ad dolores, perferendis delectus, blanditiis velit explicabo laudantium
+        nobis distinctio earum officia quod ab voluptatem ipsa ipsum. Modi dolores ipsa facilis? Expedita rerum rem in
+        praesentium accusantium enim totam facere iusto quis sequi. Optio ullam nihil a accusantium laudantium explicabo
+        incidunt itaque consequatur. Fugiat placeat unde adipisci sunt illum delectus, magnam vero laborum dignissimos
+        numquam dolorem maiores architecto porro error at molestiae quaerat iure nisi cupiditate. Minima neque enim eius
+        nisi repellat, ea nemo! Omnis numquam rerum veniam, expedita cupiditate id sit porro. Voluptatum quasi, itaque
+        rem maiores, nobis provident culpa dignissimos laborum placeat cupiditate eligendi voluptates quisquam excepturi
+        perspiciatis earum ducimus rerum, obcaecati at corrupti modi. Nostrum quisquam delectus animi! Nam earum
+        necessitatibus aspernatur veniam porro! Error nobis eius vel. Magni quasi harum ullam ea hic iure itaque
+        similique deleniti quia minima amet necessitatibus vitae saepe excepturi laudantium perspiciatis adipisci
+        maxime, sequi fuga provident, neque perferendis? Nobis impedit quos commodi assumenda nulla est quis! Quam sint
+        beatae praesentium ullam ut officiis consectetur! Qui consequatur ipsam quod consectetur. Enim alias suscipit
+        repellat quis. Vitae facilis nemo quod officia quidem modi totam.
+    </div>
+    <div class="auto">
+        <h3 style="text-align: center;text-transform: uppercase;">ini nilai auto</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique, facilis sapiente fuga soluta
+        hic assumenda saepe facere repudiandae ad dolores, perferendis delectus, blanditiis velit explicabo laudantium
+        nobis distinctio earum officia quod ab voluptatem ipsa ipsum. Modi dolores ipsa facilis? Expedita rerum rem in
+        praesentium accusantium enim totam facere iusto quis sequi. Optio ullam nihil a accusantium laudantium explicabo
+        incidunt itaque consequatur. Fugiat placeat unde adipisci sunt illum delectus, magnam vero laborum dignissimos
+        numquam dolorem maiores architecto porro error at molestiae quaerat iure nisi cupiditate. Minima neque enim eius
+        nisi repellat, ea nemo! Omnis numquam rerum veniam, expedita cupiditate id sit porro. Voluptatum quasi, itaque
+        rem maiores, nobis provident culpa dignissimos laborum placeat cupiditate eligendi voluptates quisquam excepturi
+        perspiciatis earum ducimus rerum, obcaecati at corrupti modi. Nostrum quisquam delectus animi! Nam earum
+        necessitatibus aspernatur veniam porro! Error nobis eius vel. Magni quasi harum ullam ea hic iure itaque
+        similique deleniti quia minima amet necessitatibus vitae saepe excepturi laudantium perspiciatis adipisci
+        maxime, sequi fuga provident, neque perferendis? Nobis impedit quos commodi assumenda nulla est quis! Quam sint
+        beatae praesentium ullam ut officiis consectetur! Qui consequatur ipsam quod consectetur. Enim alias suscipit
+        repellat quis. Vitae facilis nemo quod officia quidem modi totam.
+    </div>
+    <div class="x">
+        <div class="content">
+            <h3 style="text-align: center;text-transform: uppercase;">ini nilai overflow-x</h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique, facilis sapiente fuga
+            soluta
+            hic assumenda saepe facere repudiandae ad dolores, perferendis delectus, blanditiis velit explicabo
+            laudantium
+            nobis distinctio earum officia quod ab voluptatem ipsa ipsum. Modi dolores ipsa facilis? Expedita rerum rem
+            in
+            praesentium accusantium enim totam facere iusto quis sequi. Optio ullam nihil a accusantium laudantium
+            explicabo
+            incidunt itaque consequatur. Fugiat placeat unde adipisci sunt illum delectus, magnam vero laborum
+            dignissimos
+            numquam dolorem maiores architecto porro error at molestiae quaerat iure nisi cupiditate. Minima neque enim
+            eius
+            nisi repellat, ea nemo! Omnis numquam rerum veniam, expedita cupiditate id sit porro. Voluptatum quasi,
+            itaque
+            rem maiores, nobis provident culpa dignissimos laborum placeat cupiditate eligendi voluptates quisquam
+            excepturi
+            perspiciatis earum ducimus rerum, obcaecati at corrupti modi. Nostrum quisquam delectus animi! Nam earum
+            necessitatibus aspernatur veniam porro! Error nobis eius vel. Magni quasi harum ullam ea hic iure itaque
+            similique deleniti quia minima amet necessitatibus vitae saepe excepturi laudantium perspiciatis adipisci
+            maxime, sequi fuga provident, neque perferendis? Nobis impedit quos commodi assumenda nulla est quis! Quam
+            sint
+            beatae praesentium ullam ut officiis consectetur! Qui consequatur ipsam quod consectetur. Enim alias
+            suscipit
+            repellat quis. Vitae facilis nemo quod officia quidem modi totam.
+        </div>
+    </div>
+    <div class="y">
+        <h3 style="text-align: center;text-transform: uppercase;">ini nilai overflow-y</h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique, facilis sapiente fuga soluta
+        hic assumenda saepe facere repudiandae ad dolores, perferendis delectus, blanditiis velit explicabo laudantium
+        nobis distinctio earum officia quod ab voluptatem ipsa ipsum. Modi dolores ipsa facilis? Expedita rerum rem in
+        praesentium accusantium enim totam facere iusto quis sequi. Optio ullam nihil a accusantium laudantium explicabo
+        incidunt itaque consequatur. Fugiat placeat unde adipisci sunt illum delectus, magnam vero laborum dignissimos
+        numquam dolorem maiores architecto porro error at molestiae quaerat iure nisi cupiditate. Minima neque enim eius
+        nisi repellat, ea nemo! Omnis numquam rerum veniam, expedita cupiditate id sit porro. Voluptatum quasi, itaque
+        rem maiores, nobis provident culpa dignissimos laborum placeat cupiditate eligendi voluptates quisquam excepturi
+        perspiciatis earum ducimus rerum, obcaecati at corrupti modi. Nostrum quisquam delectus animi! Nam earum
+        necessitatibus aspernatur veniam porro! Error nobis eius vel. Magni quasi harum ullam ea hic iure itaque
+        similique deleniti quia minima amet necessitatibus vitae saepe excepturi laudantium perspiciatis adipisci
+        maxime, sequi fuga provident, neque perferendis? Nobis impedit quos commodi assumenda nulla est quis! Quam sint
+        beatae praesentium ullam ut officiis consectetur! Qui consequatur ipsam quod consectetur. Enim alias suscipit
+        repellat quis. Vitae facilis nemo quod officia quidem modi totam.
+    </div>
+</body>
+
+</html>

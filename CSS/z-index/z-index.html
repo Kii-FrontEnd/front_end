@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        body {
+            background-color: #c987b4;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        span {
+            color: #ff0000;
+        }
+
+        .one {
+            position: relative;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .one img {
+            height: 50vh;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .catatan {
+            margin-top: 230px;
+        }
+
+        .two {
+            border: 1px solid black;
+            height: 50vh;
+            position: relative;
+            box-shadow: 0 0 10px snow;
+        }
+
+        .two .black {
+            position: relative;
+            border: 2px solid black;
+            background-color: #000000;
+            color: #ffffff;
+            width: 200px;
+            height: 150px;
+            margin: 20px;
+            z-index: 1;
+        }
+
+        .two .red {
+            position: absolute;
+            border: 2px solid red;
+            padding: 20px;
+            background-color: #ff0000;
+            color: #ffffff;
+            z-index: 2;
+            height: 50px;
+            top: 130px;
+            left: 40px;
+        }
+
+        .two .green {
+            position: relative;
+            border: 2px solid green;
+            width: 100px;
+            padding: 20px;
+            background-color: green;
+            color: floralwhite;
+            z-index: 3;
+            top: -130px;
+            left: 100px;
+        }
+
+        .container {
+            border: 1px solid black;
+            height: 50vh;
+            position: relative;
+            box-shadow: 0 0 10px snow;
+        }
+
+        .container .black {
+            position: relative;
+            border: 2px solid black;
+            background-color: #000000;
+            color: #ffffff;
+            width: 200px;
+            height: 150px;
+            margin: 20px;
+        }
+
+        .container .red {
+            position: absolute;
+            border: 2px solid red;
+            padding: 20px;
+            background-color: #ff0000;
+            color: #ffffff;
+            height: 50px;
+            top: 130px;
+            left: 40px;
+        }
+
+        .container .green {
+            position: relative;
+            border: 2px solid green;
+            width: 100px;
+            padding: 20px;
+            background-color: green;
+            color: floralwhite;
+            top: -120px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Z-INDEX</h1>
+    <p>
+        Properti ini menentukan urutan tumpukan elemen yang diposisikan.
+        Urutan tumpukan mendefinisikan elemen mana yang harus ditempatkan
+        di depan / belakang elemen tersebut. Ketika elemen diposisikan,
+        mereka dapattumpang tindih pada elemen lainnya. Elemen ini dapat
+        memiliki urutan tumpukan positif dan negatif (z-index).
+        <br>
+        Berikut contohnya:
+    </p>
+    <div class="one">
+        <h3>mountain darkness</h3>
+        <p>
+            Teks ini berada di depan gambar karena gambar memiliki z-index -1,
+            maka ditempatkan di belakang teks.
+        </p>
+        <img src="bg.jpg" alt="gambar">
+    </div>
+    <p class="catatan">
+        <b>Catatan: </b><span>z-index</span> hanya bekerja pada elemen yang diposisikan
+        (posisi: absolute, posisi: relatif, posisi: fixed, atau posisi: sticky)
+        dan item flex (elemen yang merupakan anak-anak langsung dari tampilan: elemen flex).
+    </p>
+    <p>
+        Contoh z-index lainnya:
+    </p>
+    <div class="two">
+        <div class="black">Black Box z-index: 1</div>
+        <div class="red">Red Box z-index: 2</div>
+        <div class="green">Green Box z-index: 3</div>
+    </div>
+    <h3>Tanpa z-index</h3>
+    <p>
+        Jika beberapa elemen yang diposisikan tumpang tindih satu sama lain Tanpa
+        <span>z-index</span> maka elemen yang dibuat dalam urutan yang didefinisikan
+        dalam sumber HTML kode.
+        <br>
+        Untuk contoh sama dengan yang diatas tanpa menggunakan <span>z-index:</span>
+    </p>
+    <div class="container">
+        <div class="black">Black Box</div>
+        <div class="red">Red Box</div>
+        <div class="green">Green Box</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float-Clear</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        span {
+            color: red;
+        }
+
+        img {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .div1 {
+            border: 2px solid black;
+            padding: 20px;
+            width: 30px;
+            float: left;
+        }
+
+        .div2 {
+            border: 2px solid #00ff00;
+            width: 300px;
+            height: 150px;
+            margin: 10px 0;
+        }
+
+        .div3 {
+            border: 2px solid black;
+            padding: 20px;
+            width: 40px;
+            float: left;
+        }
+
+        .div4 {
+            border: 2px solid #00ff00;
+            width: 300px;
+            height: 150px;
+            clear: left;
+        }
+
+        .clear h3 {
+            text-align: center;
+        }
+
+        .clear .no {
+            border: 2px solid red;
+            padding: 10px;
+            height: 100px;
+        }
+
+        .clear .no img {
+            width: 150px;
+            float: right;
+        }
+
+        .clear .pseudo {
+            border: 2px solid blue;
+            padding: 10px;
+        }
+
+        .clear .pseudo::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .clear .pseudo img {
+            width: 150px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>float clear</h1>
+    <p>
+        Properti ini menentukan apa harus terjadi dengan elemen yang ada di
+        depan elemen mengambang. Properti ini mencegah dari membungkus atau
+        disamping konten melayang. Properti ini dapat memiliki salah satu nilai
+        - nilai berikut:
+    </p>
+    <ul>
+        <li>
+            <span>none</span> Default
+        </li>
+        <li>
+            <span>left</span> Elemen didorong di bawah ini elemen melayang
+            di sisi kirinya.
+        </li>
+        <li>
+            <span>right</span> Elemen didorong di bawah ini elemen melayang
+            di sisi kanannya.
+        </li>
+        <li>
+            <span>both</span> Elemen didorong di bawah elemen float, di sisi
+            kiri dan kanannya.
+        </li>
+        <li>
+            <span>inherit</span> Elemen mewarisi nilai yang jelas dari induknya.
+        </li>
+    </ul>
+    <p>Contoh:</p>
+    <div class="div1">div1</div>
+    <div class="div2">div2 - Perhatikan bahwa div2 ada setelah div1 dalam kode HTML.
+        Namun, karena div2 tidak ada elemen float maka teks di div2 melayang di sekitar div1.
+    </div>
+    <div class="div3">div 3</div>
+    <div class="div4">div4 - Di sini, clear: left; mendorong div4 ke bawah div3 mengambang,
+        di sisi kirinya.
+    </div>
+
+    <h3>Clearfix Hack</h3>
+    <div>
+        Jika elemen mengambang lebih tinggi dari elemen yang menagndung, itu akan "meluap"
+        di luar wadahnya. Dengan menambahkan clearfix hack akan memecahkan masalah ini:
+        <img src="hack.png" alt="clearfix">
+        <br>
+        Untuk mengaktifkan clearfix ini akan melibatkan pseudo-elemen yaitu <span>::after</span>,
+        ini digunakan untuk memasatikan bahwa parent membuangkus anak dengan benar pada elemen yang
+        menagmbang.
+        <br>
+        Contoh:
+    </div>
+    <div class="clear">
+        <h3>Tanpa Clearfix</h3>
+        <p>
+            Gambar melayang ke kanan. Ia juga lebih tinggi dari elemen yang memuatnya,
+            sehingga meluap ke luar wadahnya:
+        </p>
+        <div class="no">
+            <img src="logo.jpg" alt="logo">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus minus ullam voluptatibus quisquam, fugit
+            libero laboriosam. Explicabo doloremque veritatis rem!
+        </div>
+
+        <h3 style="clear: right;">Dengan Clearfix</h3>
+        <p>
+            Tambahkan pseudo-element clearfix ke elemen yang memuatnya, untuk memperbaiki masalah ini:
+        </p>
+        <div class="pseudo">
+            <img src="logo.jpg" alt="logo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur corrupti accusantium? Quibusdam
+            eveniet consectetur, doloremque suscipit tenetur, molestias numquam recusandae ipsam, non officia velit
+            quaerat nostrum impedit odio atque.
+        </div>
+    </div>
+    <p>
+        Penjelasan:
+    <ul>
+        <li>
+            .pseudo:: after - Menargetkan pseudo-elemen yang dihasilkan setelah konten dari elemen apa pun dengan
+            class="pseudo"
+        </li>
+        <li>
+            content: "" - Memastikan semua elemen dirender dan diberikan, bahkan jika tidak memiliki konten yang
+            terlihat.
+        </li>
+        <li>
+            clear: both - Ini menghapus float kiri dan kanan, secara efektif mendorong konten berikut di bawah
+            elemen float, dan memaksa wadah induk untuk memperluas agar menyertakannya
+        </li>
+        <li>
+            display: table - Ini menciptakan konteks pemformatan blok baru, yang membantu memuat float
+        </li>
+    </ul>
+    </p>
+</body>
+
+</html>
