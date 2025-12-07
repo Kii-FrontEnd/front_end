@@ -1,6 +1,9 @@
-# Front-end Projects from Roadmap.sh
+# Repositori Belajar Frontend (learning-front_end)
 
-This repository contains front-end projects built following the [roadmap.sh](https://roadmap.sh/) front-end developer path.
+Repositori ini berfungsi sebagai tempat untuk mendokumentasikan dan menyimpan progres pembelajaran dalam pengembangan *frontend* (HTML, CSS, JavaScript, dan teknologi terkait).
+Repositori ini berisi proyek front-end yang dibangun mengikuti jalur pengembang front-end [roadmap.sh](https://roadmap.sh/) dan website lainnya.
+
+---
 
 ## Projects List
 
@@ -14,85 +17,57 @@ This repository contains front-end projects built following the [roadmap.sh](htt
 [Github Random Repo](https://roadmap.sh/projects/github-random-repo), [Reddit Client](https://roadmap.sh/projects/reddit-client),\
 [Temperature Converter](https://roadmap.sh/projects/temperature-converter), [Age Calculator](https://roadmap.sh/projects/age-calculator),
 
-Click any of the images below to view the readme and live demo of the project.
+---
 
-<p align="left">
-  <a href='/Frontend Projects/01-single-page-cv/'>
-    <img width="48%" src="./assets/images/single-page-cv.png" alt="single page cv" />
-  </a>
-  <a href='/Frontend Projects/02-basic-html-website/'>
-    <img width="48%" src="./assets/images/basic-html-website.png" alt="basic html website" />
-  </a>
-</p>
+## 🌳 Branch: `latihan`
 
-<p align="left">
-  <a href='/Frontend Projects/03-personal-portfolio/'>
-    <img width="48%" src="./assets/images/personal-portfolio.png" alt="personal portfolio" />
-  </a>
-  <a href='/Frontend Projects/04-changelog-component/'>
-    <img width="48%" src="./assets/images/changelog-component.png" alt="changelog component" />
-  </a>
-</p>
+**Branch `latihan` ini secara spesifik didedikasikan untuk menyimpan semua kode praktik, hasil eksperimen, dan implementasi tugas/latihan yang berasal dari materi-materi yang tercantum di *branch* utama (`main`).**
 
-<p align="left">
-  <a href='/Frontend Projects/05-testimonial-cards/'>
-    <img width="48%" src="./assets/images/testimonial-cards.png" alt="testimonial cards" />
-  </a>
-  <a href='/Frontend Projects/06-datepicker-ui/'>
-    <img width="48%" src="./assets/images/datepicker-ui.png" alt="datepicker ui" />
-  </a>
-</p>
+### 🎯 Tujuan Branch Ini
 
-<p align="left">
-  <a href='/Frontend Projects/07-accessible-form-ui/'>
-    <img width="48%" src="./assets/images/accessible-form-ui.png" alt="accessible form ui" />
-  </a>
-  <a href='/Frontend Projects/08-image-grid-layout/'>
-    <img width="48%" src="./assets/images/image-grid-layout.png" alt="image grid layout" />
-  </a>
-</p>
+* **Arsip Praktik:** Branch ini berfungsi sebagai arsip lengkap dari semua hasil *coding* yang merupakan bagian dari proses pembelajaran.
+* **Lingkungan Eksperimen (*Sandbox*):** Memberikan ruang kerja di mana perubahan, percobaan, atau implementasi kode yang sering dilakukan selama proses belajar dapat dilakukan tanpa memengaruhi kebersihan dan stabilitas kode pada *branch* `main`.
+* **Progres Individu:** Konten di sini menunjukkan langkah-langkah nyata dan hasil dari setiap sesi latihan yang dijalankan.
 
-<p align="left">
-  <a href='/Frontend Projects/09-tooltip-ui/'>
-    <img width="48%" src="./assets/images/tooltip-ui.png" alt="tooltip ui" />
-  </a>
-  <a href='/Frontend Projects/10-simple-tabs/'>
-    <img width="48%" src="./assets/images/simple-tabs.png" alt="simple tabs" />
-  </a>
-</p>
+---
 
-<p align="left">
-  <a href='/Frontend Projects/11-cookie-consent/'>
-    <img width="48%" src="./assets/images/cookie-consent.png" alt="cookie consent" />
-  </a>
-  <a href='/Frontend Projects/12-restricted-textarea/'>
-    <img width="48%" src="./assets/images/restricted-textarea.png" alt="restricted textarea" />
-  </a>
-</p>
+## 🎯 Tujuan Pembelajaran
 
-<p align="left">
-  <a href='/Frontend Projects/13-accordion-ui/'>
-    <img width="48%" src="./assets/images/accordion-ui.png" alt="accordion ui" />
-  </a>
-  <a href='/Frontend Projects/14-custom-dropdown/'>
-    <img width="48%" src="./assets/images/custom-dropdown.png" alt="custom dropdown" />
-  </a>
-</p>
+Proyek pembuatan CV ini berfokus pada penguasaan konsep-konsep inti sebagai berikut:
 
-<p align="left">
-  <a href='/Frontend Projects/15-task-tracker/'>
-    <img width="48%" src="./assets/images/task-tracker.png" alt="task tracker js" />
-  </a>
-  <a href='/Frontend Projects/16-github-random-repo/'>
-    <img width="48%" src="./assets/images/github-random-repo.png" alt="github random repo" />
-  </a>
-</p>
+1.  **Struktur HTML Semantik:** Menggunakan elemen HTML5 yang tepat (seperti `<header>`, `<section>`, dll.) untuk membangun struktur dokumen yang bermakna.
+2.  **Desain Tata Letak (Layout) dengan CSS:** Mengimplementasikan teknik _layout_ modern (**Flexbox** atau **CSS Grid**) untuk mengatur bagian-bagian CV agar rapi dan profesional.
+3.  **Styling Dasar:** Menerapkan properti CSS untuk tipografi, warna, dan efek visual yang membuat CV mudah dibaca.
+4.  **Desain Responsif:** Memastikan tata letak CV dapat ditampilkan dengan baik dan optimal di berbagai ukuran layar (desktop, tablet, dan mobile).
 
-<p align="left">
-  <a href='/Frontend Projects/17-reddit-client/'>
-    <img width="48%" src="./assets/images/reddit-client.png" alt="reddit client" />
-  </a>
-  <a href='/Frontend Projects/18-temperature-converter/'>
-    <img width="48%" src="./assets/images/temperature-converter.png" alt="temperature converter" />
-  </a>
-</p>
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+| Kategori    | Teknologi | Deskripsi                                                            |
+| :---------- | :-------- | :------------------------------------------------------------------- |
+| **Markup**  | HTML5     | Digunakan untuk struktur konten dan elemen utama CV.                 |
+| **Styling** | CSS3      | Digunakan untuk mengatur tampilan, layout, dan responsivitas desain. |
+| **Interaktivitas** | JavaScript      | Digunakan untuk menambahkan fitur dinamis dan interaktif (misalnya, validasi form kontak, efek toggle menu mobile, atau animasi ringan). |
+
+---
+
+## 💡 Sumber Daya dan Referensi
+
+Proyek ini terinspirasi dan menggunakan panduan dari proyek-proyek pembelajaran _frontend_ untuk memastikan cakupan fitur yang komprehensif:
+
+- **Panduan Proyek Front-End Web Developer:** [https://roadmap.sh/frontend/projects](https://roadmap.sh/frontend/projects)
+
+---
+
+## 🔗 Akses Proyek (Live Demo)
+
+## 💻 Daftar Proyek Latihan yang Selesai
+
+Tabel ini mengindeks semua proyek latihan yang dikembangkan untuk memperkuat pemahaman HTML, CSS, dan JavaScript.
+
+| No. | Nama Proyek | Teknologi Utama | Status | Lokasi Kode (Branch: `latihan`) | Live Demo | URL Referensi |
+| :---: | :--- | :--- | :---: | :--- | :--- | :--- |
+| 1. | **Single Page CV** | HTML, CSS (Flexbox) | ✅ Selesai | [`CV/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/CV) | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/CV/) | [Roadmap.sh](https://roadmap.sh/projects/single-page-cv) |
+
+---
