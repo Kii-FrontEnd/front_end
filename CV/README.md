@@ -72,6 +72,7 @@ Proyek ini terinspirasi dan menggunakan panduan dari proyek-proyek pembelajaran 
 
 Proyek CV ini dapat dilihat secara langsung tanpa mengunduh kode melalui tautan _deployment_ berikut:
 
-[**Lihat CV Versi Live di sini**](https://fiqriviadi.github.io/learning-front_end/CV/)
+**Lihat CV Versi Live di sini** [(https://fiqriviadi.github.io/learning-front_end/CV/)](https://fiqriviadi.github.io/learning-front_end/CV/)
 
 ---
+
