@@ -1,6 +1,6 @@
 # 📄 Sub-Proyek CV (Curriculum Vitae)
 
-Proyek ini adalah bagian dari serangkaian latihan yang terdapat di *branch* `latihan` repositori `learning-front_end`. Tujuan utama proyek ini adalah menerapkan keterampilan dasar pengembangan *frontend* dalam membuat halaman web **Curriculum Vitae (CV) statis (Single Page)** yang fungsional dan terstruktur dengan baik.
+Proyek ini adalah bagian dari serangkaian latihan yang terdapat di _branch_ `latihan` repositori `learning-front_end`. Tujuan utama proyek ini adalah menerapkan keterampilan dasar pengembangan _frontend_ dalam membuat halaman web **Curriculum Vitae (CV) statis (Single Page)** yang fungsional dan terstruktur dengan baik.
 
 ---
 
@@ -9,7 +9,7 @@ Proyek ini adalah bagian dari serangkaian latihan yang terdapat di *branch* `lat
 Proyek pembuatan CV ini berfokus pada penguasaan konsep-konsep inti sebagai berikut:
 
 1.  **Struktur HTML Semantik:** Menggunakan elemen HTML5 yang tepat (seperti `<header>`, `<section>`, dll.) untuk membangun struktur dokumen yang bermakna.
-2.  **Desain Tata Letak (Layout) dengan CSS:** Mengimplementasikan teknik *layout* modern (**Flexbox** atau **CSS Grid**) untuk mengatur bagian-bagian CV agar rapi dan profesional.
+2.  **Desain Tata Letak (Layout) dengan CSS:** Mengimplementasikan teknik _layout_ modern (**Flexbox** atau **CSS Grid**) untuk mengatur bagian-bagian CV agar rapi dan profesional.
 3.  **Styling Dasar:** Menerapkan properti CSS untuk tipografi, warna, dan efek visual yang membuat CV mudah dibaca.
 4.  **Desain Responsif:** Memastikan tata letak CV dapat ditampilkan dengan baik dan optimal di berbagai ukuran layar (desktop, tablet, dan mobile).
 
@@ -17,10 +17,10 @@ Proyek pembuatan CV ini berfokus pada penguasaan konsep-konsep inti sebagai beri
 
 ## 🛠️ Teknologi yang Digunakan
 
-| Kategori | Teknologi | Deskripsi |
-| :--- | :--- | :--- |
-| **Markup** | HTML5 | Digunakan untuk struktur konten dan elemen utama CV. |
-| **Styling** | CSS3 | Digunakan untuk mengatur tampilan, layout, dan responsivitas desain. |
+| Kategori    | Teknologi | Deskripsi                                                            |
+| :---------- | :-------- | :------------------------------------------------------------------- |
+| **Markup**  | HTML5     | Digunakan untuk struktur konten dan elemen utama CV.                 |
+| **Styling** | CSS3      | Digunakan untuk mengatur tampilan, layout, dan responsivitas desain. |
 
 ---
 
@@ -37,15 +37,16 @@ CV/
 └── assets/
 └── profile.jpg     \<-- Gambar atau foto profil
 
-````
+```
 
 ---
 
 ## 🚀 Cara Menjalankan Project
 
-Karena ini adalah proyek berbasis HTML dan CSS statis, tidak diperlukan *server* khusus.
+Karena ini adalah proyek berbasis HTML dan CSS statis, tidak diperlukan _server_ khusus.
 
 1.  **Kloning dan Navigasi:**
+
     ```bash
     # (Asumsikan Anda sudah mengkloning repo)
     cd learning-front_end
@@ -53,19 +54,24 @@ Karena ini adalah proyek berbasis HTML dan CSS statis, tidak diperlukan *server*
     cd CV
     ```
 
-2.  **Buka di Browser:** Cukup buka file **`index.html`** langsung di *browser* web pilihan Anda (Chrome, Firefox, Edge, dll.).
+2.  **Buka di Browser:** Cukup buka file **`index.html`** langsung di _browser_ web pilihan Anda (Chrome, Firefox, Edge, dll.).
 
 ---
 
 ## 💡 Sumber Daya dan Referensi
 
-Proyek ini terinspirasi dan menggunakan panduan dari proyek-proyek pembelajaran *frontend* untuk memastikan cakupan fitur yang komprehensif:
+Proyek ini terinspirasi dan menggunakan panduan dari proyek-proyek pembelajaran _frontend_ untuk memastikan cakupan fitur yang komprehensif:
 
-* **Panduan Proyek CV Halaman Tunggal:** [https://roadmap.sh/projects/single-page-cv](https://roadmap.sh/projects/single-page-cv)
+- **Panduan Proyek CV Halaman Tunggal:** [https://roadmap.sh/projects/single-page-cv](https://roadmap.sh/projects/single-page-cv)
 
 ---
 
-## ⚠️ Catatan Proyek
+---
 
-Proyek ini adalah **LATIHAN** dan dapat dimodifikasi atau diperbarui kapan saja untuk menerapkan konsep *frontend* yang baru dipelajari.
-````
+## 🔗 Akses Proyek (Live Demo)
+
+Proyek CV ini dapat dilihat secara langsung tanpa mengunduh kode melalui tautan _deployment_ berikut:
+
+[**Lihat CV Versi Live di sini**](https://fiqriviadi.github.io/learning-front_end/CV/)
+
+---
