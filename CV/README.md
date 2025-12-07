@@ -70,9 +70,19 @@ Proyek ini terinspirasi dan menggunakan panduan dari proyek-proyek pembelajaran 
 
 ## 🔗 Akses Proyek (Live Demo)
 
-Proyek CV ini dapat dilihat secara langsung tanpa mengunduh kode melalui tautan _deployment_ berikut:
+## 💻 Daftar Proyek Latihan yang Selesai
 
-**Lihat CV Versi Live di sini** [(https://fiqriviadi.github.io/learning-front_end/CV/)](https://fiqriviadi.github.io/learning-front_end/CV/)
+Tabel ini mengindeks semua proyek latihan yang dikembangkan untuk memperkuat pemahaman HTML, CSS, dan JavaScript.
+
+| No. | Nama Proyek | Teknologi Utama | Status | Lokasi Kode (Branch: `latihan`) | Live Demo |
+| :---: | :--- | :--- | :---: | :--- | :--- |
+| 1. | **Single Page CV** | HTML, CSS (Flexbox) | ✅ Selesai | [`CV/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/CV) | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/CV/) |
+| 2. | **To-Do List App** | HTML, CSS, Vanilla JS | 🚧 Sedang Proses | [`todo-app/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/todo-app) | *Akan ditambahkan* |
+| 3. | **Basic Calculator** | HTML, CSS, Vanilla JS | 🚧 Sedang Proses | [`calculator-app/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/calculator-app) | *Akan ditambahkan* |
+| 4. | **Weather App** | HTML, CSS, JavaScript (API Fetch) | ⏳ Direncanakan | N/A | N/A |
+
+*(Catatan: Anda dapat mengubah atau menambahkan proyek dan memperbarui status serta URL Live Demo sesuai dengan perkembangan aktual.)*
 
 ---
+
 
