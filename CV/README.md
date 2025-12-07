@@ -77,13 +77,11 @@ Tabel ini mengindeks semua proyek latihan yang dikembangkan untuk memperkuat pem
 | No. | Nama Proyek | Teknologi Utama | Status | Lokasi Kode (Branch: `latihan`) | Live Demo |
 | :---: | :--- | :--- | :---: | :--- | :--- |
 | 1. | **Single Page CV** | HTML, CSS (Flexbox) | ✅ Selesai | [`CV/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/CV) | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/CV/) |
-| 2. | **To-Do List App** | HTML, CSS, Vanilla JS | 🚧 Sedang Proses | [`todo-app/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/todo-app) | *Akan ditambahkan* |
-| 3. | **Basic Calculator** | HTML, CSS, Vanilla JS | 🚧 Sedang Proses | [`calculator-app/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/calculator-app) | *Akan ditambahkan* |
-| 4. | **Weather App** | HTML, CSS, JavaScript (API Fetch) | ⏳ Direncanakan | N/A | N/A |
 
 *(Catatan: Anda dapat mengubah atau menambahkan proyek dan memperbarui status serta URL Live Demo sesuai dengan perkembangan aktual.)*
 
 ---
+
 
 
 
