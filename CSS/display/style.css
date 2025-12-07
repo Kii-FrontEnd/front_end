@@ -1,0 +1,104 @@
+* {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        span {
+            color: red;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            /* Menggabungkan border sel */
+        }
+
+        th,
+        td {
+            border: 2px solid #000000;
+            /* Menambahkan border pada header dan sel */
+            padding: 8px;
+            /* Menambahkan ruang di dalam sel */
+            text-align: left;
+            /* Teks rata kiri */
+        }
+
+        th {
+            background-color: #f2f2f2;
+            /* Warna latar belakang header */
+        }
+
+        #panel,
+        .click {
+            padding: 10px;
+            border: 1px solid darkgrey;
+            margin: auto;
+            cursor: pointer;
+            background-color: rgb(113, 108, 108);
+            text-align: center;
+            width: 500px;
+            display: block;
+            color: #f2f2f2;
+        }
+
+        #panel {
+            display: none;
+        }
+
+        .inline {
+            background: linear-gradient(to left, orange, red, green);
+            padding: 20px;
+        }
+
+        .inline ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .inline ul li {
+            display: inline;
+            padding: 10px;
+            background: linear-gradient(to right, red, blue);
+            color: white;
+            cursor: pointer;
+        }
+
+        .block a {
+            display: block;
+        }
+
+        .cards {
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            padding: 20px;
+        }
+        .cards .card {
+            border: 1px solid black;
+            width: 150px;
+            padding: 10px;
+        }
+        .cards .card p {
+            margin: 5px 0;
+            text-transform: uppercase;
+            font-weight: 800;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow: 0 0 5px black;
+        }
+        .cards .card img {
+            width: 120px;
+        }
+        .cards .card button {
+            width: 120px;
+            margin-top: 5px;
+            letter-spacing: 2px;
+        }

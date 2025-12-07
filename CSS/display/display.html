@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>display</h1>
+    <p>
+        Properti <span>display</span> adalah properti CSS yang pentig untuk
+        mengendalikan layout. Ini menentukan apakah elemen diperlukan sebagai
+        inline atau block. Setiap elemen HTML memiliki nilai tampilan default,
+        tergantung pada jenis elemen apa itu. Nilai tampilan default untuk
+        sebagian besar elemen adalah <span>block</span> dan <span>inline</span>.
+        <span>display</span> properti digunakan untuk mengubah prilaku tampilan
+        default dari elemen HTML.
+    </p>
+
+    <h2>Elemen Block-level</h2>
+    <p>
+        Elemen block-level selalu dimulia pada baris baru dan mengambil lebar
+        penuh yang tersedia (melebar ke kiri dan kanan sejauh yang bisa).
+        <br>
+        Contoh elemen tingkat block/block-level:
+    </p>
+    <ul>
+        <li>div</li>
+        <li>h1-h6</li>
+        <li>p</li>
+        <li>form</li>
+        <li>header</li>
+        <li>footer</li>
+        <li>section</li>
+    </ul>
+
+    <h2>Elemen Inline</h2>
+    <p>
+        Elemen inline tidak mulai pada baris baru dan hanya mengambil lebar
+        sebanyak yang diperlukan. Ini adalah elemen inline <span>span</span>
+        di dalam sebuah paragraf.
+        <br>
+        Contoh dari elemen inline:
+    </p>
+    <ul>
+        <li>span</li>
+        <li>a</li>
+        <li>img</li>
+    </ul>
+
+    <h2>Nilai tampilan umum</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>inline</td>
+                <td>Menampilkan elemen sebagai elemen inline</td>
+            </tr>
+            <tr>
+                <td>block</td>
+                <td>Menampilkan elemen sebagai elemen block</td>
+            </tr>
+            <tr>
+                <td>contents</td>
+                <td>
+                    Membuat container menghilang,
+                    membuat elemen turunannya menjadi
+                    anak elemen yang naik level berikutnya di DOM
+                </td>
+            </tr>
+            <tr>
+                <td>flex</td>
+                <td>Menampilkan elemen sebagai wadah fleksibel tingkat blok</td>
+            </tr>
+            <tr>
+                <td>grid</td>
+                <td>Menampilkan elemen sebagai wadah grid tingkat blok</td>
+            </tr>
+            <tr>
+                <td>inline-block</td>
+                <td>
+                    Menampilkan elemen sebagai wadah blok tingkat inline.
+                    Elemen itu sendiri diformat sebagai elemen inline,
+                    tetapi Anda dapat menerapkan nilai tinggi, lebar, padding, dan margin
+                </td>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>
+                    Elemen ini sepenuhnya tersembunyi dari aliran dokumen (tidak memakan ruang).
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- none -->
+    <h2>Tampilan CSS: none;</h2>
+    <p>
+        Saat menggunakan <span>display: none;</span> elemen benar-benar tersembunyi dari
+        aliran dokumen dan tidak mengambil di atas setiap ruang. Hal ini biasa digunakan
+        dengan javascript untuk menyembunyikan atau menunjukkan elemen tanpa menghapus
+        dan Menambahkannya.
+    </p>
+    <button class="click" onclick="Click()">
+        Klik untuk menampilkan teks yang tersembunyi
+    </button>
+    <div id="panel">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente quia totam quidem ut
+        necessitatibus vel sed beatae, iste doloremque, veritatis expedita laboriosam sint inventore consectetur unde
+        aliquam ullam veniam. Excepturi molestiae blanditiis velit omnis libero ratione dolores beatae, fugit illum ab
+        placeat non maxime quisquam facere eveniet unde minima.
+    </div>
+
+    <!-- inline -->
+    <h2>Display: inline;</h2>
+    <p>
+        Properti <span>display</span> digunakan untuk mengubah perilaku tampilan default dari elemen HTML.
+        Mengubah elemen inline menjadi elemen blok, atau sebaliknya, dapat berguna untuk membuat halaman
+        terlihat dengan cara tertentu, dan masih mengikuti standar web. Contoh yang umum adalah untuk
+        mengubah elemen <span>li</span> ke inline, untuk membuat menu horizontal:
+    </p>
+    <div class="inline">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Project</li>
+            <li>Experience</li>
+        </ul>
+    </div>
+
+    <!-- block -->
+    <h2>Display: block;</h2>
+    <p>Contoh:</p>
+    <p>
+        display block menggunakan elemen link
+    </p>
+    <div class="block">
+        <a href="/CSS/align/align.html">align</a>
+        <a href="/CSS/background/bg-attachment.html">background</a>
+        <a href="/CSS/box model/box-model.html">box-model</a>
+    </div>
+
+    <!-- Contoh Display lainnya -->
+    <h3>Contoh Display yang lainnya</h3>
+    <p>
+        Klik link ini untuk melihat display yang lainnya:
+    </p>
+    <a href="https://www.w3schools.com/cssref/playdemo.php?filename=playcss_display&preval=inline">
+        Click Untuk melihat demo tampilan display lainnya
+    </a>
+
+    <!-- Visibility -->
+    <h2>Menyembunyikan elemen menggunakan display none atau visibility hidden</h2>
+    <div class="one">
+        <h3>Perbedaan antara display: none; dan visibilitas: hidden;</h3>
+        <p>
+            <b>visibilitas:</b> tersembunyi menyembunyikan elemen,
+            tetapi masih memakan ruang di tata letak.
+            <br>
+            <b>display:none</b> menghapus elemen dari dokumen.
+            Itu tidak memakan ruang apa pun.
+        </p>
+        <div class="cards">
+            <div class="card" id="card1">
+                <p>Box 1</p>
+                <img src="logo.jpg" alt="logo">
+                <button onclick="Remove()">Remove</button>
+            </div>
+            <div class="card" id="card2">
+                <p>Box 2</p>
+                <img src="logo2.jpg" alt="logo">
+                <button onclick="Hidden()">Hidden</button>
+            </div>
+            <div class="card" id="card3">
+                <p>Box 3</p>
+                <img src="logo3.jpg" alt="logo">
+                <button onclick="Reset()">Reset All</button>
+            </div>
+        </div>
+        <!-- display: none; -->
+        <h3>Display none</h3>
+        <div style="display: none;">
+            teks ini tidak ada di layar
+        </div>
+        <p>
+            Menyembunyikan elemen dapat dilakukan dengan mengatur displayproperti untuk none. Elemen akan disembunyikan,
+            dan halaman akan ditampilkan seolah-olah elemen tidak di sana:
+        </p>
+
+        <!-- visibility: hidden; -->
+        <h3>visibility: hidden;</h3>
+        <div style="visibility: hidden;">
+            teks ini disembunyikan dari layar
+        </div>
+        <p>
+            properti <span>visibility: hidden;</span>, elemen akan disembunyikan, tetapi masih akan mengambil ruang yang
+            sama.
+            Seolah-olah itu terlihat:
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        h1,
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        span {
+            color: red;
+        }
+
+        .center .align {
+            margin: auto;
+            border: 3px solid black;
+            padding: 10px;
+            width: 60%;
+            height: 100px;
+            line-height: 100px;
+            /*mengatur posisi teks di tengah*/
+        }
+
+        .center p {
+            text-align: center;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .img {
+            width: 200px;
+            margin: auto;
+            display: block;
+        }
+
+        .flexbox b {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            height: 100px;
+        }
+
+        .grid b {
+            border: 2px solid black;
+            padding: 10px;
+            display: grid;
+            place-items: center;
+            height: 100px;
+        }
+
+        .position .absolute {
+            position: absolute;
+            border: 2px solid black;
+            width: 300px;
+            right: 0;
+            padding: 10px;
+            height: 70px;
+        }
+
+        .float {
+            margin-top: 120px;
+        }
+
+        .float .right {
+            float: right;
+            border: 2px solid red;
+            padding: 10px;
+            width: 300px;
+        }
+
+        .transformasi {
+            margin-top: 120px;
+        }
+
+        .transformasi .translate {
+            border: 2px solid black;
+            padding: 10px;
+            height: 70px;
+            position: relative;
+        }
+
+        .transformasi .translate p {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>align center</h1>
+    <p>
+        Dengan CSS, anda dapat memusatkan elemen (horizontal, vertikal atau keduanya)
+        dengan beberapa metode, tergantung pada jenis elemennya.
+    </p>
+
+    <h2>align center block element</h2>
+    <p>
+        Gunakan <span>margin: auto;</span> untuk memusatkan elemen tingkat block secara
+        horizontal (seperti div). Juga menentukan <span>width</span> untuk mencegahnya
+        membentang ke tepi wadahnya.
+        <br>
+        <strong>Catatan:</strong> align center tidak berpengaruh pada elemen tingkat block
+        jika <span>width</span> tidak diatur (seperti diatur ke 100%).
+        <br>
+        Di bawah ini elemen <span>div</span> akan berpusat dan memiliki lebar 60% dan ruang
+        yang tersisa akan dibagi rata antara margin-left dan margin-right.
+    </p>
+    <div class="center">
+        <h3>ini adalah contoh align center elemen block</h3>
+        <div class="align">
+            Elemen <span>div</span> ini akan berada di tengah/center halaman
+        </div>
+        <h3>ini adalah contoh teks align center</h3>
+        <p>
+            teks <span>p</span> ini akan berada di tengah/center
+        </p>
+    </div>
+
+    <h2>Center align gambar</h2>
+    <p>
+        Untuk memusatkan gambar, set <span>margin-left</span> dan <span>margin-right</span>
+        atau <span>margin</span> untuk <span>auto</span> dan juga mengubah gambar menjadi
+        <span>block</span> elemen:
+    </p>
+    <img class="img" src="logo1.jpg" alt="logo">
+
+    <div class="flexbox">
+        <h3>center align dengan flexbox</h3>
+        <p>
+            Dengan CSS Flexbox anda dapat memusatkan elemen baik horizontal dan vertikal dalam
+            wadah flex. Sebuah wadah flex dengan kedua-duanya <span>jsutify-content</span> dan
+            <span>align-items</span> properti diatur <span>center</span> akan membuat item di
+            tengah.
+            <br>
+            Contoh:
+        </p>
+        <b>Teks ini akan berpusat di tengah antara vertikal dan horizontal</b>
+    </div>
+
+    <div class="grid">
+        <h3>center align dengan grid</h3>
+        <p>
+            Dengan CSS grid anda dapat memusatkan elemen baik horizontal dan vertikal dalam
+            wadah grid. Sebuah wadah grid dengan <span>place-items</span> properti yang diatur
+            ke tengah, akan menyelaraskan item di tengah.
+        </p>
+        <b>Teks ini akan berpusat di tengah antara vertikal dan horizontal</b>
+    </div>
+
+    <div class="position">
+        <h3>align kiri dan kanan - Menggunakan position</h3>
+        <p>
+            Metode lain untuk align elemen adalah dengan menggunakan <span>position: absolute;</span>
+            <br>
+            <b>Catatan:</b> Elemen yang diposisikan absolut dikeluarkan dari aliran normal,
+            dan dapat tumpang tindih dengan elemen lainnya.
+        </p>
+        <b class="absolute">
+            <p>
+                elemen <span>b</span> ini diposisikan ke kanan dengan posisi: absolute;
+            </p>
+        </b>
+    </div>
+
+    <div class="float">
+        <h3>align kiri dan kanan - Menggunakan float</h3>
+        <p>
+            Metode lain untuk align elemen adalah dengan menggunakan <span>float: right;</span>
+            <br>
+            Contoh:
+        </p>
+        <b class="right">
+            <p>
+                elemen <span>b</span> ini diposisikan ke kanan dengan float: right;
+            </p>
+        </b>
+    </div>
+
+    <div class="transformasi">
+        <h3>align center dengan position dan transfrom</h3>
+        <p>
+            Jika anda barurusan dengan elemen dimensi yang tidak dikenal atau dinamis,
+            itu adalah umum. Teknik untuk menggunakan <span>position: absolute;</span>
+            dikombinasikan dengan <span>transform: translate();</span>
+            untuk memusatkan elemen di tengah.
+        </p>
+        <div class="translate">
+            <p>
+                elemen <span>b</span> ini diposisikan ke kanan dengan position: absolute;
+                dan transform: translate();
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
