@@ -1,4 +1,4 @@
-# 📄 Sub-Proyek CV (Curriculum Vitae)
+# 📄 Sub-Proyek CV (Curriculum Vitae) - Proyek Front-end dari Roadmap.sh
 
 Proyek ini adalah bagian dari serangkaian latihan yang terdapat di _branch_ `latihan` repositori `learning-front_end`. Tujuan utama proyek ini adalah menerapkan keterampilan dasar pengembangan _frontend_ dalam membuat halaman web **Curriculum Vitae (CV) statis (Single Page)** yang fungsional dan terstruktur dengan baik.
 
@@ -81,6 +81,7 @@ Tabel ini mengindeks semua proyek latihan yang dikembangkan untuk memperkuat pem
 *(Catatan: Anda dapat mengubah atau menambahkan proyek dan memperbarui status serta URL Live Demo sesuai dengan perkembangan aktual.)*
 
 ---
+
 
 
 
