@@ -52,7 +52,7 @@ Proyek ini terinspirasi dan menggunakan panduan dari proyek-proyek pembelajaran 
 Tabel ini mengindeks semua proyek latihan yang dikembangkan untuk memperkuat pemahaman HTML, CSS, dan JavaScript.
 
 | No. | Nama Proyek | Teknologi Utama | Status | Lokasi Kode (Branch: `latihan`) | Live Demo | URL Project |
-| :---: | :--- | :--- | :---: | :--- | :--- |
+| :---: | :--- | :--- | :---: | :--- | :--- | :--- |
 | 1. | **Single Page CV** | HTML, CSS (Flexbox) | ✅ Selesai | [`CV/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/CV) | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/CV/) | [URL](https://roadmap.sh/projects/single-page-cv) |
 
 *(Catatan: Anda dapat mengubah atau menambahkan proyek dan memperbarui status serta URL Live Demo sesuai dengan perkembangan aktual.)*
