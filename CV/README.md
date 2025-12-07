@@ -62,7 +62,7 @@ Karena ini adalah proyek berbasis HTML dan CSS statis, tidak diperlukan _server_
 
 Proyek ini terinspirasi dan menggunakan panduan dari proyek-proyek pembelajaran _frontend_ untuk memastikan cakupan fitur yang komprehensif:
 
-- **Panduan Proyek Front-End Web Developer:** [https://roadmap.sh/projects/single-page-cv](https://roadmap.sh/frontend/projects)
+- **Panduan Proyek Front-End Web Developer:** [https://roadmap.sh/frontend/projects](https://roadmap.sh/frontend/projects)
 
 ---
 
@@ -84,6 +84,7 @@ Tabel ini mengindeks semua proyek latihan yang dikembangkan untuk memperkuat pem
 *(Catatan: Anda dapat mengubah atau menambahkan proyek dan memperbarui status serta URL Live Demo sesuai dengan perkembangan aktual.)*
 
 ---
+
 
 
 
