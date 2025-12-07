@@ -2,6 +2,7 @@
 
 Repositori ini berfungsi sebagai tempat untuk mendokumentasikan dan menyimpan progres pembelajaran dalam pengembangan *frontend* (HTML, CSS, JavaScript, dan teknologi terkait).
 This repository contains front-end projects built following the [roadmap.sh](https://roadmap.sh/) front-end developer path.
+
 ---
 
 ## 🌳 Branch: `latihan`
