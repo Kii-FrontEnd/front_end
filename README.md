@@ -14,6 +14,24 @@ Repositori ini berfungsi sebagai tempat untuk mendokumentasikan dan menyimpan pr
 * **Lingkungan Eksperimen (*Sandbox*):** Memberikan ruang kerja di mana perubahan, percobaan, atau implementasi kode yang sering dilakukan selama proses belajar dapat dilakukan tanpa memengaruhi kebersihan dan stabilitas kode pada *branch* `main`.
 * **Progres Individu:** Konten di sini menunjukkan langkah-langkah nyata dan hasil dari setiap sesi latihan yang dijalankan.
 
-### 📂 Struktur Konten Latihan
+## 💡 Sumber Daya dan Referensi
 
-Konten dalam branch ini mungkin dikelompokkan berdasarkan topik atau modul yang dipelajari:
+Proyek ini terinspirasi dan menggunakan panduan dari proyek-proyek pembelajaran _frontend_ untuk memastikan cakupan fitur yang komprehensif:
+
+- **Panduan Proyek Front-End Web Developer:** [https://roadmap.sh/frontend/projects](https://roadmap.sh/frontend/projects)
+
+---
+
+## 🔗 Akses Proyek (Live Demo)
+
+## 💻 Daftar Proyek Latihan yang Selesai
+
+Tabel ini mengindeks semua proyek latihan yang dikembangkan untuk memperkuat pemahaman HTML, CSS, dan JavaScript.
+
+| No. | Nama Proyek | Teknologi Utama | Status | Lokasi Kode (Branch: `latihan`) | Live Demo |
+| :---: | :--- | :--- | :---: | :--- | :--- |
+| 1. | **Single Page CV** | HTML, CSS (Flexbox) | ✅ Selesai | [`CV/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/CV) | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/CV/) |
+
+*(Catatan: Anda dapat mengubah atau menambahkan proyek dan memperbarui status serta URL Live Demo sesuai dengan perkembangan aktual.)*
+
+---
