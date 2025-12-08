@@ -1,11 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pseudo element</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        span {
+            color: red;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .sintaks {
+            border-left: 3px solid black;
+            box-shadow: 0 0 10px black;
+            padding: 15px 20px;
+        }
+
+        .line {
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+        }
+
+        .line p::first-line {
+            color: blueviolet;
+            font-size: 16px;
+            font-weight: 800;
+            font-variant: small-caps;
+        }
+
+        .letter {
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+        }
+
+        .letter p::first-letter {
+            color: blueviolet;
+            font-size: 18px;
+            font-weight: 800;
+            font-size: xx-large;
+        }
+
+        .before {
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+        }
+
+        .before span::before {
+            content: "👋 ";
+        }
+
+        .after {
+            padding: 10px;
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+        }
+
+        .after span::after {
+            content: " 🙋";
+        }
+
+        .marker {
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        ::marker {
+            color: red;
+            font-size: 26px;
+        }
+        
+        .selection {
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        ::selection {
+            color: white;
+            background-color: darkred;
+        }
+        .backdrop {
+            box-shadow: 0 0 10px black;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .backdrop dialog::backdrop {
+            background-color: brown;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>pseudo element</h1>
+    <p>
+        Sebuah CSS pseudo-element adalah kata kunci yang dapat ditambahkan ke
+        selector, pada gaya bagian tertentu dari suatu elemen.
+        <br>
+        Beberapa pengguanan umum untuk pseudo-element:
+    </p>
+    <ul>
+        <li>Gaya huruf pertama dan baris pertama dari elemen</li>
+        <li>Masukkan content sebelum atau sesudah elemen</li>
+        <li>Gaya penanda item daftar</li>
+        <li>Gaya bagian yang dipilih pengguna dari suatu elemen</li>
+        <li>Gaya viewbox di balik kotak dialog</li>
+    </ul>
+
+    <h3>Sintaks</h3>
+    <p>
+        pseudo-element dilambangkan dengan petik ganda (::) diikuti oleh
+        nama pseudo-element:
+    </p>
+    <p class="sintaks">
+        <span>
+            selector::pseudo-element-name {
+            <br>
+            <em>CSS properties</em>
+            <br>
+            }
+        </span>
+    </p>
+
+    <h2>CSS ::first-line Pseudo-element</h2>
+    <p>
+        <span>::first-line</span> pseudo-element digunakan untuk menambahkan
+        gaya khusus ke baris pertama dari sebuah teks.
+        <br>
+        <b>Catatan:</b> <span>::first-line</span> pseudo-element hanya dapat
+        diterapkan pada tingkat block elemen.
+    </p>
+    <div class="line">
+        <h4>Contoh:</h4>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error veniam quia voluptatem aspernatur
+            necessitatibus
+            dolorum beatae laudantium eius aliquam aperiam. Illum molestias fugiat, quae autem quisquam porro
+            consectetur
+            dolor reprehenderit.
+        </p>
+    </div>
+
+    <h2>CSS ::first-letter Pseudo-element</h2>
+    <p>
+        <span>::first-letter</span> pseudo-element digunakan untuk menambahkan
+        gaya khusus ke huruf pertama dari sebuah teks.
+        <br>
+        <b>Catatan:</b> <span>::first-letter</span> pseudo-element hanya dapat
+        diterapkan pada tingkat block elemen.
+    </p>
+    <div class="letter">
+        <h4>Contoh:</h4>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error veniam quia voluptatem aspernatur
+            necessitatibus
+            dolorum beatae laudantium eius aliquam aperiam. Illum molestias fugiat, quae autem quisquam porro
+            consectetur
+            dolor reprehenderit.
+        </p>
+    </div>
+
+    <h2>CSS ::before pseudo-element</h2>
+    <p>
+        <span>::before</span> pseudo-element digunakan untuk memasukkan beberapa konten
+        sebelum konten dari elemen tertentu.
+        <br>
+        Gunakan <span>content</span> properti untuk menentukan konten yang akan dimasukkan.
+    </p>
+    <div class="before">
+        <h4>Contoh</h4>
+        <p>Memasukkan gambar sebelum isi dari content:</p>
+        <span>Welcome Guys</span>
+    </div>
+
+    <h2>CSS ::after pseudo-element</h2>
+    <p>
+        <span>::after</span> pseudo-element digunakan untuk memasukkan beberapa konten
+        sesudah konten dari elemen tertentu.
+        <br>
+        Gunakan <span>content</span> properti untuk menentukan konten yang akan dimasukkan.
+    </p>
+    <div class="after">
+        <h4>Contoh</h4>
+        <p>Memasukkan gambar sesudah isi dari content:</p>
+        <span>Welcome Guys</span>
+    </div>
+
+    <h2>CSS ::marker pseudo-element</h2>
+    <p>
+        pseudo-element <span>::marker</span> digunakan untuk menandakan item pada daftar.
+    </p>
+    <div class="marker">
+        <h4>Contoh</h4>
+        <p>
+            pseudo-element akan menandakan seluruh body page yang menggunakan elemen
+            <span>list (ul,ul, li)</span> pada html.
+            <br>
+            Gaya penanda item daftar:
+        </p>
+        <ul>
+            <li>Gym</li>
+            <li>Workout</li>
+            <li>Music</li>
+        </ul>
+        <ol>
+            <li>Gitar</li>
+            <li>Dumble</li>
+            <li>Barbel</li>
+        </ol>
+    </div>
+
+    <h2>CSS ::selection pseudo-element</h2>
+    <p>
+        <span>::selection</span> pseudo-element digunakan untuk style bagian dari teks
+        yang dipilih oleh developer.
+    </p>
+    <div class="selection">
+        <h4>Contoh</h4>
+        <p>
+            Gaya teks yang dipilih pengguna dengan warnah merah, dan latar belakang kuning:
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque incidunt dolorem eius exercitationem tenetur
+            eaque, alias soluta ipsam tempore repellendus.
+        </p>
+    </div>
+
+    <h2>CSS ::backdrop pseudo-element</h2>
+    <p>
+        <span>::backdrop</span> pseudo-element digunakan untuk styling box di belakang box dialog
+        atau elemen popover.
+    </p>
+    <div class="backdrop">
+        <h4>Contoh</h4>
+        <p>
+            Gaya box di tampilan di balik kotak dialog.
+            <br>
+            Click button ini untuk membuka teks pada box dialog:
+        </p>
+        <button id="btn">Click Me</button>
+        <dialog id="dialog">
+            <form method="dialog">
+                <p>
+                    Latar belakang di balik dialog ini, adalah sebuah latar belakang.
+                </p>
+                <button>Close</button>
+            </form>
+        </dialog>
+    </div>
+
+    <script>
+        const Button = document.getElementById("btn");
+        const Dialog = document.getElementById("dialog");
+
+        Button.addEventListener('click', () => Dialog.showModal('Dialog'))
+    </script>
 </body>
+
 </html>
