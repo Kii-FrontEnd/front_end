@@ -56,5 +56,6 @@ Tabel ini mengindeks semua proyek latihan yang dikembangkan untuk memperkuat pem
 | :-: | :--------------------- | :------------------ | :--------: | :-------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------- |
 | 1.  | **Single Page CV**     | HTML, CSS (Flexbox) | ✅ Selesai | [`CV/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/CV)               | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/CV/)        | [Roadmap.sh](https://roadmap.sh/projects/single-page-cv)     |
 | 2.  | **Web HTML CSS Basic** | HTML, CSS (Flexbox) | ✅ Selesai | [`Web Basic/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/web-basic) | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/web-basic/) | [Roadmap.sh](https://roadmap.sh/projects/basic-html-website) |
+| 3.  | **Login**              | HTML, CSS (Flexbox) | ✅ Selesai | [`Login/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/login)         | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/login/)     | [Roadmap.sh]()                                               |
 
 ---
