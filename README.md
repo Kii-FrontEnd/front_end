@@ -1,36 +1,43 @@
-Belajar Pengembangan Front-End
+# 🚀 Learning Front-End Web Developer
 
-Selamat datang di repositori learning-front_end Saya
+Repositori ini adalah sebuah panduan, koleksi sumber daya, dan penyimpanan proyek inti untuk proses belajar intensif menjadi seorang **Front-End Web Developer** yang kompeten.
 
-Repositori ini adalah koleksi terstruktur dari sumber daya, panduan, checklist, dan proyek kecil yang dirancang untuk membantu siapa saja yang tertarik untuk mempelajari atau meningkatkan keterampilan mereka di bidang Pengembangan Front-End (Antarmuka Pengguna Web).
+Branch `main` ini bertujuan untuk menjaga kebersihan kode, mengorganisir materi pembelajaran, dan menampung proyek-proyek akhir yang sudah rapi.
 
-Tentu, saya akan membuatkan draf README untuk repositori GitHub Kii-FrontEnd/learning-front_end.
+---
 
-Berdasarkan namanya, repositori ini tampaknya berisi materi atau sumber daya untuk belajar pengembangan Front-End.
+## 🎯 Tujuan Utama Branch `main`
 
-Anda dapat menyalin dan memodifikasi draf di bawah ini.
-📚 Kii-FrontEnd / learning-front_end
-Panduan dan Sumber Belajar Pengembangan Front-End
+Branch `main` ini berfungsi sebagai **inti** atau **sumber kebenaran (*source of truth*)** dari jalur pembelajaran *Front-End*.
 
-Selamat datang di repositori learning-front_end!
+* **Penyimpanan Proyek Akhir:** Menampung implementasi proyek-proyek utama dan studi kasus yang mencerminkan pemahaman materi secara menyeluruh.
+* **Struktur Pembelajaran:** Menyediakan kerangka kerja yang terstruktur tentang materi apa saja yang harus dikuasai oleh seorang *Front-End Developer*.
+* **Kode Bersih:** Semua kode di *branch* ini harus dipertahankan dalam keadaan *clean* dan terorganisir, siap untuk ditinjau (review) atau di-deploy.
 
-Repositori ini adalah koleksi terstruktur dari sumber daya, panduan, checklist, dan proyek kecil yang dirancang untuk membantu siapa saja yang tertarik untuk mempelajari atau meningkatkan keterampilan mereka di bidang Pengembangan Front-End (Antarmuka Pengguna Web).
-🎯 Tujuan
+---
 
-Tujuan utama repositori ini adalah:
+## 📚 Materi Pembelajaran Inti
 
-    Menyediakan Peta Jalan (Roadmap) yang Jelas: Membantu pemula memahami langkah-langkah yang harus diambil untuk menjadi pengembang Front-End.
+Pembelajaran difokuskan pada penguasaan teknologi dasar hingga modern yang wajib dikuasai oleh pengembang *frontend*.
 
-    Mengumpulkan Sumber Daya Terbaik: Mengkurasi buku, tutorial, artikel, dan kursus yang berkualitas.
+### I. Fundamental (Dasar-Dasar Web)
 
-    Memberikan Praktik Terbaik: Menyajikan panduan tentang standar kode, performa, dan praktik pengembangan modern.
+| Materi | Fokus Pembelajaran |
+| :--- | :--- |
+| **HTML5** | Semantik, Struktur Dokumen, Aksesibilitas (ARIA). |
+| **CSS3** | Layout (Flexbox & Grid), Desain Responsif (Media Queries), Preprocessors (SASS/LESS). |
+| **JavaScript (ES6+)** | Konsep dasar, DOM Manipulation, Asynchronous Programming (Promises, Async/Await). |
 
-🛠 Teknologi Utama
+### II. Ekosistem dan Alat Modern
 
-Pembelajaran Front-End berpusat pada tiga pilar utama dan alat-alat modern di sekitarnya.
+* **Version Control:** Git & GitHub Workflow.
+* **Package Manager:** Penggunaan npm/Yarn/pnpm.
+* **Build Tools:** Penggunaan tools seperti Webpack, Vite, atau Parcel.
+* **Library/Framework:** Pengenalan dan praktik dengan *library* populer (misalnya React, Vue, atau sejenisnya).
+* **State Management:** Memahami cara mengelola data aplikasi yang kompleks.
 
-    HTML (HyperText Markup Language): Struktur dasar semua halaman web.
+---
 
-    CSS (Cascading Style Sheets): Untuk styling dan presentasi visual.
+## 📂 Struktur Repositori
 
-    JavaScript (JS): Untuk interaksi dan logika di sisi klien.
+Struktur folder diatur untuk memudahkan navigasi ke materi utama dan proyek:
