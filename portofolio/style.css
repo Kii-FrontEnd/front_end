@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: aliceblue;
+}
+span {
+  color: darksalmon;
+  border-bottom: 1px solid darksalmon;
+}
+hr {
+  border-bottom: 2px solid black;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: gray;
+}
+.navbar .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.navbar .img img {
+  width: 70px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px bisque, 0 0 10px yellowgreen;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.navbar .img img:hover {
+  box-shadow: 0 0 15px burlywood, 0 0 15px yellow;
+  transform: scale(1.1);
+}
+.navbar .img p {
+  margin: 0 10px;
+  font-weight: 800;
+  color: antiquewhite;
+  font-size: 18px;
+  border-bottom: 1px solid antiquewhite;
+}
+.navbar .nav {
+  margin: 10px;
+  color: aliceblue;
+  font-weight: 800;
+}
+.navbar .nav ul {
+  display: flex;
+  cursor: pointer;
+}
+.navbar .nav ul li {
+  list-style: none;
+  padding: 10px;
+  transition: 0.5s;
+}
+.navbar .nav ul li:hover {
+  letter-spacing: 2px;
+  color: antiquewhite;
+  text-shadow: 0 0 10px whitesmoke;
+}
+
+/* Header */
+.header {
+  height: 50vh;
+  background-color: gray;
+  text-align: center;
+  font-weight: 800;
+  padding-top: 80px;
+  border-bottom: 2px solid black;
+  box-shadow: inset 0 0 10px beige;
+}
+.header h1 {
+  color: beige;
+}
+.header p {
+  color: aliceblue;
+}
+
+/* Content */
+.content th,
+td {
+  border: 2px solid black;
+  padding: 10px;
+  width: 100vw;
+}
+
+/* Service */
+.service {
+  margin: 10px;
+}
+.service .container {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+.service .container .card {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin: 50px 0;
+  height: 200px;
+}
+
+@media screen and (max-width: 675px) {
+  .navbar .img {
+    position: absolute;
+    top: 0;
+    left: -100px;
+  }
+  .navbar .img img {
+    margin-bottom: 20px;
+    z-index: 1;
+  }
+  .navbar .img p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 100px;
+  }
+  .navbar .nav {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar .nav ul li {
+    font-size: 16px;
+  }
+  .content table, th, td{
+    width: 100%;
+  }
+  .service h2 {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .service .container {
+    display: inline;
+    margin: 10px;
+  }
+  .service .container .card {
+    margin: 20px;
+  }
+}
