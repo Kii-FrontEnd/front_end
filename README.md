@@ -58,5 +58,6 @@ Tabel ini mengindeks semua proyek latihan yang dikembangkan untuk memperkuat pem
 | 2.  | **Web HTML CSS Basic**    | HTML, CSS (Flexbox) | ✅ Selesai | [`Web Basic/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/web-basic)   | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/web-basic/)  | [Roadmap.sh](https://roadmap.sh/projects/basic-html-website) |
 | 3.  | **Login**                 | HTML, CSS (Flexbox) | ✅ Selesai | [`Login/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/login)           | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/login/)      | [Roadmap.sh]()                                               |
 | 4.  | **Portofolio Responsive** | HTML, CSS (Flexbox) | ✅ Selesai | [`Portofolio/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/portofolio) | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/portofolio/) | [Roadmap.sh](https://roadmap.sh/projects/portfolio-website)  |
+| 5.  | **Card Hover**            | HTML, CSS (Flexbox) | ✅ Selesai | [`Card Hover/`](https://github.com/FiqriViadi/learning-front_end/tree/latihan/card)       | [Lihat Live Demo](https://fiqriviadi.github.io/learning-front_end/portofolio/) | [Roadmap.sh]()                                               |
 
 ---
