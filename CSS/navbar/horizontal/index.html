@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar horizontal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>navbar horizontal</h1>
+    <div class="cth">
+        <ul class="one">
+            <li class="active">Home</li>
+            <li>Berita</li>
+            <li>Hubungi</li>
+        </ul>
+        <ul>
+            <li>Tentang</li>
+        </ul>
+    </div>
+    <p>
+        Dalam bilah navigasi horizontal, tautan navigasi ditumpuk secara horizontal
+        (dari kiri ke kanan) di bagian atas halaman web. Ini adalah tata letak yang umum
+        digunakan untuk bilah navigasi karena memanfaatkan ruang horizontal yang luas di
+        bagian atas halaman web.
+    </p>
+    <p>
+        Dasar-dasar bar navigasi hrizontal adalah daftar unordead <span>ul</span>, dengan
+        item daftar <span>li</span> untuk setiap tautan navigasi.
+        <br>
+        Hal ini juga umum untuk menambahkan elemen <span>nav</span> di sekitar elemen <span>ul</span>,
+        yang berfungsi sebagai wadah untuk bar navigasi anda.
+    </p>
+    <hr>
+
+    <h2>horizontal navbar menggunakan float</h2>
+    <p>
+        Salah satu cara untuk membuat bilah navigasi horizontal adalah dengan menggunakan properti CSS
+        <span>float</span> untuk elemen <span>li</span>.
+        <br>
+        Di sini kita akan membuat bar navigasi horizontal dasar dengan warna latar belakang gelap dan
+        mengubah warna latar belakang link ketika penggunan mengarahkan cursor diatas teks navbar:
+    </p>
+    <div class="float">
+        <ul>
+            <li>Home</li>
+            <li>Berita</li>
+            <li>Hubungi</li>
+            <li>Tentang</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h2>horizontal navbar menggunakan flex</h2>
+    <p>
+        Cara lain untuk membuat bilah navigasi horizontal adalah dengan menggunakan properti CSS
+        <span>flexbox</span>. Flexbox memberikan cara yang lebih fleksibel dan kuat untuk mengatur
+        elemen dalam bar navigasi.
+        <br>
+        Di sini kita akan membuat bar navigasi horizontal dasar menggunakan flexbox dengan warna latar
+        belakang gelap dan mengubah warna latar belakang link ketika pengguna mengarahkan cursor diatas teks navbar:
+    </p>
+    <div class="flex">
+        <ul>
+            <li class="active">Home</li>
+            <li>Berita</li>
+            <li>Hubungi</li>
+            <li>Tentang</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h2>navbar active</h2>
+    <p>
+        Disini kita akan menambahkan kelas <span>active</span> pada item daftar <span>li</span>
+        untuk menandai halaman saat ini atau halaman yang sedang aktif.
+    </p>
+    <div class="aktif">
+        <ul>
+            <li class="active">Home</li>
+            <li>Berita</li>
+            <li>Hubungi</li>
+            <li>Tentang</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h2>align right satu link</h2>
+    <p>
+        Anda dapat menyelaraskan satu tautan di sebelah kanan bilah navigasi
+        dengan menambahkan <span>float: right;</span> otomatis pada elemen <span>li</span> yang ingin
+        anda sejajarkan ke kanan.
+    </p>
+    <div class="two">
+        <ul>
+            <li class="active">Home</li>
+            <li>About</li>
+            <li>Berita</li>
+            <li style="float: right;">Contact</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h2>border divider</h2>
+    <p>
+        Tambahkan <span>border-right</span> pada elemen <span>li</span> untuk membuat
+        pembatas antar tautan di bilah navigasi horizontal.
+    </p>
+    <div class="border">
+        <ul>
+            <li class="active">Home</li>
+            <li>Berita</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <hr>
+
+    <h2>bar navigasi stcky</h2>
+    <p>
+        Anda dapat membuat bilah navigasi tetap di bagian atas halaman
+        saat pengguna menggulir ke bawah dengan menggunakan properti CSS
+        <span>position: sticky;</span>.
+    </p>
+    <div class="nav">
+        <h1>scroll ke bawah</h1>
+        <h2>scroll ke bawah untuk mengaktifkan sticky</h2>
+        <div class="navbar">
+            <ul>
+                <li class="active">Home</li>
+                <li>Berita</li>
+                <li>Hubungi</li>
+                <li>Tentang</li>
+            </ul>
+        </div>
+        <div class="content">
+            <h3>Contoh Navigasi Lengket</h3>
+            <p>
+                Bilah navigasi akan menempel di bagian atas saat Anda mencapai posisi gulirnya.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consequuntur aperiam consectetur ea
+                eius quo molestiae soluta qui corporis illo dignissimos facere repudiandae libero omnis eum in, adipisci
+                molestias eligendi placeat architecto aspernatur sint atque? Numquam aut fugit distinctio facilis amet
+                praesentium totam, rem voluptas asperiores quidem rerum a eius molestiae veniam ratione! In est enim
+                minus hic, aliquid quis esse nesciunt architecto iusto sunt, pariatur nam rem libero cumque
+                consequuntur. Laboriosam, laborum aut. Distinctio in similique molestias iusto atque officia recusandae
+                reprehenderit quod obcaecati ex veniam, facere quis dolorum inventore ab veritatis modi dolorem
+                assumenda nobis laudantium sit porro commodi neque. Optio, adipisci harum ad illum quasi ratione
+                laudantium, quam illo, id iure eaque impedit corrupti nobis. Itaque iure perspiciatis architecto
+                molestiae aspernatur laborum voluptates? Asperiores, commodi tempore! Culpa, mollitia. Ipsam minima
+                aliquam porro delectus nostrum sed quis reprehenderit at blanditiis, eveniet cumque quidem deleniti?
+                Minus excepturi obcaecati dolor maiores amet accusamus neque dolores assumenda nihil rem impedit
+                explicabo quibusdam debitis doloremque temporibus maxime eligendi, perferendis facilis. Temporibus
+                ducimus vel ipsum natus reprehenderit tempore ipsam, fugiat impedit cumque veniam delectus totam alias,
+                libero ullam in sed beatae asperiores et ad incidunt? Consectetur alias officiis veritatis iusto itaque?
+                Dolorem temporibus debitis, molestiae provident quibusdam inventore fugiat beatae consequuntur a in.
+                Harum laboriosam provident natus omnis, mollitia maiores sunt voluptates nostrum aperiam dicta at ullam
+                tenetur dignissimos deleniti ipsa eius unde? Odit explicabo nulla eaque adipisci non iusto! Hic suscipit
+                quo quos quisquam recusandae culpa sit vel consectetur optio debitis earum eos ipsam enim nisi eum nobis
+                qui, tenetur iste quasi. Voluptatibus unde aspernatur, ipsum molestias hic in adipisci facere modi
+                ratione cum rerum sequi magnam quisquam quo illum repellat, fugiat expedita accusantium itaque sit
+                quasi? Voluptates aperiam ipsa quasi eum alias deleniti dolor doloribus quod. Aut id eaque in possimus?
+            </p>
+        </div>
+    </div>
+    <hr>
+
+    <h2>menu dropdown pad abar navigasi</h2>
+    <p>
+        Di sini kita akan membuat menu dropdown untuk salah satu tautan menu:
+    </p>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Project</a>
+                <div class="dropdown-content">
+                    <a href="#">Project 1</a>
+                    <a href="#">Project 2</a>
+                    <a href="#">Project 3</a></div>
+            </li>
+        </ul>
+        <h2>Dropdown menu pada navbar</h2>
+        <p>Hover pada menu Project untuk melihat menu dropdown</p>
+    </div>
+</body>
+
+</html>
