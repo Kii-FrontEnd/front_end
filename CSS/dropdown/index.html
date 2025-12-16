@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>dropdown</h1>
+        <p>
+            CSS dropdown digunakan untuk menampilkan daftar opsi atau konten saat
+            pengguna klik atau hover dia atas elemen, seperti tombol atau tautan
+            navigasi.
+        </p>
+        <p>
+            Sebuah penurunan CSS terdiri dari elemen pemicu (seperti <span>div, button,
+            p, a, danlainnya.</span>).
+            <br>
+            Ketika elemen pemicu diklik atau hover di atas konten, maka opsi dropdown
+            akan ditampilkan.
+            <br>
+            Konten dropdown adalah elemen kontainer (misalnya <span>div</span>) yang
+            menyimpaan konten tersembunyi (bisa berupa teks, link, gambar, dll.).
+            <br>
+            Mouse di atas tiga contoh penurunan CSS di bawah ini:
+        </p>
+
+        <h2>CSS Dropdown Box dengan Teks</h2>
+        <p>
+            Di sini kami membuat kotak dropdown dengan beberapa teks, yang muncul
+            ketika mouse penggunan di atas elemen <span>div</span>.
+        </p>
+        <div class="text">
+            <div class="dropdown">Hover me
+                <div class="dropdown-content">Hello Universe</div>
+            </div>
+        </div>
+        <h3>penjelasan contoh diatas</h3>
+        <ul>
+            <li>
+                kelas <strong>dropdown</strong> menggunakan <span>position: relative;</span>, yang diperlukan
+                ketika kita ingin konten dropdown ditempatkan tepat di bawah
+                elemen pemicu (dropdown konten akan digunakan <span>position: abbsolute;</span> ).
+            </li>
+            <li>
+                kelas <strong>dropdown-content</strong> memegang konten dropdown. ha ini disembunyikan oleh default,
+                dan akan ditampalikan pada saat peggunan menghover teks.
+            </li>
+            <li>
+                elemen <span>box-shadow</span> digunakan untuk membuat konten dropdown terlihat
+                seperti kartu.
+            </li>
+            <li>
+                selector <span>:hover</span> digunakan untuk menunjukkan dropdown konten saat  pengguna
+                menghover mouse di atas elemen <strong>kelas dropdown</strong>
+            </li>
+        </ul>
+        <hr>
+
+        <h2>menu dropdown CSS</h2>
+        <p>
+            Buat menu dropdown yang memungkinkan penggunan untuk memilih opsi dari daftar.
+        </p>
+        <div class="menu">
+            <button class="dropbtn">project</button>
+            <div class="dropdown-content">
+                <a href="#">project 1</a>
+                <a href="#">project 2</a>
+                <a href="#">project 3</a>
+            </div>
+        </div>
+        <p>
+            contoh ini mirip dengan yang sebelumnya, kecuali bahwa kami menambahakan tombol
+            dan tautan di dalam kotak dropdown dan gaya mereka agar sesuai tombol
+            dropdown:
+        </p>
+        <hr>
+
+        <h2>CSS righ and left dropdown</h2>
+        <div class="position">
+            <div class="dropdown">
+                <button class="dropbtn">project</button>
+                <div class="dropdown-content">
+                    <a href="#">project 1</a>
+                    <a href="#">project 2</a>
+                    <a href="#">project 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">customers</button>
+                <div class="dropdown-content">
+                    <a href="#">customer 1</a>
+                    <a href="#">customer 2</a>
+                    <a href="#">customer 3</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h2>CSS dropdown gambar</h2>
+        <div class="gambar">
+            <div class="dropdown">
+                <img src="cat1.png" alt="gambar 1">
+                <div class="dropdown-content">
+                    <img src="cat1.png" alt="gambar 1">
+                    <div class="desc">coll cat smoking</div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <img src="cat2.png" alt="gambar 2">
+                <div class="dropdown-content">
+                    <img src="cat2.png" alt="gambar 2">
+                    <div class="desc">upset cat</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
