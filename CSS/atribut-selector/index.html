@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribut selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS attribut selector</h1>
+        <p>
+            peneliti atribut CSS digunakan untuk memilih elemen berdasarkan
+            atribut atau nilai atribut tertentu. Berikut adalah beberapa contoh
+            peneliti atribut CSS:
+        </p>
+
+        <section>
+            <h2>Contoh Peneliti Atribut CSS</h2>
+            <ul class="contoh">
+                <li>
+                    <strong>[attribute]</strong>: Memilih elemen yang memiliki atribut tertentu.
+                    <br>
+                    Contoh: <code>a[href]</code> memilih semua elemen <code>&lt;a&gt;</code> yang memiliki atribut <code>href</code>.
+                </li>
+                <li>
+                    <strong>[attribute="value"]</strong>: Memilih elemen dengan atribut tertentu yang memiliki nilai spesifik.
+                    <br>
+                    Contoh: <code>input[type="text"]</code> memilih semua elemen <code>&lt;input&gt;</code> dengan atribut <code>type</code> bernilai "text".
+                </li>
+                <li>
+                    <strong>[attribute~="value"]</strong>: Memilih elemen dengan atribut tertentu yang mengandung kata tertentu dalam daftar kata.
+                    <br>
+                    Contoh: <code>[class~="highlight"]</code> memilih elemen dengan kelas yang mengandung kata "highlight".
+                </li>
+                <li>
+                    <strong>[attribute|="value"]</strong>: Memilih elemen dengan atribut tertentu yang dimulai dengan nilai spesifik diikuti oleh tanda hubung atau akhir string.
+                    <br>
+                    Contoh: <code>[lang|="en"]</code> memilih elemen dengan atribut bahasa yang dimulai dengan "en" (misalnya "en-US", "en-GB").
+                </li>
+                <li>
+                    <strong>[attribute^="value"]</strong>: Memilih elemen dengan atribut tertentu yang nilainya diawali dengan nilai spesifik.
+                    <br>
+                    Contoh: <code>a[href^="https"]</code> memilih semua tautan yang URL-nya diawali dengan "https".
+                </li>
+                <li>
+                    <strong>[attribute$="value"]</strong>: Memilih elemen dengan atribut tertentu yang nilainya diakhiri dengan nilai spesifik.
+                    <br>
+                    Contoh: <code>img[src$=".jpg"]</code> memilih semua gambar yang sumbernya berakhiran ".jpg".
+                </li>
+                <li>
+                    <strong>[attribute*="value"]</strong>: Memilih elemen dengan atribut tertentu yang nilainya mengandung nilai spesifik di mana saja dalam string.
+                    <br>
+                    Contoh: <code>a[href*="example"]</code> memilih semua tautan yang URL-nya mengandung kata "example".
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS [atribut] selector</h2>
+            <p>
+                <span>[atribut]</span> memilih elemen yang memiliki atribut tertentu. Misalnya, <code>a[target]</code> memilih semua elemen 
+                <code>&lt;a&gt;</code> yang memiliki atribut <code>target</code>. Ini berguna untuk menargetkan elemen yang memiliki atribut
+                tanpa memperhatikan nilainya. Contohnya sebagai berikut:
+            </p>
+            <div class="box-container">
+                <div class="link">
+                    <a href="https://www.example.com" target="_blank">Tautan dengan target</a>
+                    <a href="https://www.example.com">Tautan tanpa target</a>
+                    <a href="https://www.example.com" target="_blank">Tautan dengan target</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS [atribut="value"] selector</h2>
+            <p>
+                <span>[atribut="value"]</span> memilih elemen dengan atribut tertentu yang memiliki nilai spesifik. Misalnya, 
+                <code>input[type="checkbox"]</code> memilih semua elemen <code>&lt;input&gt;</code> dengan atribut <code>type</code> bernilai "checkbox".
+                Ini berguna untuk menargetkan elemen berdasarkan nilai atributnya. Contohnya sebagai berikut:
+            </p>
+            <div class="box-container">
+                <input type="checkbox" id="option1" name="option1" value="Option 1">
+                <label for="option1">Opsi 1</label><br>
+                <input type="checkbox" id="option2" name="option2" value="Option 2">
+                <label for="option2">Opsi 2</label><br>
+                <input type="text" id="textInput" name="textInput" placeholder="Input Teks">
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS [atribut~="value"] selector</h2>
+            <p>
+                <span>[atribut~="value"]</span> memilih elemen dengan atribut tertentu yang mengandung kata tertentu dalam daftar kata.
+                <br>
+                Contoh: <code>[class~="highlight"]</code> memilih elemen dengan kelas yang mengandung kata "highlight".
+            </p>
+            <div class="box-container">
+                <div class="box highlight">Box dengan kelas highlight</div>
+                <div class="box">Box tanpa kelas highlight</div>
+                <div class="box highlight special">Box dengan kelas highlight dan special</div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS [atribut|="value"] selector</h2>
+            <p>
+                <span>[atribut|="value"]</span> memilih elemen dengan atribut tertentu yang nilainya dimulai dengan nilai spesifik atau nilai spesifik diikuti oleh tanda hubung.
+                <br>
+                Contoh: <code>[lang|="en"]</code> memilih elemen dengan atribut <code>lang</code> yang nilainya dimulai dengan "en".
+            </p>
+            <div class="box-container">
+                <div lang="en-US">Bahasa Inggris Amerika Serikat</div>
+                <div lang="en-GB">Bahasa Inggris Inggris</div>
+                <div lang="fr-FR">Bahasa Prancis Prancis</div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS [atribut^="value"] selector</h2>
+            <p>
+                <span>[atribut^="value"]</span> memilih elemen dengan atribut tertentu yang nilainya diawali dengan nilai spesifik.
+                <br>
+                Contoh: <code>a[class^top="value"]</code> memilih semua elemen <code>&lt;a&gt;</code> dengan atribut <code>class</code> yang
+                nilainya diawali dengan "top".
+            </p>
+            <div class="box-container">
+                <div class="box">
+                    <a href="https://www.w3schools.com/css/css_attribute_selectors.asp" 
+                    class="top-one" target="_blank">W3schools</a>
+                    <a href="http://www.example.com" class="bottom">tautan</a>
+                    <a href="https://roadmap.sh/dashboard" 
+                    class="top-two" target="_blank">Roadmap.sh</a>
+                    <a href="http://www.example.com" class="bottom">tautan</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS [atribut$="value"] selector</h2>
+            <p>
+                <span>[atribut$="value"]</span> memilih elemen dengan atribut tertentu yang nilainya diakhiri dengan nilai spesifik.
+                <br>
+                Contoh: <code>img[src$=".png"]</code> memilih semua elemen <code>&lt;img&gt;</code> dengan atribut <code>src</code> yang
+                nilainya diakhiri dengan ".png".
+            </p>
+            <div class="box-container">
+                <div class="box">
+                    <img src="img/image3.png" alt="Gambar PNG 3" width="100">
+                    <img src="img/image1.jpg" alt="Gambar JPG 2" width="100">
+                    <img src="img/image2.png" alt="Gambar PNG 1" width="100">
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS [atribut*="value"] selector</h2>
+            <p>
+                <span>[atribut*="value"]</span> memilih elemen dengan atribut tertentu yang nilainya mengandung nilai spesifik di mana saja dalam string.
+                <br>
+                Contoh: <code>a[href*="example"]</code> memilih semua elemen <code>&lt;a&gt;</code> dengan atribut <code>href</code> yang
+                nilainya mengandung "example".
+            </p>
+            <div class="box-container">
+                <div class="card">
+                    <img src="img/image3.png" alt="Gambar PNG 3" width="100">
+                    <img src="img/image1.jpg" alt="Gambar JPG 2" width="100">
+                    <img src="img/image2.png" alt="Gambar PNG 1" width="100">
+                    <img src="img/image1.jpg" alt="Gambar JPG 2" width="100">
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Form username & password</h2>
+            <div class="box-container">
+                <form action="#" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Masukkan nama pengguna" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required>
+                    <input type="submit" value="Kirim">
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

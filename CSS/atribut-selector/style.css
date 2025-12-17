@@ -1,0 +1,114 @@
+body {
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+span {
+    color: red;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px greenyellow;
+    letter-spacing: 5px;
+}
+h2 {
+    letter-spacing: 3px;
+}
+.container {
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+.container:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+
+/* [attribut] */
+.box-container {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    height: 100%;
+}
+.box-container .link a {
+    display: grid;
+    width: 200px;
+}
+.box-container .link a[target] {
+    color: black;
+    font-weight: 800;
+    margin: 5px 20px;
+}
+
+/* [atribut="value"] */
+.box-container input[type="checkbox"] {
+    margin: 5px 20px;
+    accent-color: #14a943;
+    cursor: pointer;
+}
+
+/* [atribut~="value"] */
+.box-container [class~="highlight"] {
+    background-color: yellow;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* [atribut|="value"] */
+.box-container div[lang|="en"] {
+    font-style: italic;
+    color: blue;
+}
+
+/* [atribut^="value"] */
+.box-container .box a[href^="https"] {
+    border: 5px solid green;
+    border-radius: 10px;
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/* [atribut$="value"] */
+.box-container .box img[src$=".png"] {
+    border: 5px solid orange;
+    border-radius: 10px;
+}
+
+/* [atribut*="value"] */
+.box-container .card img[src*="jpg"] {
+    border: 5px solid purple;
+    border-radius: 10px;
+}
+
+/* username & password */
+form label, input {
+    display: block;
+}
+form input {
+    margin: 5px 0;
+}
+form input[type="text"] {
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+form input[type="password"] {
+    background-color: lightgray;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+form input[type="submit"] {
+    cursor: pointer;
+    background-color: #14a943;
+    color: white;
+    font-weight: 800;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
