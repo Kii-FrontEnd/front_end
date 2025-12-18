@@ -93,9 +93,14 @@ h2 {
 .flex ul li:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
-.flex:hover > ul li:not(:hover) {
+/* blur ketika diarahkan pada teks jika diarahkan pada background tidak blur */
+.flex:has(ul li:hover)  ul li:not(:hover) {
   filter: blur(2px);
 }
+/* ketika cursor diarahkan background semua akan blur */
+/* .flex:hover > ul li:not(:hover) {
+  filter: blur(2px);
+} */
 
 .aktif {
   background-color: rgba(0, 0, 0, 0.6);
