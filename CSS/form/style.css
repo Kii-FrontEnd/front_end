@@ -1,0 +1,354 @@
+body {
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+span {
+    color: red;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px greenyellow;
+    letter-spacing: 5px;
+}
+h2 {
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+.container {
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px ;
+    transition: 0.5s ease;
+}
+
+/* form */
+.cth-form {
+    box-shadow: 0 0 10px black;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.cth-form:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.cth-form label {
+    display: inline-block;
+    font-weight: bold;
+}
+.cth-form input[type="text"], select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.cth-form input[type="submit"] {
+    background-color: greenyellow;
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+.cth-form input[type="submit"]:hover {
+    background-color: limegreen;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/* width */
+.width {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.width:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.width label {
+    display: block;
+    font-weight: 800;
+}
+.width input[type="text"] {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* padding */
+.padding {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.padding:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.padding label {
+    display: block;
+    font-weight: 800;
+}
+.padding input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* border */
+.border {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.border:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.border label {
+    display: block;
+    font-weight: 800;
+}
+.border input[type="email"] {
+    width: 100%;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.border input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    box-sizing: border-box;
+}
+
+/* background-color dan color */
+.bg-color {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.bg-color:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.bg-color label {
+    display: block;
+    font-weight: 800;
+}
+.bg-color input[type="text"] {
+    width: 100%;
+    background-color: lightgray;
+    color: darkblue;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.bg-color input[type="text"]::placeholder {
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* focus */
+.focus {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.focus:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.focus label {
+    display: block;
+    font-weight: 800;
+}
+.focus input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.focus input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.focus input[type="text"]:focus {
+    background-color: greenyellow;
+    outline: none;
+}
+.focus input[type="password"]:focus {
+    border: 3px solid green;
+    outline: none;
+}
+
+/* icon/gambar */
+.icon {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.icon:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.icon label {
+    display: block;
+    font-weight: 800;
+}
+.icon input[type="text"] {
+    width: 100%;
+    padding: 15px 20px 15px 50px;
+    margin: 10px 0 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-image: url(image.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50px;
+}
+.icon input[type="password"] {
+    width: 25%;
+    padding: 15px 20px 15px 50px;
+    margin: 10px 0 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-image: url(image.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    transition: 1s ease;
+}
+.icon input[type="password"]:focus {
+    width: 100%;
+}
+
+/* textarea */
+.textarea {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.textarea:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.textarea label {
+    display: block;
+    font-weight: 800;
+}
+.textarea textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none; /*digunakan untuk mengatur ukuran textarea */
+}
+
+/* style forms button */
+.button {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.button:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.button input[type="button"],
+.button input[type="reset"],
+.button input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button input:hover {
+    background-color: #45a049;
+}
+
+/* responsife forms */
+.responsive {
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+.responsive:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.responsive label {
+    display: block;
+    font-weight: 800;
+    margin: 10px auto;
+}
+.responsive input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.responsive textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    border-radius: 10px;
+    resize: none;
+}
+.responsive input[type="submit"] {
+    background-color: greenyellow;
+    color: black;
+    padding: 15px 20px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+.responsive input[type="submit"]:hover {
+    background-color: limegreen;
+    color: white;
+    letter-spacing: 2px;
+}

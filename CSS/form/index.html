@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>forms css</h1>
+        <section>
+            <h2>styling bentuk form</h2>
+            <p>
+                CSS digunakan untuk gaya bentuk HTML. Tampilan bentuk 
+                HTML dapat diubah menggunakan CSS dengan menargetkan elemen 
+                formulir seperti <code>&lt;input&gt;</code>, <code>&lt;label&gt;</code>, 
+                <code>&lt;select&gt;</code>, <code>&lt;button&gt;</code> dan lainnya.
+            </p>
+            <form class="cth-form">
+                <label for="nama">Nama Depan:</label><br>
+                <input type="text" id="nama" name="nama">
+                
+                <label for="email">Nama Belakang:</label><br>
+                <input type="text" id="nama" name="nama">
+                
+                <label for="negara">Negara:</label><br>
+                <select id="negara" name="negara">
+                    <option value="indonesia">Indonesia</option>
+                    <option value="malaysia">Malaysia</option>
+                    <option value="singapura">Singapura</option>
+                </select>
+                
+                <input type="submit" value="Kirim">
+            </form>
+        </section>
+        <hr>
+
+        <section>
+            <h2>styling bentuk input fields</h2>
+            <p>
+                Dengan CSS anda dapat menata sebagian besar jenis input yang berbeda,
+                seperti <code>text</code>, <code>password</code>, <code>checkbox</code>, 
+                <code>radio</code>, <code>submit</code>, dan lainnya. Anda juga bisa 
+                mengubah input dan form button.
+                <br>
+                Beberapa properti CSS yang umum digunakan untuk menata input fields adalah:
+                <ul>
+                    <li><code>width</code> dan <code>height</code>: Mengatur ukuran input fields.</li>
+                    <li><code>padding</code> dan <code>margin</code>: Menambahkan ruang di dalam dan di luar input fields.</li>
+                    <li><code>border</code>: Mengubah gaya, warna, dan lebar border input fields.</li>
+                    <li><code>background-color</code>: Mengubah warna latar belakang input fields.</li>
+                    <li><code>font-size</code> dan <code>color</code>: Mengubah ukuran dan warna teks di dalam input fields.</li>
+                    <li><code>:focus</code> pseudo-class: Menata input fields saat mereka mendapatkan fokus.</li>
+                </ul>
+            </p>
+        </section>
+        <hr>
+
+        <section>
+            <h2>style input width</h2>
+            <p>
+                Anda dapat mengatur lebar input fields menggunakan properti 
+                <code>width</code> di CSS. Misalnya, untuk mengatur lebar 
+                semua input text fields menjadi 100%.
+                <br>
+                <strong>Tip:</strong> Lebar default dari bidang input text adalah
+                sekitar 20 karakter.
+                Anda dapat menggunakan kode CSS berikut:
+            </p>
+            <div class="width">
+                <label for="text">Nama Depan</label>
+                <input type="text" placeholder="isi kolom ini">
+            </div>
+            <p>
+                Contoh diatas berlaku untuk semua elemen <code>&lt;input&gt;</code>.
+                Jika anda hanya ingin gaya jenis input tertentu, anda dapat 
+                menggunakan selector attribut:
+            </p>
+            <ul>
+                <li>
+                    <span>input[type=text]</span> - hanya akan memilih bidang teks
+                </li>
+                <li>
+                    <span>input[type=password]</span> - hanya akan memilih bidang password
+                </li>
+                <li>
+                    <span>input[type=number]</span> - hanya akan memilih bidang angka
+                </li>
+                <li>
+                    Dan lain-lain... 
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section>
+            <h2>style input padding</h2>
+            <p>
+                Anda dapat menambahkan ruang di dalam input fields menggunakan 
+                properti <code>padding</code> di CSS. Misalnya, untuk menambahkan 
+                padding 10px di dalam semua input text fields, anda dapat 
+                menggunakan kode CSS berikut:
+            </p>
+            <div class="padding">
+                <label for="text">Nama Depan</label>
+                <input type="text" placeholder="isi kolom ini">
+                <label for="text">Nama Belakang</label>
+                <input type="text" placeholder="isi kolom ini">
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>style input border</h2>
+            <p>
+                Anda dapat mengubah gaya, warna, dan lebar border input fields 
+                menggunakan properti <code>border</code> di CSS. Misalnya, untuk 
+                mengatur border 2px solid biru pada semua input text fields, 
+                anda dapat menggunakan kode CSS berikut:
+            </p>
+            <div class="border">
+                <label for="email">Border radius</label>
+                <input type="email" placeholder="isi kolom ini">
+                <label for="text">Border Bottom</label>
+                <input type="text" placeholder="isi kolom ini">
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>stle input background-color dan color</h2>
+            <p>
+                Anda dapat mengubah warna latar belakang dan warna teks di dalam 
+                input fields menggunakan properti <code>background-color</code> 
+                dan <code>color</code> di CSS. Misalnya, untuk mengatur latar 
+                belakang abu-abu muda dan teks hitam pada semua input text fields, 
+                anda dapat menggunakan kode CSS berikut:
+            </p>
+            <div class="bg-color">
+                <label for="text">Background Color dan Color</label>
+                <input type="text" placeholder="isi kolom ini">
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>input style with focus</h2>
+            <p>
+                Anda dapat menata input fields saat mereka mendapatkan fokus 
+                menggunakan pseudo-class <code>:focus</code> di CSS. Misalnya, 
+                untuk mengubah border menjadi hijau saat input text fields 
+                mendapatkan fokus, anda dapat menggunakan kode CSS berikut:
+            </p>
+            <div class="focus">
+                <label for="text">baackground-color</label>
+                <input type="text" placeholder="isi kolom ini">
+                <label for="password">border</label>
+                <input type="password" placeholder="isi kolom ini">
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>style input with icon/image</h2>
+            <p>
+                Anda dapat menambahkan ikon atau gambar di dalam input fields 
+                menggunakan CSS. Misalnya, untuk menambahkan ikon pencarian di 
+                dalam input text fields, anda dapat menggunakan kode CSS berikut:
+            </p>
+            <div class="icon">
+                <label for="search">Input with icon/image</label>
+                <input name="search" type="text" placeholder="Search...">
+                <label for="search">Input with icon/image animation</label>
+                <input name="search" type="password" placeholder="Search...">
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>style textarea</h2>
+            <p>
+                Anda dapat menata elemen <code>&lt;textarea&gt;</code> menggunakan 
+                CSS. Misalnya, untuk mengatur lebar, tinggi, border, dan padding 
+                pada textarea, anda dapat menggunakan kode CSS berikut:
+            </p>
+            <div class="textarea">
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan anda disini..."></textarea>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>style forms button</h2>
+            <p>
+                Anda dapat menata elemen <code>&lt;button&gt;</code> menggunakan 
+                CSS. Misalnya, untuk mengubah warna latar belakang, warna teks, 
+                border, padding, dan menambahkan efek hover pada tombol, anda 
+                dapat menggunakan kode CSS berikut:
+            </p>
+            <div class="button">
+                <input type="submit" value="Kirim"></input>
+                <input type="reset" value="Reset"></input>
+                <input type="button" value="Button"></input>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS responsif forms</h2>
+            <p>
+                Anda dapat membuat formulir yang responsif menggunakan CSS media 
+                queries. Misalnya, untuk menyesuaikan lebar input fields dan 
+                tombol pada perangkat dengan layar kecil, anda dapat menggunakan 
+                kode CSS berikut:
+            </p>
+            <div class="responsive">
+                <label for="nama">Nama Depan:</label>
+                <input type="text" id="nama" name="nama">
+                
+                <label for="nama">Nama Belakang:</label>
+                <input type="text" id="nama" name="nama">
+
+                <label for="pesan">Pesan</label>
+                <textarea name="pesan" id="pesan" placeholder="tulis pesanmu disini....."></textarea>
+                
+                <input type="submit" value="Kirim">
+        </section>
+    </div>
+</body>
+</html>
