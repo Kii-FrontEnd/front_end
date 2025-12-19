@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Perhitungan/counter</h1>
+        <p>
+            Dengan menggunakan CSS Counter, Anda dapat menambahkan penomoran 
+            otomatis pada elemen HTML seperti daftar atau paragraf. 
+            Ini sangat berguna untuk membuat daftar bernomor atau menandai 
+            bagian tertentu dalam dokumen Anda tanpa perlu menambahkan nomor 
+            secara manual.
+        </p>
+        <hr>
+
+        <section>
+            <h2>CSS automatic numbering dengan counter</h2>
+            <p>
+                Perhitungan CSS seperti "variabel". Nilai variabel dapat ditingkatkan
+                atau diatur ulang menggunakan aturan CSS. Anda dapat menggunakan
+                perhitungan CSS untuk membuat penomoran otomatis pada elemen HTML.
+                Berikut properti yang digunakan untuk CSS counter:
+            </p>
+            <ul>
+                <li>
+                    <span>counter-reset</span> - mengatur ulang nilai counter ke nilai tertentu.
+                </li>
+                <li>
+                    <span>counter-increment</span> - meningkatkan nilai counter sebesar nilai tertentu.
+                </li>
+                <li>
+                    <span>content-</span> - menyisipkan nilai counter ke dalam konten elemen.
+                    (Digunakan bersama dengan pseudo-elemen seperti <span>::before</span> atau <span>::after</span>,
+                    untuk memasukkan nilai counter ke dalam konten elemen.)
+                </li>
+                <li>
+                    <span>counter()</span> dan <span>counters()</span> - fungsi yang digunakan untuk mengambil nilai counter.
+                </li>
+            </ul>
+            <p>
+                Untuk menggunakan counter CSS, pertama-tama harus diuat dengan <span>counter-reset</span> properti.
+            </p>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS meningkatkan dan mengurangi counter</h2>
+            <p>
+                Contoh berikut membuat counter untuk halaman (dalam bagian body),
+                kemudian meningkatkan nilai counter dengan 1 untuk setiap <code>&lt;h2&gt;</code>
+                elemen dan menambahkan teks "bagian + nilai counter." Untuk awal dari setiap
+                <code>&lt;h2&gt;</code> elemen.
+                <br>
+            </p>
+            <div class="box-container">
+                <h2>Contoh</h2>
+                <div class="positif">
+                    <h3>Bagian Satu</h3>
+                    <p>Ini adalah paragraf pertama di bagian satu.</p>
+                    <h3>Bagian Dua</h3>
+                    <p>Ini adalah paragraf pertama di bagian dua.</p>
+                    <h3>Bagian Tiga</h3>
+                    <p>Ini adalah paragraf pertama di bagian tiga.</p>
+                </div>
+                <hr>
+
+                <p>
+                    Properti <span>counter-increment</span> memiliki paramter kedua. Nilai default ini
+                    adalah 1 (yang berarti counter akan ditingkatkan sebesar 1). Namun, Anda dapat
+                    mengatur nilai ini ke nilai negatif (-1) untuk mengurangi counter.
+                    <br>
+                    Contoh beriikut mengurangi counter untuk setiap <code>&lt;h3&gt;</code> elemen:
+                </p>
+                <div class="negatif">
+                    <h3>Bagian Satu</h3>
+                    <p>Ini adalah paragraf pertama di bagian satu.</p>
+                    <h3>Bagian Dua</h3>
+                    <p>Ini adalah paragraf pertama di bagian dua.</p>
+                    <h3>Bagian Tiga</h3>
+                    <p>Ini adalah paragraf pertama di bagian tiga.</p>
+                </div>
+                <hr>
+
+                <p>
+                    Contoh berikut adalah untuk meningkatkan counter sebesar 2 untuk setiap
+                    <code>&lt;h3&gt;</code> elemen:
+                </p>
+                <div class="plus-two">
+                    <h3>Bagian Satu</h3>
+                    <p>Ini adalah paragraf pertama di bagian satu.</p>
+                    <h3>Bagian Dua</h3>
+                    <p>Ini adalah paragraf pertama di bagian dua.</p>
+                    <h3>Bagian Tiga</h3>
+                    <p>Ini adalah paragraf pertama di bagian tiga.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>CSS menggunakan dua counter</h2>
+            <p>
+                Contoh berikut menciptakan satu counter untuk halaman (bernama "section")
+                dan satu counter untuk setiap <code>&lt;h4&gt;</code> elemen
+                (dinamakanan "subsection"). Counter "section" diatur ulang setiap kali
+                <code>&lt;h3&gt;</code> elemen muncul, dan counter "subsection" ditingkatkan
+                setiap kali <code>&lt;h4&gt;</code> elemen muncul. Nilai counter
+                kemudian ditampilkan di dalam <code>&lt;h3&gt;</code> dan <code>&lt;h4&gt;</code> elemen.
+            </p>
+            <div class="box-container">
+                <h2>Contoh</h2>
+                <div class="dual-counter">
+                    <h3>Bagian Satu</h3>
+                    <p>Ini adalah paragraf pertama di bagian satu.</p>
+                    <h4>Subbagian 1.1</h4>
+                    <p>Ini adalah paragraf pertama di subbagian 1.1.</p>
+                    <h4>Subbagian 1.2</h4>
+                    <p>Ini adalah paragraf pertama di subbagian 1.2.</p>
+                    <h3>Bagian Dua</h3>
+                    <p>Ini adalah paragraf pertama di bagian dua.</p>
+                    <h4>Subbagian 2.1</h4>
+                    <p>Ini adalah paragraf pertama di subbagian 2.1.</p>
+                    <h4>Subbagian 2.2</h4>
+                    <p>Ini adalah paragraf pertama di subbagian 2.2.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>counter CSS() fungsi </h2>
+            <p>
+                Fungsi <span>counter()</span> digunakan untuk mengambil nilai counter tunggal
+                dan menampilkannya di dalam elemen. Fungsi ini biasanya digunakan bersama
+                dengan pseudo-elemen seperti <span>::before</span> atau <span>::after</span>.
+                <br>
+                Berikut adalah sintaks dasar untuk fungsi <span>counter()</span>:
+            </p>
+            <pre>
+                counters(counter-name, style)
+            </pre>
+            <p>
+                Di mana <code>counter-name</code> adalah nama counter yang ingin Anda ambil
+                nilainya, dan <code>style</code> adalah gaya penomoran yang diinginkan
+                (misalnya, decimal, lower-roman, upper-roman, lower-alpha, upper-alpha, dll.).
+            </p>
+            <p>
+                Contoh berikut menunjukkan cara menggunakan fungsi <span>counter()</span>
+                untuk menampilkan nilai counter di dalam elemen <code>&lt;h2&gt;</code>:
+            </p>
+            <div class="box1-container">
+                <h2>Contoh</h2>
+                <div class="fungsi-counter">
+                    <p>list 1</p>
+                    <ol>
+                        <li>item
+                            <ol>
+                                <li>item</li>
+                                <li>item</li>
+                            </ol>
+                        </li>
+                        <li>item
+                            <ol>
+                                <li>item</li>
+                                <li>item</li>
+                            </ol>
+                        </li>
+                        <li>item
+                            <ol>
+                                <li>item</li>
+                                <li>item</li>
+                            </ol>
+                        </li>
+                    </ol>
+                    <p>list 2</p>
+                    <ol>
+                    <li>item
+                        <ol>
+                            <li>item
+                                <ol>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ol>
+                            </li>
+                            <li>item
+                                <ol>
+                                    <li>item</li>
+                                    <li>item</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                        <li>item
+                            <ol>
+                                <li>item
+                                    <ol>
+                                        <li>item</li>
+                                        <li>item</li>
+                                    </ol>
+                                </li>
+                                <li>item
+                                    <ol>
+                                        <li>item</li>
+                                        <li>item</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>item
+                            <ol>
+                                <li>item</li>
+                                <li>item
+                                    <ol>
+                                        <li>item</li>
+                                        <li>item</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

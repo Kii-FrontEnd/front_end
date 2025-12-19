@@ -1,0 +1,151 @@
+body {
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+span {
+    color: red;
+}
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 10px greenyellow;
+    letter-spacing: 5px;
+}
+h2 {
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+.container {
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px ;
+    transition: 0.5s ease;
+}
+
+/* contoh counter */
+.box-container {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    height: 100%;
+    /* bagian ini adalah inti dari counter */
+    counter-reset: section;
+}
+.box-container:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+
+/* positif */
+.box-container .positif {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    height: 100%;
+}
+.box-container .positif:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.box-container .positif h3::before {
+    /* artinya setiap h3 di dalam .example akan menambah counter section sebanyak 1 */
+    counter-increment: section; 
+    content: "Section " counter(section) ": ";
+    color: blue;
+    font-weight: bold;
+}
+
+/* negatif */
+.box-container .negatif {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    height: 100%;
+}
+.box-container .negatif:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.box-container .negatif h3::before {
+    /* artinya setiap h3 di dalam .example akan menambah counter section sebanyak 1 */
+    counter-increment: section -1; 
+    content: "Section " counter(section) ": ";
+    color: blue;
+    font-weight: bold;
+}
+
+/* kelipatan 2 */
+.box-container .plus-two {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    height: 100%;
+}
+.box-container .plus-two:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.box-container .plus-two h3::before {
+    /* artinya setiap h3 di dalam .example akan menambah counter section sebanyak 1 */
+    counter-increment: section 2; 
+    content: "Section " counter(section) ": ";
+    color: blue;
+    font-weight: bold;
+}
+
+/* menggunakan dua counter */
+.dual-counter {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    height: 100%;
+}
+.dual-counter:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.dual-counter h3 {
+    /* artinya  */
+    counter-reset: subsection;
+}
+.dual-counter h3::before {
+    /* artinya setiap h3 di dalam .example akan menambah counter section sebanyak 1 */
+    counter-increment: section;
+    content: "Section " counter(section) ". ";
+    color: blue;
+    font-weight: bold;
+}
+.dual-counter h4:before {
+    /* artinya setiap h4 di dalam .dual-counter akan menambah counter subsection sebanyak 1 */
+    counter-increment: subsection;
+    content: " Subsection " counter(section) "." counter(subsection) " ";
+    color: green;
+    font-weight: bold;
+}
+
+/* fungsi counter */
+.box1-container {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    height: 100%;
+}
+.box1-container:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.fungsi-counter {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    height: 100%;
+}
+.fungsi-counter:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.fungsi-counter ol {
+    counter-reset: section;
+    list-style: none;
+}
+.fungsi-counter ol li::before {
+    counter-increment: section;
+    content: "Point " counters(section, ". ") " ";
+    color: purple;
+    font-weight: bold;
+}
