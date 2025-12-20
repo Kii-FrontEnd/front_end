@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math fuction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS Matematika Fungsi</h1>
+        <p>
+            Fungsi matematika CSS memungkinkan eksprei matematika digunakan
+            sebagai nilai properti. Dalam bab ini, kita akan menjelaskan fungsi
+            matematika berikut:
+        </p>
+        <ul>
+            <li><span>calc()</span></li>
+            <li><span>max()</span></li>
+            <li><span>min()</span></li>
+            <li><span>clamp()</span></li>
+        </ul>
+
+        <section>
+            <h2>Fungsi dari CSS Calc()</h2>
+            <p>
+                Fungsi <span>calc()</span> melakukan perhitungan matemis yang
+                akan digunakan sebagai nilai properti.
+                <br><br>
+                Fungsi <span>calc()</span> mendukung penambahan (+), pengurangan(-),
+                perkalian(*), dan pembagian(/), serta dapat menggabungkan beberapa
+                unit, seperti piksel(px) dan persentase(%).
+            </p>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>
+                    Gunakan calc() untuk menghitung width dan height elemen <code>&lt;div&gt;</code>
+                </p>
+                <div class="calc">
+                    <h3>Fungsi calc()</h3>
+                    <p>
+                        <strong>width</strong> #calc diatur ke 100% dikurangi 100px untuk padding. Hal ini memastikan
+                        bahwa #calc
+                        mengambil 100% lebar wadah, dengan offset 50px di setiap sisi (dengan margin: auto;).
+                        <br>
+                        <strong>height</strong> #calc diatur ke 30% dari tinggi viewport + 50px.
+                    </p>
+                    <div id="calc">Fungsi calc()</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Fungsi CSS max()</h2>
+            <p>
+                Fungsi <span>max()</span> megambil daftar nilai yang dipisahkan koma,
+                dan menggunakan nilai terbesar dari daftar sebagai nilai properti.
+            </p>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>
+                    Gunakan max() untuk mengatur width #max ke nilai mana yang terbesar,
+                    antara 50% atau 300px.
+                </p>
+                <div class="max">
+                    <h3>Fungsi max()</h3>
+                    <p>
+                        Gunakan max() untuk mengatur lebar #max ke mana saja yang terbesar: 50% atau 300px.
+                        Ubah ukuran jendela browser untuk melihat efeknya!
+                    </p>
+                    <div id="max">Fungsi max()</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Fungsi CSS min()</h2>
+            <p>
+                Fungsi <span>min()</span> megambil daftar nilai yang dipisahkan koma,
+                dan menggunakan nilai terkecil dari daftar sebagai nilai properti.
+            </p>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>
+                    Gunakan min() untuk mengatur width #max ke nilai mana yang terbesar,
+                    antara 50% atau 300px.
+                </p>
+                <div class="min">
+                    <h3>Fungsi min()</h3>
+                    <p>
+                        Gunakan min() untuk mengatur lebar #max ke mana saja yang terbesar: 50% atau 300px.
+                        Ubah ukuran jendela browser untuk melihat efeknya!
+                    </p>
+                    <div id="min">Fungsi min()</div>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </div>
+</body>
+
+</html>
