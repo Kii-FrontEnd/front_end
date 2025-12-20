@@ -1,0 +1,152 @@
+body {
+  background-color: beige;
+  font-family: "Courier New", Courier, monospace;
+  text-align: justify;
+}
+span {
+  color: red;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 0 10px greenyellow;
+  letter-spacing: 5px;
+}
+h2 {
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+.container {
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  transition: 0.5s ease;
+}
+.box-container {
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+
+/* example */
+.example {
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.example:hover {
+  box-shadow: inset 0 0 5px gray;
+}
+.example p {
+  padding: 10px;
+  background-color: yellow !important;
+}
+
+/* example1 */
+@media (prefers-reduced-motion: no-preference) {
+  /* media query aksesibilitas: hanya bila user tidak meminta reduced motion */
+  .example1 .animated-element {
+    /* target elemen animasi di dalam .example1 */
+    animation-duration: 3s; /* durasi setiap siklus animasi */
+    animation-iteration-count: infinite; /* ulangi animasi tanpa batas */
+    animation-direction: alternate; /* arah bergantian (bolak-balik) */
+  }
+}
+
+.example1 .animated-element {
+  /* aturan dasar untuk elemen animasi */
+  width: 100px;
+  height: 100px;
+  background-color: orange !important; /* warna latar, dipaksa dengan !important */
+  position: relative; /* posisi relatif agar left pada keyframes memindahkannya */
+  animation: example 3s infinite alternate; /* shorthand animasi: nama, durasi, iterasi, arah */
+}
+
+@keyframes example {
+  0% {
+    /* awal animasi */
+    background-color: red;
+    left: 0px; /* posisi horizontal pada 0% */
+  }
+  25% {
+    background-color: darkcyan;
+    left: 100px; /* geser ke kanan 100px */
+    border-radius: 15px; /* sudut sedikit membulat */
+  }
+  50% {
+    background-color: blue;
+    left: 200px; /* geser lebih jauh */
+    border-radius: 30px; /* sudut lebih membulat */
+  }
+  100% {
+    background-color: red;
+    left: 350px; /* posisi paling kanan */
+    border-radius: 50%; /* sudut paling bulat */
+  }
+}
+
+/* example2 */
+.example2 {
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.example2:hover{
+    box-shadow: inset 0 0 5px gray;
+}
+.example2 a.button {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: green;
+  padding: 10px;
+  border: 2px solid gray;
+}
+
+/* example3 */
+.example3 {
+    box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+}
+.example3:hover{
+    box-shadow: inset 0 0 5px gray;
+}
+.example3 a.button {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: green;
+  padding: 5px;
+  border: 2px solid gray;
+}
+.example3 #myDiv a {
+    background-color: yellow;
+    color: red;
+    text-decoration: none;
+}
+
+.example4 {
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+}
+.example4:hover {
+    box-shadow: inset 0 0 5px gray;
+}
+.example4 a.button {
+  text-decoration: none;
+  color: whitesmoke !important;
+  background-color: green !important;
+  padding: 10px !important;
+  border: 2px solid gray !important;
+}
+.example4 #myDiv a {
+    background-color: yellow;
+    color: red;
+    text-decoration: none;
+}

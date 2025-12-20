@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS !important</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS !important</h1>
+        <p>
+            <span>!important</span> aturan digunakan untuk memnberikan nilai properti
+            tertentu adalah prioritas tertinggi, mengesampingkan aturan lain yang mungkin bertentangan.
+            <br>
+            aturan <span>!important</span> akan mengesampingkan <strong>SEMUA</strong>
+            aturan CSS lainnya, termasuk aturan inline. Cara penulisan adalah dengan menambahkan
+            <span>!important</span> setelah nilai properti, diikuti dengan titik koma (;).
+        </p>
+        <p>
+            <strong>Sintaks:</strong>
+        </p>
+        <pre class="box-container">
+<code>
+    p {
+        color: blue !important;
+    }
+</code>
+        </pre>
+
+        <section>
+            <h2>CSS ! contoh aturan important</h2>
+            <p>
+                Dalam contoh berikut, ketiga paragraf akan mendapatkan latar beakang
+                kuning. Meskipun inline style, attribut selector, dan attribut class
+                memiliki prioritas yang lebih tinggi, aturan dengan <span>!important</span>
+                akan mengesampingkan semuanya.
+            </p>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>Menggunakan !important aturan</p>
+                <div class="example">
+                    <p style="background-color: lightblue;">
+                        Paragraf ini memiliki latar belakang kuning
+                        meskipun ada inline style yang menetapkan
+                        latar belakang biru muda.
+                    </p>
+
+                    <p style="background-color: lightgreen;">
+                        Paragraf ini memiliki latar belakang kuning
+                        meskipun ada class selector dan inline style
+                        yang menetapkan latar belakang hijau muda.
+                    </p>
+
+                    <p style="background-color: lightcoral;">
+                        Paragraf ini memiliki latar belakang kuning
+                        meskipun ada ID selector dan inline style
+                        yang menetapkan latar belakang merah muda.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>beberapa kegunaan !important</h2>
+            <p>
+                <span>!important</span> digunakan untuk memaksa aturan CSS tertentu untuk diterapkan, 
+                meskipun aturan lain memiliki prioritas lebih tinggi. Sepert:
+            </p>
+            <ol>
+                <li>
+                    <strong>Untuk mensponsori style yang tidak bisa dikesampingkan dengan cara lain.</strong>
+                    Ini bisa berguna ketika bekerja dengan CSS pihak ketiga atau framework di mana Anda tidak 
+                    memiliki kontrol penuh atas aturan CSS yang ada. Dengan menggunakan <span>!important</span>,
+                    Anda dapat memastikan bahwa aturan tertentu diterapkan sesuai keinginan Anda.
+                </li>
+                <li>
+                    <strong>Untuk menghormati preferensi pengguna.</strong> Beberapa pengguna mungkin memiliki
+                    preferensi khusus untuk tampilan situs web, seperti mode gelap atau ukuran font yang lebih besar,
+                    dan sedikit animasi. CSS memiliki <span>@media</span> fiitur yang disebut <span>prefers-reduced-motion</span>
+                    yang memungkinkan pengembang web untuk mendeteksi preferensi ini dan menyesuaikan gaya situs web
+                    sesuai kebutuhan. Dalam kasus ini, menggunakan <span>!important</span> dapat membantu memastikan bahwa gaya yang sesuai diterapkan
+                    untuk menghormati preferensi pengguna.
+                </li>
+                <div class="box-container">
+                    <h3>Contoh</h3>
+                    <div class="example1">
+                        <div class="animated-element"></div>
+                    </div>
+                </div>
+                <li>
+                    <strong>Untuk menciptakan style yang sangat spesifik dan tidak dapat diubah untuk yang spesifik elemen.</strong>
+                    Asumsikan kami ingin tampilan khusus untuk semua tombol link pada halaman.
+                </li>
+                <div class="box-container">
+                    <h3>Contoh</h3>
+                    <p>
+                        Tombol link style dengan background color green, teks whitesmoke,
+                        10px padding dan border 2px solid gray.
+                    </p>
+                    <div class="example2">
+                        <p>Tombol link standar
+                            <a href="#" class="button">click me</a>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Sekarang, jika kita menempatkan tombol link di dalam elemen lain dengan spesifisitas
+                    yang lebih tinggi, properti mungkin masuk dalam konflik. Berikut ini adalah
+                    contohnya:
+                </p>
+                <div class="box-container">
+                    <h3>Contoh</h3>
+                    <div class="example3">
+                        <p>
+                            Standard link button: 
+                            <a href="#" class="button">Click me</a>
+                        </p>
+                        <div id="myDiv">
+                            <p>
+                                link text inside #myDiv
+                                <a href="#">CSS Tutorial</a>
+                            </p>
+                            <p>
+                                link button inside #myDiv
+                                <a href="#" class="button">CSS Tutorial</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    Untuk <strong>Memaksa</strong> semua tombol untuk memiliki tampilan yang sama tidak peduli
+                    elemen, atribut, pproperti atau class apa, kita dapat menambahkan <span>!important</span>
+                    aturan untuk properti tombol yang kita inginkan sperti ini:
+                </p>
+                <div class="box-container">
+                    <h3>Contoh</h3>
+                    <div class="example4">
+                        <p>
+                            Standard link button: 
+                            <a href="#" class="button">Click me</a>
+                        </p>
+                        <div id="myDiv">
+                            <p>
+                                link text inside #myDiv
+                                <a href="#">CSS Tutorial</a>
+                            </p>
+                            <p>
+                                link button inside #myDiv
+                                <a href="#" class="button">CSS Tutorial</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </ol>
+        </section>
+    </div>
+</body>
+
+</html>
