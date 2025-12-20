@@ -33,6 +33,10 @@
                 perkalian(*), dan pembagian(/), serta dapat menggabungkan beberapa
                 unit, seperti piksel(px) dan persentase(%).
             </p>
+            <h3>CSS syntax</h3>
+            <div class="syntax">
+                <code>calc(<em>expression</em>)</code>
+            </div>
             <div class="box-container">
                 <h3>Contoh</h3>
                 <p>
@@ -59,6 +63,10 @@
                 Fungsi <span>max()</span> megambil daftar nilai yang dipisahkan koma,
                 dan menggunakan nilai terbesar dari daftar sebagai nilai properti.
             </p>
+            <div class="syntax">
+                <code>max(<em>value1, value2, ....</em>)</code>
+            </div>
+            <h3>CSS syntax</h3>
             <div class="box-container">
                 <h3>Contoh</h3>
                 <p>
@@ -83,6 +91,10 @@
                 Fungsi <span>min()</span> megambil daftar nilai yang dipisahkan koma,
                 dan menggunakan nilai terkecil dari daftar sebagai nilai properti.
             </p>
+            <h3>CSS syntax</h3>
+            <div class="syntax">
+                <code>min(<em>value1, value2, ....</em>)</code>
+            </div>
             <div class="box-container">
                 <h3>Contoh</h3>
                 <p>
@@ -100,6 +112,49 @@
             </div>
         </section>
         <hr>
+
+        <section>
+            <h2>CSS fungsi clamp()</h2>
+            <p>
+                Fungsi <span>clamp()</span> digunakan untuk menetapkan nilai yang akan
+                menyesuaikan secara responsif antara nilai minimum dan nilai maksimum
+                tergantung pada ukuran viewport.
+                <br><br>
+                Fungsi <span>clamp()</span> memiliki 3 paramater: niali minimum, parafase nilai
+                dan nilai maksimum. Jika nilai yang disukai lebih kecil dari minimum nilai atau lebih
+                besar dari nilai maksimum, nilai yang disukai digunakan.
+            </p>
+            <h3>CSS syntax</h3>
+            <div class="syntax">
+                <code>clamp(<em>min, preferred, max</em>)</code>
+            </div>
+            <div class="box-container">
+                <h3>contoh</h3>
+                <p>
+                    Atur ukuran font minimum <code>&lt;h3&gt;</code> elemen ke 2rem, dan ukuran font
+                    maksimum untuk 3.5rem juga, mengatur <code>&lt;p&gt;</code> elemen minimum font-ukuran
+                    ke 1rem, dan ukuran font maksimum hingga 2.5rem:
+                </p>
+                <div class="clamp">
+                    <h3>Fungsi clamp()</h3>
+                    <p>
+                        Ubah ukuran jendela untuk melihat efeknya!
+                    </p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid blanditiis odit amet error
+                        explicabo culpa odio, corrupti, eos deserunt eius sed. Laboriosam, consequuntur. Ab laudantium
+                        nisi explicabo et dolores cupiditate pariatur non, dolore numquam beatae commodi amet veniam.
+                        Molestiae perferendis aut necessitatibus reiciendis ducimus doloremque odio maiores omnis,
+                        veritatis sed possimus explicabo quasi soluta repellendus mollitia. Dolorum quia tempora sit,
+                        quasi numquam laudantium. Ad excepturi corrupti iure officiis rerum quidem aut voluptas,
+                        aliquam, minus iusto aliquid. Natus quis sequi, maxime eligendi placeat ullam iure corporis
+                        ipsam voluptates maiores possimus explicabo, odio rem tenetur repudiandae corrupti saepe, magni
+                        odit amet! Dignissimos.
+                    </p>
+                    <div id="clamp"></div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 
