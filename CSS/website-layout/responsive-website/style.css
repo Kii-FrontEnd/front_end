@@ -7,6 +7,11 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: beige;
 }
+h1, h2, h3 {
+    text-transform: uppercase;
+    margin: 10px auto;
+    text-align: center;
+}
 
 /* top */
 .top {
@@ -23,12 +28,6 @@ body {
     background-color: antiquewhite;
     text-align: center;
     padding: 100px 0;
-}
-.header h1 {
-    margin: 10px auto;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-weight: bolder;
 }
 
 /* navbar */
@@ -69,18 +68,82 @@ body {
     flex: 30%;
     padding: 20px;
     background-color: rgba(141, 118, 66, 0.2);
+    text-align: center;
+}
+.container .side .team {
+    width: 340px;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: inset 0 0 10px gray;
+    border-radius: 10px;
+}
+.container .side .team:hover {
+    box-shadow: 0 0 10px black;
+}
+.container .side .team h4 {
+    margin: 10px auto;
 }
 .container .side .team img {
-    width: 300px;
+    width: 320px;
+    box-shadow: 0 0 10px black;
 }
-.container .side .more .card img {
-    width: 200px;
-    height: 200px;
+
+/* more */
+.container .side .more {
+    margin: 30px auto;
 }
+.container .side .more p {
+    margin-bottom: 20px;
+}
+.container .side .more .image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    place-items: center;
+}
+.container .side .more .image .card {
+    border: 1px solid black;
+    width: 100%;
+    height: 240px;
+}
+.container .side .more .image .card img {
+    width: 100%;
+    height: 150px;
+}
+
+/* main */
 .container .main {
     flex: 70%;
     padding: 20px;
 }
+.container .main .content {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px auto;
+}
 .container .main .content img {
-    width: 200px;
+    width: 100%;
+}
+
+/* footer */
+.footer {
+    padding: 20px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar ul{
+        display: block;
+        text-align: center;
+    }
+    .container .side .team {
+        width: 100%;
+    }
+    .container .side .team img {
+        width: 100%;
+    }
 }
