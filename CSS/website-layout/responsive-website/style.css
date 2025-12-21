@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+}
+
+/* top */
+.top {
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+    background-color: bisque;
+    text-transform: uppercase;
+}
+
+/* header */
+.header {
+    height: 80vh;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 100px 0;
+}
+.header h1 {
+    margin: 10px auto;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+
+/* navbar */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    background-color: aquamarine;
+}
+.navbar ul li.active {
+    background-color: rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+}
+.navbar ul li {
+    padding: 15px;
+    transition: 0.5s ease;
+}
+.navbar ul li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+}
+.navbar:has(ul li:hover) ul li:not(:hover) {
+    filter: blur(1px);
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+/* container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(141, 118, 66, 0.2);
+}
+.container .side {
+    flex: 30%;
+    padding: 20px;
+    background-color: rgba(141, 118, 66, 0.2);
+}
+.container .side .team img {
+    width: 300px;
+}
+.container .side .more .card img {
+    width: 200px;
+    height: 200px;
+}
+.container .main {
+    flex: 70%;
+    padding: 20px;
+}
+.container .main .content img {
+    width: 200px;
+}
