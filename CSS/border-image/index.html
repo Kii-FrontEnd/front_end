@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border image</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>CSS border image</h1>
+
+        <section>
+            <h2>CSS border image properti</h2>
+            <p>
+                Properti <span>border-image</span> memungkinkan anda untuk menentukan gambar
+                yang akan digunakan sebagai border disekitar elemen, bukan border default.
+                <br><br>
+                Properti ini mengambil gambar dan mengirisnya menjadi sembilan bagian. Kemudian
+                menempatkan di sudut-sudut, dan bagian tengah diulang atau direnggangkan seperti yang
+                anda tentukan.
+                <br><br>
+                Properti <span>border-image</span> adalah properti singkatan untuk mengikuti properti:
+            </p>
+            <ul>
+                <li>
+                    <span>border-image-source</span> - mendefinisikan jalan source gambar.
+                </li>
+                <li>
+                    <span>border-image-slice</span> - mendefinisikan bagaimana slice gambar.
+                </li>
+                <li>
+                    <span>border-image-width</span> - mendefinisikan lebar gambar.
+                </li>
+                <li>
+                    <span>border-image-outset</span> - mendefinisikan jumlah dimana area border-image
+                    melampaui/outest border box.
+                </li>
+                <li>
+                    <span>border-image-repeat</span> - mendefinisikan bagaimana mengulangi gambar
+                </li>
+            </ul>
+            <div class="quote">
+                <strong>Catatan:</strong> Untuk membuat <span>border-image</span> bekerja, elemen juga
+                membutuhkan <span>border</span> properti!
+            </div>
+        </section>
+
+        <section>
+            <h2>CSS border-image contoh</h2>
+            <p>
+                Kami akan menggunakan gambar berikut(bernama "image.png"):
+                <br><br>
+                <img src="image.png" alt="border">
+                <br><br>
+                Dalam contoh berikut, url(image.png) menentukan gambar sumber, dengan slice gambar 30px dari setiap
+                tepi,
+                dan <span>round</span> nilai menetukan bahwa bagian tengah gambar ubin(diulang) untuk mengisi area
+                (dan diulang agar sesuai, jika diperlukan):
+                <br>
+                Berikut adalah contohnya:
+            </p>
+            <div class="box-container">
+                <h3>Contoh 1: border-image-slice</h3>
+                <div class="round">
+                    Gambar sebagai perbatasan!
+                </div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Penjelasan Lengkap border-image</h2>
+
+            <h3>1. border-image-source</h3>
+            <p>
+                Mendefinisikan path/sumber gambar yang akan digunakan sebagai border. Harus berupa URL menuju gambar.
+                <br><strong>Syntax:</strong> <span>border-image-source: url('image.png');</span>
+            </p>
+            <div class="box-container">
+                <div class="example-source">
+                    Contoh dengan border-image-source
+                </div>
+            </div>
+
+            <h3>2. border-image-slice</h3>
+            <p>
+                Menentukan bagaimana gambar dipotong menjadi 9 bagian (4 sudut, 4 sisi, dan 1 tengah).
+                Nilai adalah jarak dalam pixel atau persentase dari tepi gambar.
+                <br><strong>Syntax:</strong> <span>border-image-slice: 30 30 30 30;</span>
+                <br><strong>Catatan:</strong> Nilai dapat berupa 1 hingga 4 nilai (top, right, bottom, left)
+            </p>
+            <div class="box-container">
+                <div class="example-slice">
+                    border-image-slice: 30
+                </div>
+            </div>
+
+            <h3>3. border-image-width</h3>
+            <p>
+                Menentukan lebar dari border-image. Dapat berupa pixel, persentase, atau kata kunci (auto).
+                <br><strong>Syntax:</strong> <span>border-image-width: 15px;</span>
+                <br><strong>Default:</strong> Nilai dari properti <span>border-width</span>
+            </p>
+            <div class="box-container">
+                <div class="example-width">
+                    border-image-width: 20px
+                </div>
+            </div>
+
+            <h3>4. border-image-outset</h3>
+            <p>
+                Menentukan jarak antara border-image dan border-box elemen. Gambar border akan melampaui area border.
+                <br><strong>Syntax:</strong> <span>border-image-outset: 10px;</span>
+                <br><strong>Nilai:</strong> Dapat berupa pixel atau nilai tanpa unit (kelipatan dari border-width)
+            </p>
+            <div class="box-container">
+                <div class="example-outset">
+                    border-image-outset: 10px
+                </div>
+            </div>
+
+            <h3>5. border-image-repeat</h3>
+            <p>
+                Menentukan bagaimana bagian tengah gambar diulang atau direnggangkan untuk mengisi area border.
+                <br><strong>Nilai yang tersedia:</strong>
+            </p>
+            <ul>
+                <li><span>stretch</span> - Merenggangkan gambar (default)</li>
+                <li><span>repeat</span> - Mengulangi gambar</li>
+                <li><span>round</span> - Mengulangi dan menyesuaikan untuk mengisi area</li>
+                <li><span>space</span> - Mengulangi dan menambah ruang jika diperlukan</li>
+            </ul>
+            <div class="box-container">
+                <h4>Contoh stretch:</h4>
+                <div class="example-stretch">
+                    border-image-repeat: stretch
+                </div>
+            </div>
+            <div class="box-container">
+                <h4>Contoh repeat:</h4>
+                <div class="example-repeat">
+                    border-image-repeat: repeat
+                </div>
+            </div>
+            <div class="box-container">
+                <h4>Contoh round:</h4>
+                <div class="example-round">
+                    border-image-repeat: round
+                </div>
+            </div>
+
+            <h3>Shorthand - border-image</h3>
+            <p>
+                Properti <span>border-image</span> adalah shorthand untuk semua properti di atas.
+                <br><strong>Syntax:</strong> <span>border-image: source slice / width / outset repeat;</span>
+                <br><br><strong>Contoh lengkap:</strong>
+                <br><span>border-image: url('image.png') 30 / 15px 0 round;</span>
+            </p>
+            <div class="box-container">
+                <div class="example-full">
+                    Contoh border-image lengkap!
+                </div>
+            </div>
+
+            <div class="quote">
+                <strong>Penting:</strong> Selalu gunakan properti <span>border</span> bersama dengan
+                <span>border-image</span>
+                agar border-image bekerja dengan baik. Contoh: <span>border: 15px solid transparent;</span>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

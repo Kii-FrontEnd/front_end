@@ -1,0 +1,114 @@
+body {
+  background-color: beige;
+  font-family: "Courier New", Courier, monospace;
+  text-align: justify;
+}
+span {
+  color: red;
+  font-weight: bold;
+}
+code {
+  font-size: 14px;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 0 10px greenyellow;
+  letter-spacing: 5px;
+}
+h2,
+h3 {
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+.container {
+  box-shadow: 0 0 10px black;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  transition: 0.5s ease;
+}
+.box-container {
+  box-shadow: inset 0 0 10px gray;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+}
+.quote {
+  background-color: burlywood;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* round */
+.round {
+  padding: 10px;
+  margin: 20px;
+  border: 10px solid transparent;
+  border-image: url(image.png) 30 round;
+}
+
+/* border-image examples */
+.example-source {
+  padding: 20px;
+  border: 15px solid transparent;
+  border-image-source: url("image.png");
+  border-image-slice: 30;
+  border-image-repeat: stretch;
+}
+
+.example-slice {
+  padding: 20px;
+  border: 15px solid transparent;
+  border-image: url("image.png") 30 stretch;
+}
+
+.example-width {
+  padding: 20px;
+  border: 20px solid transparent;
+  border-image: url("image.png") 30 / 20px stretch;
+}
+
+.example-outset {
+  padding: 20px;
+  border: 15px solid transparent;
+  border-image: url("image.png") 30 / 15px / 10px stretch;
+}
+
+.example-stretch {
+  padding: 20px;
+  border: 15px solid transparent;
+  border-image: url("image.png") 30 stretch;
+}
+
+.example-repeat {
+  padding: 20px;
+  border: 15px solid transparent;
+  border-image: url("image.png") 30 repeat;
+}
+
+.example-round {
+  padding: 20px;
+  border: 15px solid transparent;
+  border-image: url("image.png") 30 round;
+}
+
+.example-full {
+  padding: 20px;
+  border: 15px solid transparent;
+  border-image: url("image.png") 30 / 15px 0 round;
+}
+
+h4 {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+ul {
+  margin-left: 20px;
+  line-height: 1.8;
+}
+
+li {
+  margin-bottom: 10px;
+}
