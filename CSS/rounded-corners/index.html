@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rounded corners</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>CSS Sudut Bulat</h1>
@@ -39,6 +41,85 @@
                 <span>border-bottom-right-radius</span> dan <span>border-bottom-left-radius</span>.
             </div>
         </section>
+
+        <section>
+            <h2>CSS border-radius - menentukan setiap sudut</h2>
+            <p>
+                Properti <span>border-radius</span> dapat memiliki satu elemen dari empat nilai.
+                Berikut adalah aturannya:
+            </p>
+            <div class="box-container">
+                <p>
+                    <strong>empat nilai - border-radius: 20px 55px 35px 10px:</strong>
+                    (pertama nilai berlaku untuk sudut kiri atas, nilai kedua berlaku untuk
+                    sudut kanan atas, nilai ketiga berlaku untuk sudut kanan bawah, dan nilai
+                    keempat berlaku untuk sudut kiri bawah):
+                </p>
+                <div class="radius4"></div>
+            </div>
+            <div class="box-container">
+                <p>
+                    <strong>tiga nilai - border-radius: 20px 55px 35px:</strong>
+                    (pertama nilai untuk sudut kiri atas, kedua nilai untuk sudut kanan atas dan kiri bawah, ketiga
+                    nilai untuk sudut kanan bawah)
+                </p>
+                <div class="radius3"></div>
+            </div>
+            <div class="box-container">
+                <p>
+                    <strong>dua nilai - border-radius: 20px 55px:</strong>
+                    (pertama nilai untuk sudut kiri atas dan kanan bawah, kedua nilai untuk sudut kanan atas dan kiri
+                    bawah)
+                </p>
+                <div class="radius2"></div>
+            </div>
+            <div class="box-container">
+                <p>
+                    <strong>satu nilai - border-radius: 20px:</strong>
+                    (nilai berlaku untuk semua empat sudut)
+                </p>
+                <div class="radius1"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>CSS border-radius - Bentuk Elliptical dan Melingkar</h2>
+            <p>
+                Properti <span>border-radius</span> juga dapat digunakan untuk membuat bentuk elliptical (elips) dan
+                melingkar (lingkaran).
+                Anda dapat menggunakan nilai horizontal dan vertikal dipisahkan dengan garis miring (/).
+            </p>
+            <div class="box-container">
+                <p>
+                    <strong>Bentuk Melingkar - border-radius: 50%:</strong>
+                    Nilai 50% akan membuat elemen menjadi bentuk lingkaran sempurna jika elemen tersebut memiliki ukuran
+                    yang sama (width dan height).
+                </p>
+                <div class="melingkar"></div>
+            </div>
+            <div class="box-container">
+                <p>
+                    <strong>Bentuk Elliptical - border-radius: 50% / 25%:</strong>
+                    Menggunakan format horizontal / vertikal untuk membuat bentuk elips.
+                </p>
+                <div class="elliptical1"></div>
+            </div>
+            <div class="box-container">
+                <p>
+                    <strong>Bentuk Elliptical - border-radius: 25% / 50%:</strong>
+                    Contoh lain dari bentuk elips dengan proporsi berbeda.
+                </p>
+                <div class="elliptical2"></div>
+            </div>
+            <div class="box-container">
+                <p>
+                    <strong>Bentuk Elliptical Custom - border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%:</strong>
+                    Kombinasi nilai yang lebih kompleks untuk bentuk organik yang menarik.
+                </p>
+                <div class="elliptical3"></div>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>

@@ -16,7 +16,8 @@ h1 {
   text-shadow: 0 0 10px greenyellow;
   letter-spacing: 5px;
 }
-h2, h3 {
+h2,
+h3 {
   letter-spacing: 3px;
   text-transform: capitalize;
 }
@@ -34,33 +35,121 @@ h2, h3 {
   margin: 20px;
 }
 .quote {
-    background-color: burlywood;
-    padding: 20px;
-    border-radius: 10px;
+  background-color: burlywood;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 /* contoh */
 .box-container li {
-    margin: 30px;
+  margin: 30px;
 }
-.box-container .box1, .box2, .box3 {
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-    margin: 10px auto;
-    border-radius: 25px;
+.box-container .box1,
+.box2,
+.box3 {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 25px;
 }
 .box-container .box1 {
-    background-color: aqua;
+  background-color: aqua;
 }
 .box-container .box2 {
-    border: 2px solid blue;
+  border: 2px solid blue;
 }
 .box-container .box3 {
-    background-image: url(image.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: yellow;
-    font-weight: 800;
+  background-image: url(image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: yellow;
+  font-weight: 800;
+}
+
+/* border radius */
+.box-container .radius4,
+.radius3,
+.radius2,
+.radius1 {
+  width: 300px;
+  height: 150px;
+  margin: 10px auto;
+}
+.box-container .radius4 {
+  background-color: aqua;
+  border-radius: 20px 55px 35px 10px;
+  border: 2px solid gray;
+}
+.box-container .radius3 {
+  background-color: blue;
+  border-radius: 20px 55px 35px;
+  border: 2px solid gray;
+}
+.box-container .radius2 {
+  background-color: blueviolet;
+  border-radius: 20px 55px;
+  border: 2px solid gray;
+}
+.box-container .radius1 {
+  background-color: darkcyan;
+  border-radius: 20px;
+  border: 2px solid gray;
+}
+
+/* elliptical dan bentuk melingkar */
+/* border-radius: 50% / 25% 
+   - Membuat bentuk elips dengan radius horizontal 50% dan vertikal 25% */
+.box-container .elliptical1 {
+  width: 300px;
+  height: 150px;
+  margin: 10px auto;
+  background-color: lightcoral;
+  border-radius: 50% / 25%;
+  border: 2px solid gray;
+}
+
+/* border-radius: 25% / 50%
+   - Membuat bentuk elips dengan radius horizontal 25% dan vertikal 50% */
+.box-container .elliptical2 {
+  width: 300px;
+  height: 150px;
+  margin: 10px auto;
+  background-color: lightgreen;
+  border-radius: 25% / 50%;
+  border: 2px solid gray;
+}
+
+/* Menggunakan slash (/) untuk radius horizontal dan vertikal:
+     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+     → Sebelum slash: radius horizontal di setiap sudut
+     → Sesudah slash: radius vertikal di setiap sudut
+     → Menciptakan bentuk organik kompleks dengan kombinasi radius berbeda
+
+  PROPERTY INDIVIDUAL:
+  - border-top-left-radius
+  - border-top-right-radius
+  - border-bottom-right-radius
+  - border-bottom-left-radius
+*/
+.box-container .elliptical3 {
+  width: 300px;
+  height: 150px;
+  margin: 10px auto;
+  background-color: lightskyblue;
+  /* Kombinasi 8 nilai: 4 untuk horizontal, 4 untuk vertikal (dipisah /) */
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  border: 2px solid gray;
+}
+
+/* border-radius: 50%
+   - Membuat bentuk lingkaran sempurna ketika lebar dan tinggi sama */
+.box-container .melingkar {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  background-color: gold;
+  border-radius: 50%;
+  border: 2px solid gray;
 }
