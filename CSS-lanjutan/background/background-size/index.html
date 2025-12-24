@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background size</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>background size</h1>
+
+        <section>
+            <h2>properti background-size CSS</h2>
+            <p>
+                Properti <span>background-size</span> memungkinkan anda untuk menentukan ukuran
+                gambar latar belakang.
+                <br><br>
+                <span>background-size</span> dapat ditentukan dalam panjang, persentase, atau dengan
+                menggunakan salah satu kata kunci: <span>auto</span>, <span>contain</span>, atau <span>cover</span>.
+                <br><br>
+                Contoh berikut mengubah background size menjadi jauh lebih keci; dari gambar asli(menggunakan px):
+            </p>
+            <div class="box-container">
+                <h3>contoh</h3>
+                <p>Set background-size menggunakan px</p>
+                <div class="example">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi qui at laborum nisi quo nemo
+                        dolor illo, corporis nobis, natus sequi voluptate quia numquam, repellendus doloremque. Beatae
+                        ipsam id nihil?
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>background-size - auto, contain dan cover</h2>
+            <p>
+                Nilai kata kunci untuk <span>background-size</span> adalah <span>auto</span>, <span>contain</span>,
+                dan <span>cover</span>.
+            </p>
+            <ul>
+                <li>
+                    Nilai <span>auto</span> adalah nilai default, dan menampilkan gambar latar belakang
+                    dalam ukuran aslinya.
+                </li>
+                <li>
+                    Nilai <span>contain</span> adalah nilai dengan skala gambar atas atau bawah menyesuaikan
+                    ukuran area konten.
+                </li>
+                <li>
+                    Nilai <span>cover</span> adalah nilai skala gambar menjadi sebesar mungkin sehingga area konten
+                    benar-benar tertutup oleh gambar latar belakang (lebar dan tingginya akan sama dengan, atau lebih
+                    besar dari area konten).
+                </li>
+            </ul>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>Atur background-size dengan auto, contain dan cover</p>
+                <div class="nilai">
+                    <div class="auto">
+                        NILAI AUTO
+                    </div>
+                    <div class="contain">
+                        NILAI CONTAIN
+                    </div>
+                    <div class="cover">
+                        NILAI COVER
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>
