@@ -97,3 +97,23 @@ h2, h3 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* menentukan beberapa size */
+.size {
+    box-shadow: inset 0 0 5px gray;
+    padding: 10px;
+    border-radius: 10px;
+    height: 300px;
+    margin: 20px;
+    background-image: url(/CSS-lanjutan/background/img/image1.png),
+    url(/CSS-lanjutan/background/img/logo.png), url(/CSS-lanjutan/background/img/bg.png);
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-position: top left, top right, left top;
+    background-size: contain, 150px, auto;
+}
+.size p {
+    color: darkgreen;
+    text-align: center;
+    margin: 8rem auto;
+    font-weight: bold;
+}
