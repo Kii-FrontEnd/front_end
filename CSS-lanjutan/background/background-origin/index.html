@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background origin</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>background origin</h1>
+
+        <section>
+            <h2>CSS background-origin properti</h2>
+            <p>
+                Properti CSS <span>background-origin</span> menentukan posisi backgroung image. Properti
+                ini dapat memiliki salah satu nilai berikut:
+            </p>
+            <ul>
+                <li>
+                    <span>padding-box</span> - Gambar latar belakang dimulai dari sudut kiri atas
+                    tepi padding. ini adalah default
+                </li>
+                <li>
+                    <span>border-box</span> - Gambar latar belakang dimulai dari sudut kiri atas
+                    sisi border.
+                </li>
+                <li>
+                    <span>content-box</span> - Gambar latar belakang dimulai dari sudut kiri atas
+                    sisi konten.
+                </li>
+            </ul>
+            <div class="quote">
+                <strong>Catatan:</strong> Properti ini tidak berpengaruh jika <span>background-attachment</span>
+                properti diatur ke "fixed".
+            </div>
+            <p>
+                Contoh berikut ini menggambarkan <span>background-origin</span> properti:
+            </p>
+            <div class="box-container">
+                <h2>Contoh</h2>
+                <div class="origin">
+                    <div class="padding">
+                        <h2>nilai padding-box</h2>
+                    </div>
+                    <div class="border">
+                        <h2>nilai border-box</h2>
+                    </div>
+                    <div class="content">
+                        <h2>nilai content-box</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique quaerat
+                            provident quidem sit autem repellendus saepe magni! At earum quasi laborum ipsum vel eius
+                            doloribus soluta optio libero nesciunt!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>
