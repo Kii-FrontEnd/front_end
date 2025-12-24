@@ -51,7 +51,7 @@ h2, h3 {
 .padding, .border, .content {
   height: 300px;
   padding: 55px;
-  border: 2px solid black;
+  border: 5px dotted black;
   box-shadow: 0 0 10px black;
   border-radius: 10px;
   background-image: url(image.png);

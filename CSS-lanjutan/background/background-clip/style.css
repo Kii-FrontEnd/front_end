@@ -33,3 +33,55 @@ h2, h3 {
   padding: 10px;
   margin: 20px;
 }
+
+/* example1 */
+.example {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+.example .div1, .div2, .div3 {
+  border: 5px dotted darkgreen;
+  padding: 20px;
+  background: url(image.png);
+  color: aliceblue;
+}
+.example .content {
+  padding: 30px;
+  text-align: center;
+}
+/* div1 = padding-box */
+.example .div1 {
+  background-clip: padding-box;
+}
+/* div2 = border-box */
+.example .div2 {
+  background-clip: border-box;
+}
+/* div3 = content-box */
+.example .div3 {
+  background-clip: content-box;
+  margin-bottom: 20px;
+}
+
+/* example2 */
+.example #div1, #div2, #div3 {
+  border: 5px dotted yellowgreen;
+  padding: 20px;
+  background-color: brown;
+  color: aliceblue;
+}
+/* div1 = padding-box */
+.example #div1 {
+  background-clip: padding-box;
+}
+/* div2 = border-box */
+.example #div2 {
+  background-clip: border-box;
+}
+/* div3 = content-box */
+.example #div3 {
+  background-clip: content-box;
+  margin-bottom: 20px;
+}

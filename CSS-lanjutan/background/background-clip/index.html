@@ -1,14 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Background CLip</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Background clip</h1>
+
+        <section>
+            <h2>CSS background-clip properti</h2>
+            <p>
+                CSS properti <span>background-clip</span> mendefinisikan seberapa jauh latar belakang
+                (warna, gambar, atau gradien) harus meluas ke dalam sebuah elemen.
+                <br>
+                Properti ini dapat memiliki salah satu nilai berikut:
+            </p>
+            <ul>
+                <li>
+                    <span>padding-box</span> - latar belakang memanjang di belakang perbatasan.
+                    Ini adalah default
+                </li>
+                <li>
+                    <span>border-box</span> - Latar belakang meluas ke tepi dalam perbatasan.
+                </li>
+                <li>
+                    <span>content-box</span> - Latar belakang meluas ke tepi kotak konten.
+                </li>
+            </ul>
+            <div class="box-container">
+                <h2>contoh</h2>
+                <p>Dengan menggunakan <span>background-clip</span> properti dengan gambar latar belakang:</p>
+                <div class="example">
+                    <div class="div1">
+                        <div class="content">
+                            <h2>nilai padding-box</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores voluptatum amet
+                                tempora voluptate totam ut rem, dicta saepe itaque perspiciatis a voluptatibus officiis
+                                corporis dolorem sapiente. Esse, sint repellat!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <div class="content">
+                            <h2>nilai border-box</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores voluptatum amet
+                                tempora voluptate totam ut rem, dicta saepe itaque perspiciatis a voluptatibus officiis
+                                corporis dolorem sapiente. Esse, sint repellat!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="content">
+                            <h2>nilai content-box</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores voluptatum amet
+                                tempora voluptate totam ut rem, dicta saepe itaque perspiciatis a voluptatibus officiis
+                                corporis dolorem sapiente. Esse, sint repellat!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <h2>contoh</h2>
+                <p>Dengan menggunakan <span>background-clip</span> properti dengan warna latar belakang:</p>
+                <div class="example">
+                    <div id="div1">
+                        <div class="content">
+                            <h2>nilai padding-box</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores voluptatum amet
+                                tempora voluptate totam ut rem, dicta saepe itaque perspiciatis a voluptatibus officiis
+                                corporis dolorem sapiente. Esse, sint repellat!
+                            </p>
+                        </div>
+                    </div>
+                    <div id="div2">
+                        <div class="content">
+                            <h2>nilai border-box</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores voluptatum amet
+                                tempora voluptate totam ut rem, dicta saepe itaque perspiciatis a voluptatibus officiis
+                                corporis dolorem sapiente. Esse, sint repellat!
+                            </p>
+                        </div>
+                    </div>
+                    <div id="div3">
+                        <div class="content">
+                            <h2>nilai content-box</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus asperiores voluptatum amet
+                                tempora voluptate totam ut rem, dicta saepe itaque perspiciatis a voluptatibus officiis
+                                corporis dolorem sapiente. Esse, sint repellat!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>
