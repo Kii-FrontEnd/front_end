@@ -2,6 +2,7 @@ body {
   background-color: beige;
   font-family: "Courier New", Courier, monospace;
   text-align: justify;
+  color: darkblue;
 }
 span {
   color: red;
@@ -16,7 +17,8 @@ h1 {
   text-shadow: 0 0 10px greenyellow;
   letter-spacing: 5px;
 }
-h2, h3 {
+h2,
+h3 {
   letter-spacing: 3px;
   text-transform: capitalize;
 }
@@ -37,4 +39,95 @@ h2, h3 {
   background-color: burlywood;
   padding: 20px;
   border-radius: 10px;
+}
+
+/* transparent */
+.transparent {
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  background: url(image.png) no-repeat center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  gap: 20px;
+}
+.transparent .div1 {
+  background-color: aquamarine;
+  padding: 50px;
+  border-radius: 10px;
+}
+.transparent .div2 {
+  background-color: transparent;
+  padding: 50px;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+/* currentcolor */
+.current {
+  box-shadow: inset 0 0 10px black;
+  padding: 10px;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  border-radius: 10px;
+  margin: 20px;
+  line-height: 100px;
+  color: darkcyan;
+  border: 5px solid currentColor;
+}
+.current1 {
+  box-shadow: inset 0 0 10px black;
+  padding: 10px;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: currentColor;
+}
+.current1 p {
+  color: aliceblue;
+}
+.current2 {
+  padding: 10px;
+  height: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  border-radius: 10px;
+  margin: 20px;
+  line-height: 100px;
+  border: 5px solid currentColor;
+  box-shadow: 0 0 10px currentColor;
+}
+
+/* inherit */
+.inherit {
+  box-shadow: inset 0 0 10px black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  border: 2px solid black;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.inherit span {
+    border: inherit;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: inset 0 0 10px black;
 }

@@ -9,7 +9,95 @@
 <body>
     <div class="container">
         <h1>CSS color keywords</h1>
-        
+        <p>
+            CSS memiliki beberapa kata kunci warna predefined khusus yang dapat
+            digunakan dengan properti seperti <span>color</span>, <span>background-color</span>,
+            dan <span>border-color</span>.
+            <br>
+            Kata kunci khusus adalah:
+        </p>
+        <ul>
+            <li><span>transparent</span></li>
+            <li><span>currentcolor</span></li>
+            <li><span>inherit</span></li>
+        </ul>
+
+        <section>
+            <h2>Kata kunci transparent</h2>
+            <p>
+                Kata kunci <span>transparent</span> digunakna untuk membuat warna transparant. Hal ini
+                sering digunakan untuk membuat warna latar belakang transparan untuk sebuah elemen.
+            </p>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>
+                    Disini, warna latar belakang elemen <code>&lt;div&gt;</code> akan sepenuhnya transparant,
+                    dan gambar latar belakang akan menunjukkan melalui:
+                </p>
+                <div class="transparent">
+                    <div class="div1">tidak transparant</div>
+                    <div class="div2">dengan nilai transparant</div>
+                </div>
+            </div>
+            <div class="quote">
+                <strong>Catatan: </strong><span>transparent</span> kata kunci setara dengan rgba(0, 0, 0, 0). Nilai warna RGBA
+                adalah perpanjangan dari nilai warna RGB dengan tambahan alfa(opacity) - yang menentukan opacity untuk warna.
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Kata kunci currentcolor</h2>
+            <p>
+                Kata kunci <span>currentcolor</span> itu seperti variabel yang memegang nilai saat ini dari properti warna elemen.
+                <br>
+                Kata kunci ini dapat berguna jika anda ingin warna tertentu konsisten dalam elemen atau halaman.
+            </p>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>
+                    Dalam contoh ini warna border dari elemen <code>&lt;div&gt;</code> akan menjadi darkcyn, karena
+                    warna teks dari elemen <code>&lt;div&gt;</code> berwarna darkcyan:
+                </p>
+                <div class="current">nilai currentcolor</div>
+            </div>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>
+                    Dalam contoh ini warna background dari elemen <code>&lt;div&gt;</code> akan diatur ke warna yang sesuai
+                    dengan warna elemen <strong>body</strong>.
+                </p>
+                <div class="current1">
+                    <p>nilai currentcolor</p></div>
+            </div>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>
+                    Dalam contoh ini warna border dari elemen <code>&lt;div&gt;</code> ini diatur ke nilai color pada elemen
+                    <strong>body</strong> saat ini.
+                </p>
+                <div class="current2">nilai currentcolor</div>
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>kata kunci inherit</h2>
+            <p>
+                Kata kunci <span>inherit</span> menentukan bahwa properti harus mewarisi nilainya deri elemen induknya.
+                <br>
+                Kata kunci ini dapat digunakan untuk properti CSS apapun dan pada elemen HTML apapun.
+            </p>
+            <div class="box-container">
+                <h3>Contoh</h3>
+                <p>
+                    Dalam contoh ini pengaturan border <code>&lt;span&gt;</code> akan diwarisi dari elemen iniduk:
+                </p>
+                <div class="inherit">
+                    Nilai <span>inherit</span>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
