@@ -52,3 +52,17 @@ h2, h3 {
   font-weight: bold;
   background-image: linear-gradient(to bottom, red, yellow);
 }
+
+/* to top */
+.top {
+  box-shadow: 0 0 15px black;
+  padding: 20px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 200px;
+  background-image: linear-gradient(to top, red, yellow);
+}
