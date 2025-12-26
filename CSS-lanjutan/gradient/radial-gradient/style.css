@@ -68,3 +68,29 @@ h3 {
   font-weight: bold;
   background-image: radial-gradient(red 10%, yellow 20%, green 70%);
 }
+
+/* set shape */
+.elisse {
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  margin: 10px;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: radial-gradient(red, yellow, green);
+}
+.circle {
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  margin: 20px 10px;
+  height: 150px;
+  padding: 20px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  background-image: radial-gradient(circle, red, yellow, green);
+}
