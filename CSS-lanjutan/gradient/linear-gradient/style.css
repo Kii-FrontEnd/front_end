@@ -121,3 +121,16 @@ h2, h3 {
   line-height: 200px;
   background-image: linear-gradient(blue, gold, rgb(0, 132, 255));
 }
+.pelangi {
+  box-shadow: 0 0 15px black;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 200px;
+  background-image: linear-gradient(
+    to right, red, orange, yellow, green, blue, indigo, violet
+  );
+}
