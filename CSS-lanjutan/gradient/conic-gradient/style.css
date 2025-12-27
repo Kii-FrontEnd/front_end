@@ -42,3 +42,13 @@ h3 {
   font-style: italic;
   border-radius: 10px;
 }
+
+/* gradient conic tiga warna */
+.three {
+  margin: 20px auto;
+  height: 200px;
+  width: 300px;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  background-image: conic-gradient(red, yellow, green);
+}
