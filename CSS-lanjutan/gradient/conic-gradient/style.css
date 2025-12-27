@@ -72,3 +72,14 @@ h3 {
   border-radius: 10px;
   background-image: conic-gradient(red 90deg, yellow 180deg, darkblue 240deg);
 }
+
+/* gradient conic pie charts */
+.pie {
+  margin: 20px auto;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  background-image: conic-gradient(darkcyan, darkblue, darkgreen, darkgoldenrod, yellowgreen);
+  border-radius: 50%;
+}
