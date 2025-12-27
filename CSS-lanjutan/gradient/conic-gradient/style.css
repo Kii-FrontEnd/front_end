@@ -2,7 +2,6 @@ body {
   background-color: beige;
   font-family: "Courier New", Courier, monospace;
   text-align: justify;
-  color: darkblue;
 }
 span {
   color: red;
@@ -16,6 +15,7 @@ h1 {
   text-align: center;
   text-shadow: 0 0 10px greenyellow;
   letter-spacing: 5px;
+  text-decoration: underline;
 }
 h2,
 h3 {
@@ -34,4 +34,11 @@ h3 {
   border-radius: 20px;
   padding: 10px;
   margin: 20px;
+}
+.sintaks p {
+  border: 1.5px solid black;
+  font-weight: 800;
+  padding: 20px;
+  font-style: italic;
+  border-radius: 10px;
 }
