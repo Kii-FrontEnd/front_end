@@ -62,3 +62,13 @@ h3 {
   border-radius: 10px;
   background-image: conic-gradient(red, yellow, green, darkblue, darkcyan);
 }
+
+/* gradient conic tiga warna dan masing-masing warna memiliki derajat. */
+.deg {
+  margin: 20px auto;
+  height: 200px;
+  width: 300px;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  background-image: conic-gradient(red 90deg, yellow 180deg, darkblue 240deg);
+}
