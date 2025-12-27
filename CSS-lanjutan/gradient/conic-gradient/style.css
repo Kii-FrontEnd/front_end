@@ -51,5 +51,14 @@ h3 {
   box-shadow: 0 0 10px black;
   border-radius: 10px;
   background-image: conic-gradient(red, yellow, green);
-  
+}
+
+/* gradient conic lima warna */
+.five {
+  margin: 20px auto;
+  height: 200px;
+  width: 300px;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  background-image: conic-gradient(red, yellow, green, darkblue, darkcyan);
 }
