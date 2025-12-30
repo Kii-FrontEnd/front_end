@@ -35,3 +35,60 @@ h3 {
   padding: 10px;
   margin: 20px;
 }
+
+/* contoh transform */
+.transform {
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+.cth1, .cth2 {
+    height: 100px;
+    width: 100px;
+    margin: 0 30px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+}
+/* 2D */
+.cth1 {
+    animation: two 1s infinite;
+}
+@keyframes two {
+    from {
+        transform: rotate(0deg);
+        border-radius: 10px;
+    }
+    to {
+        transform: rotate(360deg);
+        border-radius: 20px;
+    }
+}
+/* 3D */
+.cth2 {
+    animation: three 2s infinite;
+}
+@keyframes three {
+    0% {
+        transform: rotateY(0deg);
+    }
+    25% {
+        transform: rotateY(90deg);
+        border-radius: 5px;
+    }
+    50% {
+        transform: rotateY(180deg);
+        border-radius: 10px;
+    }
+    75% {
+        transform: rotateY(270deg);
+        border-radius: 15px;
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
