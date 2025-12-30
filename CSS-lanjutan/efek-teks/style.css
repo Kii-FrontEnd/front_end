@@ -82,3 +82,21 @@ h3 {
 .over4:hover {
     overflow: visible;
 }
+
+/* word-wrap */
+/* nilai normal */
+.wrap1 {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    word-wrap: normal;
+}
+/* nilai break-word */
+.wrap2 {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    word-wrap: break-word;
+}
