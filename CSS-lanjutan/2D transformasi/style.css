@@ -85,3 +85,50 @@ h3 {
     border-radius: 10px;
     transform: rotate(30deg);
 }
+
+/* scale */
+/* scale(x, y) */
+.scale {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  background-color: rgba(80, 30, 100, 0.5);
+  text-align: center;
+  margin: 50px auto;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.scale::after {
+  position: absolute;
+  content: "transform";
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  background-color: rgba(80, 30, 100, 0.8);
+  transform: scale(1.5, 1.5);
+  border-radius: 10px;
+}
+/* scaleX */
+.scaleX {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  background-color: rgba(80, 30, 100, 0.8);
+  text-align: center;
+  margin: auto;
+  transform: scaleX(2);
+}
+/* scaleY */
+.scaleY {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  background-color: rgba(80, 30, 100, 0.8);
+  text-align: center;
+  margin: 60px auto;
+  transform: scaleY(2);
+}
