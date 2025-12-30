@@ -79,7 +79,6 @@ h3 {
   height: 200px;
   width: 200px;
   box-shadow: 0 0 10px black;
-  border-radius: 10px;
   background-image: conic-gradient(darkcyan, darkblue, darkgreen, darkgoldenrod, yellowgreen);
   border-radius: 50%;
 }
@@ -89,8 +88,23 @@ h3 {
   height: 200px;
   width: 200px;
   box-shadow: 0 0 10px black;
-  border-radius: 10px;
   background-image: conic-gradient(red 0, red 90deg, blue 90deg, blue 180deg,
   green 180deg, green 270deg, yellow 270deg, yellow 360deg);
   border-radius: 50%;
+}
+
+/* menentukan posisi awal gradient dengan sudut */
+.sudut1, .sudut2 {
+  margin: 20px auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+/* menentukan posisi awal 45 deg */
+.sudut1 {
+  background-image: conic-gradient(from 45deg, red, yellow, green, blue);
+}
+/* menentukan posisi awal 90 deg */
+.sudut2 {
+  background-image: conic-gradient(from 90deg, red, yellow, green, blue);
 }
