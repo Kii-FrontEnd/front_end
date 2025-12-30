@@ -108,3 +108,23 @@ h3 {
 .sudut2 {
   background-image: conic-gradient(from 90deg, red, yellow, green, blue);
 }
+
+/* menentukan pusat dengan menggunakan [at position] */
+.posisi1, .posisi2, .posisi3 {
+  margin: 20px auto;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 0 5px black;
+}
+/* menentukan position 0% 0% */
+.posisi1 {
+  background-image: conic-gradient(at 0% 0%, red, yellow, green, blue);
+}
+/* menentukan position 100% 100% */
+.posisi2 {
+  background-image: conic-gradient(at 100% 100%, red, yellow, green, blue);
+}
+/* menentukan position 75% 25% */
+.posisi3 {
+  background-image: conic-gradient(at 75% 25%, red, yellow, green, blue);
+}
