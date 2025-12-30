@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teks Effect</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Text Effect</h1>
@@ -28,6 +30,50 @@
                 <span>writing-mode</span> - Menentukan apakah baris teks diletakkan secara horizontal atau vertikal.
             </li>
         </ul>
+
+        <!-- properti teks-overflow -->
+        <section>
+            <h2>CSS text-overflow properti</h2>
+            <p>
+                CSS properti <span>text-overflow</span> menentukan bagaimana konten yang meluap dari elemen ditampilkan
+                kepada pengguna. Properti ini hanya berfungsi pada elemen yang memiliki <span>overflow: hidden</span>
+                dan <span>white-space: nowrap</span>. Nilai yang dapat digunakan adalah:
+            </p>
+            <p>
+                <strong>Nilai-nilai text-overflow:</strong>
+            <ul style="margin-top: 10px;">
+                <li><span>clip</span> - Teks yang meluap akan dipotong dan tidak terlihat (nilai default)</li>
+                <li><span>ellipsis</span> - Teks yang meluap akan diganti dengan "..." (tiga titik)</li>
+                <li><span>string</span> - Teks yang meluap akan diganti dengan string yang ditentukan pengguna</li>
+            </ul>
+            </p>
+            <div class="box-container">
+                <h3>Contoh 1: text-overflow: clip</h3>
+                <p>Teks yang meluap akan dipotong (nilai default):</p>
+                <div class="over1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</div>
+            </div>
+            <div class="box-container">
+                <h3>Contoh 2: text-overflow: ellipsis</h3>
+                <p>Teks yang meluap akan diganti dengan "...":</p>
+                <div class="over2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</div>
+            </div>
+            <div class="box-container">
+                <h3>Contoh 3: text-overflow: string</h3>
+                <p>Teks akan diganti sesuai yang ditulis oleh pengguna</p>
+                <div class="over3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.</div>
+            </div>
+
+            <p>
+                Contoh berikut menunjukkan bagaimana anda dapat menampilkan konten yang meluap saat mealayang di atas
+                elemen:
+            </p>
+            <div class="box-container">
+                <h3>Contoh 4: menggunakan overflow: visible;</h3>
+                <div class="over4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta laborum incidunt
+                    delectus voluptas asperiores amet?</div>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>

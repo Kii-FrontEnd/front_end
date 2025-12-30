@@ -35,3 +35,50 @@ h3 {
   padding: 10px;
   margin: 20px;
 }
+
+/* text-overflow */
+/* nilai clip */
+.over1 {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+/* nilai ellipsis */
+.over2 {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* nilai string */
+.over3 {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* nilai string */
+    text-overflow: ' nilai-string'; 
+}
+/* menampilkan konten yang meluap menggunakan nilai visible */
+.over4 {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    /* nilai string */
+    text-overflow: ellipsis; 
+}
+.over4:hover {
+    overflow: visible;
+}
