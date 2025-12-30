@@ -104,7 +104,41 @@
             </div>
         </section>
 
-        
+        <!-- properti word-break -->
+        <section>
+            <h2>CSS word-break properti</h2>
+            <p>
+                CSS properti <span>word-break</span> menentukan aturan bagaimana teks harus dipatahkan ketika mencapai
+                akhir dari sebuah elemen. Properti ini berbeda dengan <span>word-wrap</span> karena properti ini akan
+                mempatahkan kata bahkan di tengah-tengah kata. Nilai yang dapat digunakan adalah:
+            </p>
+            <p>
+                <strong>Nilai-nilai word-break:</strong>
+            <ul style="margin-top: 10px;">
+                <li><span>normal</span> - Menggunakan aturan pemecahan baris default (nilai default)</li>
+                <li><span>break-all</span> - Memungkinkan kata dipatahkan di mana saja untuk mencegah overflow</li>
+                <li><span>keep-all</span> - Mencegah pemecahan kata pada bahasa CJK (Chinese, Japanese, Korean)</li>
+            </ul>
+            </p>
+            <div class="box-container">
+                <h3>Contoh 1: word-break: normal</h3>
+                <p>Teks hanya dipatahkan di titik pemisah yang diperbolehkan (nilai default):</p>
+                <div class="break1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sequi tempora
+                    adipisci est quaerat dolor voluptatibus eius ratione incidunt praesentium!</div>
+            </div>
+            <div class="box-container">
+                <h3>Contoh 2: word-break: break-all</h3>
+                <p>Kata dapat dipatahkan di mana saja untuk mencegah overflow:</p>
+                <div class="break2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sequi tempora
+                    adipisci est quaerat dolor voluptatibus eius ratione incidunt praesentium!</div>
+            </div>
+            <div class="box-container">
+                <h3>Contoh 3: word-break: keep-all</h3>
+                <p>Mencegah pemecahan kata pada bahasa CJK:</p>
+                <div class="break3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eos minima ipsum
+                    quas libero perspiciatis quam ipsam assumenda ut error.</div>
+            </div>
+        </section>
     </div>
 </body>
 

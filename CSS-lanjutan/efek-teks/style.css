@@ -100,3 +100,29 @@ h3 {
     margin: 20px;
     word-wrap: break-word;
 }
+
+/* properi word break */
+/* nilai normal */
+.break1 {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    word-break: normal;
+}
+/* nilai break-all */
+.break2 {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    word-break: break-all;
+}
+/* nilai normal */
+.break3 {
+    width: 200px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 20px;
+    word-break: keep-all;
+}
