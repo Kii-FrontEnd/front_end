@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2D Transformasi</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>CSS 2d Transformasi</h1>
+        <p>
+            Properti CSS <span>transform</span> menerapkan transformasi 2d atau 3d ke elemen.
+            Properti ini memungkinkan anda untuk translate, skala, rotate, dan skew elemen.
+        </p>
+
+        <h2>Jenis-jenis 2D Transformasi:</h2>
+
+        <h3>1. Translate</h3>
+        <p>Menggeser elemen dari posisi aslinya</p>
+        <ul>
+            <li>translate(x, y) - Geser horizontal dan vertikal</li>
+            <li>translateX(x) - Geser horizontal</li>
+            <li>translateY(y) - Geser vertikal</li>
+            <li>Nilai: pixel (px), persentase (%), atau nilai lainnya</li>
+        </ul>
+
+        <h3>2. Rotate</h3>
+        <p>Memutar elemen dengan sudut tertentu</p>
+        <ul>
+            <li>rotate(angle) - Putar searah jarum jam</li>
+            <li>Nilai: derajat (deg), radian (rad)</li>
+            <li>Contoh: rotate(45deg), rotate(-30deg)</li>
+        </ul>
+
+        <h3>3. Scale</h3>
+        <p>Mengubah ukuran elemen</p>
+        <ul>
+            <li>scale(x, y) - Skala horizontal dan vertikal</li>
+            <li>scaleX(x) - Skala horizontal</li>
+            <li>scaleY(y) - Skala vertikal</li>
+            <li>Nilai: angka (1 = normal, 0.5 = setengah, 2 = dua kali)</li>
+        </ul>
+
+        <h3>4. Skew</h3>
+        <p>Memiringkan elemen</p>
+        <ul>
+            <li>skew(x, y) - Miringkan horizontal dan vertikal</li>
+            <li>skewX(angle) - Miringkan horizontal</li>
+            <li>skewY(angle) - Miringkan vertikal</li>
+            <li>Nilai: derajat (deg), contoh: skew(20deg, 10deg)</li>
+        </ul>
+
+        <h3>5. Matrix</h3>
+        <p>Kombinasi semua transformasi 2D dalam satu fungsi</p>
+        <ul>
+            <li>matrix(a, b, c, d, e, f) - Transformasi kompleks</li>
+            <li>Nilai: angka-angka untuk matriks transformasi</li>
+        </ul>
+
+        <!-- fungsi translate() -->
+        <section>
+            <h2>CSS fungsi translate()</h2>
+            <p>
+                Fungsi <span>translate()</span> memeindahkan elemen dari posisi saat ini 
+                (menurut oarameter yang diberikan untuk sumbu-X dan sumbu-Y).
+                <br>
+                Contoh berikut menggerakkan elemen <code>&lt;.translate&gt;</code> 50 piksel ke kanan,
+                dan 20 piksel ke bawah dari posisinya saat ini:
+            </p>
+            <div class="box-container">
+                <h3>contoh</h3>
+                <div class="translate">default</div>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
