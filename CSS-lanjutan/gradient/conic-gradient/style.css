@@ -83,3 +83,14 @@ h3 {
   background-image: conic-gradient(darkcyan, darkblue, darkgreen, darkgoldenrod, yellowgreen);
   border-radius: 50%;
 }
+/* setiap warna memiliki derajat */
+.pie1 {
+  margin: 20px auto;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  background-image: conic-gradient(red 0, red 90deg, blue 90deg, blue 180deg,
+  green 180deg, green 270deg, yellow 270deg, yellow 360deg);
+  border-radius: 50%;
+}
