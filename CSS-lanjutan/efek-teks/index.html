@@ -139,6 +139,49 @@
                     quas libero perspiciatis quam ipsam assumenda ut error.</div>
             </div>
         </section>
+
+        <!-- properti writing mode -->
+        <section>
+            <h2>CSS writing-mode properti</h2>
+            <p>
+                CSS properti <span>writing-mode</span> menentukan apakah baris teks diletakkan secara horizontal atau
+                vertikal.
+                Properti ini sangat berguna untuk menampilkan teks dalam berbagai arah, terutama untuk bahasa-bahasa
+                seperti
+                Cina, Jepang, dan Korea. Nilai yang dapat digunakan adalah:
+            </p>
+            <p>
+                <strong>Nilai-nilai writing-mode:</strong>
+            <ul style="margin-top: 10px;">
+                <li><span>horizontal-tb</span> - Teks mengalir dari kiri ke kanan, baris dari atas ke bawah (nilai
+                    default)</li>
+                <li><span>vertical-rl</span> - Teks mengalir dari atas ke bawah, baris dari kanan ke kiri</li>
+                <li><span>vertical-lr</span> - Teks mengalir dari atas ke bawah, baris dari kiri ke kanan</li>
+                <li><span>sideways-rl</span> - Teks miring ke kanan, baris dari kanan ke kiri</li>
+                <li><span>sideways-lr</span> - Teks miring ke kiri, baris dari kiri ke kanan</li>
+            </ul>
+            </p>
+            <div class="box-container">
+                <h3>Contoh 1: writing-mode: horizontal-tb (Default)</h3>
+                <p>Teks mengalir dari kiri ke kanan, baris dari atas ke bawah:</p>
+                <div class="mode1">Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div class="box-container">
+                <h3>Contoh 2: writing-mode: vertical-rl</h3>
+                <p>Teks mengalir dari atas ke bawah, baris dari kanan ke kiri:</p>
+                <div>Lorem ipsum dolor <span class="mode2">sit</span> amet.</div>
+            </div>
+            <div class="box-container">
+                <h3>Contoh 3: writing-mode: vertical-lr</h3>
+                <p>Teks mengalir dari atas ke bawah, baris dari kiri ke kanan:</p>
+                <div class="mode3">Lorem ipsum dolor sit amet.</div>
+            </div>
+            <div class="box-container">
+                <h3>Contoh 4: writing-mode: sideways-rl</h3>
+                <p>Teks miring ke kanan, baris dari kanan ke kiri:</p>
+                <div>Lorem ipsum dolor sit amet consectetur <span class="mode4">adipisicing</span> elit. Facilis, tenetur.</div>
+            </div>
+        </section>
     </div>
 </body>
 

@@ -126,3 +126,25 @@ h3 {
     margin: 20px;
     word-break: keep-all;
 }
+
+/* properti writing mode */
+/* nilai horizontal-tb */
+.mode1 {
+    writing-mode: horizontal-tb;
+    text-align: center;
+}
+/* nilai vertical-rl */
+.mode2 {
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+/* nilai vertical-lr */
+.mode3 {
+    writing-mode: vertical-lr;
+    text-align: center;
+}
+/* nilai sideways-rl */
+.mode4 {
+    writing-mode: sideways-rl;
+    text-align: center;
+}
