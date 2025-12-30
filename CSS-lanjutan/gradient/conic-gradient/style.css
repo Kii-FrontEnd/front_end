@@ -128,3 +128,24 @@ h3 {
 .posisi3 {
   background-image: conic-gradient(at 75% 25%, red, yellow, green, blue);
 }
+
+/* repeating-conic-gradient */
+/* menggunakan % */
+.repeat1 {
+  margin: 20px auto;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 0 5px black;
+  background-image: repeating-conic-gradient(red 10%, blue 20%);
+  border-radius: 50%;
+}
+
+/* menggunakan deg(derajat) */
+.repeat2 {
+  margin: 20px auto;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 0 5px black;
+  background-image: repeating-conic-gradient(red 0 10deg, blue 10deg 20deg, green 20deg 30deg);
+  border-radius: 50%;
+}
