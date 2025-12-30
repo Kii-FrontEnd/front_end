@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjelasan @font-face CSS</title>
+    <style>
+        /* Mendefinisikan custom font menggunakan @font-face */
+        @font-face {
+            font-family: 'CustomFont';
+            src: url('fonts/custom-font.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'GoogleFont';
+            src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700');
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+
+        .contoh {
+            background-color: #f5f5f5;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .custom-font-example {
+            font-family: 'CustomFont', serif;
+            font-size: 24px;
+            color: #007bff;
+            margin: 10px 0;
+        }
+
+        .roboto-example {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            color: #28a745;
+            margin: 10px 0;
+        }
+
+        .code {
+            background-color: #222;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+
+        .note {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 12px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📚 Penjelasan @font-face CSS</h1>
+
+        <h2>Apa itu @font-face?</h2>
+        <div class="contoh">
+            <p><strong>@font-face</strong> adalah aturan CSS yang memungkinkan Anda untuk mendefinisikan dan menggunakan
+                custom font (font khusus) yang tidak tersedia di sistem pengguna. Dengan @font-face, Anda dapat
+                mengunduh font dari server dan menampilkannya di website Anda.</p>
+        </div>
+
+        <h2>Keuntungan @font-face:</h2>
+        <div class="contoh">
+            <ul>
+                <li>✅ Menggunakan font unik yang tidak tersedia di sistem pengguna</li>
+                <li>✅ Membuat website lebih menarik dan profesional</li>
+                <li>✅ Konsistensi tampilan font di semua browser</li>
+                <li>✅ Meningkatkan branding website</li>
+            </ul>
+        </div>
+
+        <h2>Sintaks Dasar @font-face:</h2>
+        <div class="code">
+            @font-face {
+            font-family: 'Nama-Font';
+            src: url('path/ke/font.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            }
+        </div>
+
+        <h2>Penjelasan Properti:</h2>
+        <div class="contoh">
+            <p><strong>1. font-family:</strong> Nama custom untuk font yang akan digunakan di CSS</p>
+            <p><strong>2. src:</strong> Lokasi file font (lokal atau URL eksternal) dan formatnya</p>
+            <p><strong>3. font-weight:</strong> Ketebalan font (normal, bold, 100-900)</p>
+            <p><strong>4. font-style:</strong> Gaya font (normal, italic, oblique)</p>
+        </div>
+
+        <h2>Format Font yang Didukung:</h2>
+        <div class="contoh">
+            <ul>
+                <li><strong>TTF</strong> (TrueType) - format('truetype')</li>
+                <li><strong>OTF</strong> (OpenType) - format('opentype')</li>
+                <li><strong>WOFF</strong> - format('woff') - Recommended</li>
+                <li><strong>WOFF2</strong> - format('woff2') - Lebih ringan</li>
+                <li><strong>EOT</strong> (Embedded OpenType) - format('embedded-opentype') - IE lama</li>
+            </ul>
+        </div>
+
+        <h2>Contoh Penggunaan 1: Font Lokal</h2>
+        <div class="code">
+            @font-face {
+            font-family: 'CustomFont';
+            src: url('fonts/my-custom-font.ttf') format('truetype');
+            }
+
+            h1 {
+            font-family: 'CustomFont', serif;
+            }
+        </div>
+
+        <h2>Contoh Penggunaan 2: Dari Google Fonts</h2>
+        <div class="code">
+            @font-face {
+            font-family: 'Roboto';
+            src: url('https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu7GxKOzY.woff2') format('woff2');
+            }
+
+            body {
+            font-family: 'Roboto', sans-serif;
+            }
+        </div>
+
+        <h2>Contoh Penggunaan 3: Multiple Weights</h2>
+        <div class="code">
+            @font-face {
+            font-family: 'MyFont';
+            src: url('fonts/myfont-regular.woff2') format('woff2');
+            font-weight: 400;
+            }
+
+            @font-face {
+            font-family: 'MyFont';
+            src: url('fonts/myfont-bold.woff2') format('woff2');
+            font-weight: 700;
+            }
+
+            .regular {
+            font-family: 'MyFont', sans-serif;
+            font-weight: 400;
+            }
+
+            .bold {
+            font-family: 'MyFont', sans-serif;
+            font-weight: 700;
+            }
+        </div>
+
+        <h2>Praktik Terbaik:</h2>
+        <div class="note">
+            <p>💡 <strong>Tips:</strong></p>
+            <ul>
+                <li>Gunakan format WOFF2 untuk ukuran file lebih kecil</li>
+                <li>Sediakan fallback font (serif, sans-serif, monospace)</li>
+                <li>Pertahankan load time dengan tidak menggunakan terlalu banyak font</li>
+                <li>Gunakan font-display untuk kontrol loading behavior</li>
+                <li>Optimalkan ukuran file font untuk performa</li>
+            </ul>
+        </div>
+
+        <h2>Contoh Lengkap dengan font-display:</h2>
+        <div class="code">
+            @font-face {
+            font-family: 'ModernFont';
+            src: url('fonts/modern.woff2') format('woff2'),
+            url('fonts/modern.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+            }
+
+            /* font-display values:
+            - auto: default browser behavior
+            - block: text tidak terlihat sampai font loaded
+            - swap: gunakan fallback dulu, ganti saat font loaded
+            - fallback: timeout 100ms, gunakan fallback jika belum loaded
+            - optional: jika font belum loaded dalam 100ms, tidak perlu mengganti
+            */
+        </div>
+
+        <h2>Ringkasan:</h2>
+        <div class="contoh" style="background-color: #e8f4f8; border-left-color: #00bcd4;">
+            <p>@font-face adalah fitur CSS yang powerful untuk menggunakan custom font di website. Dengan syntax yang
+                sederhana, Anda dapat membuat website lebih menarik dan sesuai dengan branding yang diinginkan. Selalu
+                gunakan format font yang optimal dan sediakan fallback font untuk kompatibilitas maksimal.</p>
+        </div>
+    </div>
+</body>
+
+</html>
