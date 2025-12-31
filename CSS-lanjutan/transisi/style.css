@@ -112,6 +112,9 @@ h3 {
 }
 
 /* cubic-bezier - custom timing function */
+/* cubic-bezier(0.68, -0.55, 0.265, 1.55) */
+/* x1=0.68, y1=-0.55 (control point 1), x2=0.265, y2=1.55 (control point 2) */
+/* y1 negatif (-0.55) = overshoot di awal, y2 > 1 (1.55) = bounce di akhir */
 .timing-cubic:hover {
   width: 300px;
   transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
