@@ -117,3 +117,29 @@ h3 {
   border: 1px solid black;
   transform: rotateX(150deg);
 }
+
+/* rotateY() */
+.rotateY {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 20px auto;
+  line-height: 100px;
+  position: relative;
+}
+.rotateY::after {
+  position: absolute;
+  content: "transform";
+  top: 0;
+  left: 120px;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid black;
+  transform: rotateY(150deg);
+}
