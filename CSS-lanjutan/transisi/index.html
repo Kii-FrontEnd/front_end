@@ -33,12 +33,56 @@
         <div class="box-container">
             <h2>Contoh transisi CSS</h2>
             <p>
-                Contoh berikut menunjukkan elemen 100px * 100px pada <code>&lt;class: cth1;&gt;</code>  dan <code>&lt;class: cth2;&gt;</code>.
+                Contoh berikut menunjukkan elemen 100px * 100px pada <code>&lt;class: cth1;&gt;</code> dan
+                <code>&lt;class: cth2;&gt;</code>.
                 Yang <code>&lt;class: cth1;&gt;</code> menentukan efek transisi width 3s, sedangkan yang
                 <code>&lt;class: cth2;&gt;</code> menentukan width, height dan background-color transisi.
             </p>
             <div class="cth1"></div>
             <div class="cth2"></div>
+        </div>
+        <hr>
+
+        <!-- transisi speed curva -->
+        <h2>CSS Transisi Speed Curva (Timing Function)</h2>
+        <p>
+            <strong>Definisi CSS Transisi Speed Curva:</strong><br>
+            CSS Timing Function adalah properti yang menentukan bagaimana kecepatan animasi transisi berubah dari awal
+            hingga akhir. Ini mengontrol percepatan dan perlambatan efek transisi untuk menciptakan gerakan yang lebih
+            alami dan menarik.
+        </p>
+
+        <h3>Properti-Properti Timing Function:</h3>
+        <ul>
+            <li><strong>linear:</strong> Kecepatan transisi tetap konstan dari awal hingga akhir</li>
+            <li><strong>ease:</strong> Dimulai lambat, cepat di tengah, dan lambat di akhir (default)</li>
+            <li><strong>ease-in:</strong> Dimulai lambat dan semakin cepat menjelang akhir</li>
+            <li><strong>ease-out:</strong> Dimulai cepat dan semakin lambat menjelang akhir</li>
+            <li><strong>ease-in-out:</strong> Dimulai lambat, cepat di tengah, dan lambat di akhir</li>
+            <li><strong>cubic-bezier(x1, y1, x2, y2):</strong> Mendefinisikan kurva custom dengan nilai antara 0 dan 1
+            </li>
+        </ul>
+
+        <h3>Contoh Transisi Speed Curva:</h3>
+        <div class="timing-container">
+            <div class="timing-box timing-linear">
+                <p>linear</p>
+            </div>
+            <div class="timing-box timing-ease">
+                <p>ease</p>
+            </div>
+            <div class="timing-box timing-ease-in">
+                <p>ease-in</p>
+            </div>
+            <div class="timing-box timing-ease-out">
+                <p>ease-out</p>
+            </div>
+            <div class="timing-box timing-ease-in-out">
+                <p>ease-in-out</p>
+            </div>
+            <div class="timing-box timing-cubic">
+                <p>cubic-bezier</p>
+            </div>
         </div>
     </div>
 </body>
