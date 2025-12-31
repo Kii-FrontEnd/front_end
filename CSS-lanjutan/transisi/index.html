@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Transisi</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>CSS Transisi</h1>
+        <p>
+            <strong>Definisi CSS Transisi:</strong><br>
+            CSS Transisi adalah fitur yang memungkinkan perubahan nilai properti CSS terjadi secara bertahap dan halus
+            selama periode waktu tertentu, alih-alih berubah secara instan. Transisi menciptakan efek animasi yang
+            menarik tanpa memerlukan JavaScript.
+        </p>
+
+        <h2>Properti-Properti CSS Transisi:</h2>
+        <ul>
+            <li><strong>transition-property:</strong> Menentukan properti CSS mana yang akan dianimasikan (contoh:
+                width, color, opacity)</li>
+            <li><strong>transition-duration:</strong> Menentukan berapa lama transisi berlangsung (dalam detik atau
+                milidetik, contoh: 2s, 500ms)</li>
+            <li><strong>transition-timing-function:</strong> Menentukan kecepatan transisi selama durasi (ease, linear,
+                ease-in, ease-out, ease-in-out, cubic-bezier)</li>
+            <li><strong>transition-delay:</strong> Menentukan penundaan sebelum transisi dimulai (dalam detik atau
+                milidetik, contoh: 1s, 200ms)</li>
+            <li><strong>transition:</strong> Shorthand untuk menggabungkan semua properti transisi di atas</li>
+        </ul>
+        <div class="box-container">
+            <h2>Contoh transisi CSS</h2>
+            <p>
+                Contoh berikut menunjukkan elemen 100px * 100px pada <code>&lt;class: cth1;&gt;</code>  dan <code>&lt;class: cth2;&gt;</code>.
+                Yang <code>&lt;class: cth1;&gt;</code> menentukan efek transisi width 3s, sedangkan yang
+                <code>&lt;class: cth2;&gt;</code> menentukan width, height dan background-color transisi.
+            </p>
+            <div class="cth1"></div>
+            <div class="cth2"></div>
+        </div>
+    </div>
 </body>
+
 </html>
