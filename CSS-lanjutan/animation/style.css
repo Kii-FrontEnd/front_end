@@ -53,3 +53,26 @@ h3 {
         background-color: green;
     }
 }
+/* aturan 2 menggunakan persen(%) */
+.aturan2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: auto;
+    animation-name: aturan2;
+    animation-duration: 5s;
+}
+@keyframes aturan2 {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color:  green;
+    }
+    100% {
+        background-color: blue;
+    }
+}
