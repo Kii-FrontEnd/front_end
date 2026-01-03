@@ -76,3 +76,40 @@ h3 {
         background-color: blue;
     }
 }
+/* aturan3 mengubah posisi */
+.aturan3 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: aturan3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes aturan3 {
+    0% {
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+    25% {
+        background-color: yellow;
+        left: 300px;
+        top: 0;
+    }
+    50% {
+        background-color: green;
+        left: 300px;
+        top: 200px;
+    }
+    75% {
+        background-color: blue;
+        left: 0;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0;
+        top: 0;
+    }
+}
