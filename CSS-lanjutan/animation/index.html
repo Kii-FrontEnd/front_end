@@ -29,6 +29,7 @@
     </div>
     <hr>
 
+    <!-- @keyframe aturan -->
     <section>
         <h2>CSS aturan @keyframes</h2>
         <p>
@@ -74,6 +75,7 @@
     </section>
     <hr>
 
+    <!-- animation-delay -->
     <section>
         <h2>CSS animation-delay properti</h2>
         <p>
@@ -98,6 +100,7 @@
     </section>
     <hr>
 
+    <!-- animation-iteration-count -->
     <section>
         <h2>CSS animation-iteration-count properti</h2>
         <p>
@@ -122,6 +125,7 @@
     </section>
     <hr>
 
+    <!-- animasi-direction -->
     <section>
         <h2>CSS properti animation-direction</h2>
         <p>
@@ -166,6 +170,84 @@
     </section>
     <hr>
 
-    
+    <!-- animation-timing-function -->
+    <section>
+        <h2>CSS properti animation-timing-function</h2>
+        <p>
+            Properti <span>animation-timing-function</span> menentukan kurva kecepatan animasi.
+            Kurva kecepatan mendefinisikan bagaimana animasi berubah dari satu set nilai ke set nilai lainnya.
+            <br>
+            Properti animation-timing-function dapat memiliki nilai-nilai berikut:
+        </p>
+        <ul>
+            <li>
+                <span>ease</span> - Animasi dimulai lambat, kemudian cepat, dan berakhir lambat (default).
+            </li>
+            <li>
+                <span>linear</span> - Animasi memiliki kecepatan yang sama dari awal hingga akhir.
+            </li>
+            <li>
+                <span>ease-in</span> - Animasi dimulai lambat.
+            </li>
+            <li>
+                <span>ease-out</span> - Animasi berakhir lambat.
+            </li>
+            <li>
+                <span>ease-in-out</span> - Animasi dimulai dan berakhir lambat.
+            </li>
+            <li>
+                <span>step-start</span> - Animasi melompat langsung ke nilai akhir pada awal animasi.
+            </li>
+            <li>
+                <span>step-end</span> - Animasi tetap pada nilai awal hingga akhir animasi, lalu melompat ke nilai akhir.
+            </li>
+            <li>
+                <span>steps(n, start|end)</span> - Menentukan langkah-langkah diskrit dalam animasi.
+            </li>
+            <li>
+                <span>cubic-bezier(n,n,n,n)</span> - Memungkinkan definisi kurva kecepatan kustom.
+            </li>
+        </ul>
+        <p>
+            Berikut adalah contoh untuk masing-masing nilai animation-timing-function menggunakan animasi yang sama namun dengan kurva kecepatan yang berbeda.
+        </p>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 1: animation-timing-function ease</h3>
+            <div class="timing-ease"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 2: animation-timing-function linear</h3>
+            <div class="timing-linear"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 3: animation-timing-function ease-in</h3>
+            <div class="timing-ease-in"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 4: animation-timing-function ease-out</h3>
+            <div class="timing-ease-out"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 5: animation-timing-function ease-in-out</h3>
+            <div class="timing-ease-in-out"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 6: animation-timing-function step-start</h3>
+            <div class="timing-step-start"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 7: animation-timing-function step-end</h3>
+            <div class="timing-step-end"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 8: animation-timing-function steps(4, end)</h3>
+            <div class="timing-steps"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 9: animation-timing-function cubic-bezier(0.25, 0.46, 0.45, 0.94)</h3>
+            <div class="timing-cubic-bezier"></div>
+        </div>
+    </section>
+    <hr>
 </body>
 </html>
