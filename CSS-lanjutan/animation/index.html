@@ -249,5 +249,49 @@
         </div>
     </section>
     <hr>
+
+    <!-- animation-fill-mode -->
+    <section>
+        <h2>CSS properti animation-fill-mode</h2>
+        <p>
+            Properti <span>animation-fill-mode</span> menentukan gaya apa yang diterapkan pada elemen ketika animasi tidak sedang berjalan (sebelum dimulai, setelah selesai, atau keduanya).
+            <br>
+            Properti animation-fill-mode dapat memiliki nilai-nilai berikut:
+        </p>
+        <ul>
+            <li>
+                <span>none</span> - Elemen tidak mendapatkan gaya apa pun dari animasi ketika tidak sedang berjalan (default).
+            </li>
+            <li>
+                <span>forwards</span> - Elemen akan mempertahankan gaya dari frame terakhir animasi setelah animasi selesai.
+            </li>
+            <li>
+                <span>backwards</span> - Elemen akan mendapatkan gaya dari frame pertama animasi segera setelah animasi ditetapkan, sebelum animasi dimulai.
+            </li>
+            <li>
+                <span>both</span> - Animasi akan mengikuti aturan forwards dan backwards, memperluas properti animasi dalam kedua arah.
+            </li>
+        </ul>
+        <p>
+            Berikut adalah contoh untuk masing-masing nilai animation-fill-mode menggunakan animasi yang sama namun dengan fill mode yang berbeda. Setiap contoh memiliki delay 1 detik sebelum animasi dimulai untuk menunjukkan efek fill mode.
+        </p>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 1: animation-fill-mode none</h3>
+            <div class="fill-none"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 2: animation-fill-mode forwards</h3>
+            <div class="fill-forwards"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 3: animation-fill-mode backwards</h3>
+            <div class="fill-backwards"></div>
+        </div>
+        <div class="box-container" style="height: 400px;">
+            <h3>Contoh 4: animation-fill-mode both</h3>
+            <div class="fill-both"></div>
+        </div>
+    </section>
+    <hr>
 </body>
 </html>
